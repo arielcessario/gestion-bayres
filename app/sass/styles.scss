@@ -1,3 +1,28 @@
+//////////////////////////////////////////paleta de colores Bayres
+
+//botones
+$color1 : #334d00;
+
+//degradado_principal
+$color2 : #77b300;
+$color3 : #446600;
+
+
+
+@mixin degradado_principal($color2, $color3) {
+  background-color: $color2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($color2), to($color3));
+  background-image: -webkit-linear-gradient(top, $color2, $color3);
+  background-image:    -moz-linear-gradient(top, $color2, $color3);
+  background-image:     -ms-linear-gradient(top, $color2, $color3);
+  background-image:      -o-linear-gradient(top, $color2, $color3);
+  background-image:         linear-gradient(top, $color2, $color3);
+  filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
+}
+
+//fondo body
+$color4 : lightgrey;
+
 @import "compass";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,100,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700italic,800,800italic,700,900,900italic);
 
@@ -60,6 +85,7 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   text-align: center;
+  background-color: $color4;
 }
 
 .form {
@@ -70,15 +96,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
-  background: rgb(229, 112, 231); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0); /* IE6-9 */
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  @include degradado_principal($color2, $color3);
 }
 
 .input {
@@ -91,12 +109,7 @@ body {
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
-  background: rgb(229, 112, 231); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0); /* IE6-9 */
+  @include degradado_principal($color2, $color3);
 
   table {
     width: 90%;
@@ -262,18 +275,48 @@ button {
 
 button:hover {
   cursor: pointer;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
-  background: rgb(229, 112, 231); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0); /* IE6-9 */
-  color: #79996D;
+  @include degradado_principal($color2, $color3);
   -webkit-transition: all 0.3s ease-in-out;
   color: white;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+ac-autocomplete input{
+  min-width: 50%;
+  margin: 10px auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+  -webkit-border-radius: 2px;
+  border: solid 1px black;
+}
+
+ac-autocomplete:focus{
+  border: solid 1px $color3;
+  color: $color3;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-animation: all ease-in .4;
+  -moz-animation: all ease-in .4;
+  animation: all ease-in .4;
+
+}
+
+ac-autocomplete input ul li{
+  background-color: $color3;
+  color: white;
+  width: 300px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+
+ac-waiting{
+  font-weight: bolder;
+  margin: 10px auto;
 }
 
 #facebook {
@@ -505,3 +548,24 @@ select {
 
   }
 }
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.ac-autocomplete-panel{
+  position: absolute;
+  z-index: 1;
+  background-color: #eee;
+  //margin-top: 41px;
+  margin-top: -10px;
+  left: 24.5%;
+  width: 50%;
+}
+ac-autocomplete > ul > li{
+  padding: 5px;
+}
+.ac-autocomplete-selected{
+  @include degradado_principal($color2, $color3);
+}
+
