@@ -16,6 +16,7 @@
         'acProductos',
         'acProductosAdministracion',
         'acStocks',
+        'acMovimientos',
         'acCajas',
         'acCobros',
         'LangTables',
