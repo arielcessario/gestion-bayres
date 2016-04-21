@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,100,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700italic,800,800italic,700,900,900italic);
 /* Reset `button` and button-style `input` default styles */
-/* line 5, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -51,14 +51,15 @@ button {
     opacity: 1;
   }
 }
-/* line 59, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   text-align: center;
+  background-color: lightgrey;
 }
 
-/* line 65, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .form {
   width: 100%;
   padding: 10px;
@@ -66,58 +67,49 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
-  background: #e570e7;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0);
-  /* IE6-9 */
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  background-color: #77b300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
+  background-image: -webkit-linear-gradient(top, #77b300, #446600);
+  background-image: -moz-linear-gradient(top, #77b300, #446600);
+  background-image: -ms-linear-gradient(top, #77b300, #446600);
+  background-image: -o-linear-gradient(top, #77b300, #446600);
+  background-image: linear-gradient(to bottom, #77b300, #446600);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .input {
   display: flex;
   flex-direction: column-reverse;
 }
 
-/* line 90, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .lista {
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
-  background: #e570e7;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0);
-  /* IE6-9 */
+  background-color: #77b300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
+  background-image: -webkit-linear-gradient(top, #77b300, #446600);
+  background-image: -moz-linear-gradient(top, #77b300, #446600);
+  background-image: -ms-linear-gradient(top, #77b300, #446600);
+  background-image: -o-linear-gradient(top, #77b300, #446600);
+  background-image: linear-gradient(to bottom, #77b300, #446600);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
-/* line 101, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .lista table {
   width: 90%;
   margin: 10px auto;
 }
-/* line 104, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .lista table td {
   padding: 10px;
   background-color: #293333;
   color: white;
   text-align: left;
 }
-/* line 111, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .lista table th {
   padding: 10px;
   font-size: 18px;
@@ -126,17 +118,17 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .lista tbody tr {
   -webkit-transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 132, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 .lista table tbody tr:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 137, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .lista table tbody tr:hover td {
   background-color: white;
   font-weight: bold;
@@ -144,11 +136,11 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 .lista table tfoot tr td {
   padding: 0 !important;
 }
-/* line 156, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .lista table tfoot tr td .table-td {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
@@ -168,13 +160,13 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .paginacion-paginas,
 .paginacion-go-to {
   margin: 20px auto;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 button {
   opacity: 0;
   /* make things invisible upon start */
@@ -200,7 +192,7 @@ button {
   -webkit-border-radius: 3px;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 .ac-error-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -225,7 +217,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 232, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -256,21 +248,17 @@ button {
   animation-delay: 0.1s;
 }
 
-/* line 263, ../sass/styles.scss */
+/* line 276, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
-  background: #e570e7;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #e570e7 0%, #c85ec7 47%, #a849a3 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0);
-  /* IE6-9 */
-  color: #79996D;
+  background-color: #77b300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
+  background-image: -webkit-linear-gradient(top, #77b300, #446600);
+  background-image: -moz-linear-gradient(top, #77b300, #446600);
+  background-image: -ms-linear-gradient(top, #77b300, #446600);
+  background-image: -o-linear-gradient(top, #77b300, #446600);
+  background-image: linear-gradient(to bottom, #77b300, #446600);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
   -webkit-transition: all 0.3s ease-in-out;
   color: white;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -278,19 +266,58 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 279, ../sass/styles.scss */
+/* line 286, ../sass/styles.scss */
+ac-autocomplete input {
+  min-width: 50%;
+  margin: 10px auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+  -webkit-border-radius: 2px;
+  border: solid 1px black;
+}
+
+/* line 297, ../sass/styles.scss */
+ac-autocomplete:focus {
+  border: solid 1px #446600;
+  color: #446600;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-animation: all ease-in .4;
+  -moz-animation: all ease-in .4;
+  animation: all ease-in .4;
+}
+
+/* line 309, ../sass/styles.scss */
+ac-autocomplete input ul li {
+  background-color: #446600;
+  color: white;
+  width: 300px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+
+/* line 317, ../sass/styles.scss */
+ac-waiting {
+  font-weight: bolder;
+  margin: 10px auto;
+}
+
+/* line 322, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 284, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 289, ../sass/styles.scss */
+/* line 332, ../sass/styles.scss */
 input.buscador {
   width: 89%;
   height: 40px;
@@ -306,17 +333,17 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 304, ../sass/styles.scss */
+/* line 347, ../sass/styles.scss */
 .form span {
   color: white;
 }
 
-/* line 309, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 314, ../sass/styles.scss */
+/* line 357, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -325,7 +352,7 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 323, ../sass/styles.scss */
+/* line 366, ../sass/styles.scss */
 .details {
   padding: 10px;
   background-color: transparent;
@@ -348,7 +375,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 345, ../sass/styles.scss */
+/* line 388, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -357,7 +384,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 353, ../sass/styles.scss */
+/* line 396, ../sass/styles.scss */
 .detalle-container {
   color: white;
   padding: 15px 30px 25px 30px;
@@ -372,7 +399,7 @@ input.buscador {
   max-height: 100%;
   overflow-y: auto;
 }
-/* line 367, ../sass/styles.scss */
+/* line 410, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -382,13 +409,13 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 383, ../sass/styles.scss */
+/* line 426, ../sass/styles.scss */
 .detalle-container select {
   padding: 10px;
   font-size: 14px;
   margin: 10px;
 }
-/* line 389, ../sass/styles.scss */
+/* line 432, ../sass/styles.scss */
 .detalle-container span {
   font-size: 16px;
   font-weight: bold;
@@ -396,11 +423,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 400, ../sass/styles.scss */
+/* line 443, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 403, ../sass/styles.scss */
+/* line 446, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -409,7 +436,7 @@ input.buscador {
   left: -21px;
   top: 41px;
 }
-/* line 412, ../sass/styles.scss */
+/* line 455, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -430,7 +457,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 432, ../sass/styles.scss */
+/* line 475, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -452,7 +479,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 454, ../sass/styles.scss */
+/* line 497, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -474,7 +501,7 @@ select {
   width: 100%;
 }
 
-/* line 476, ../sass/styles.scss */
+/* line 519, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -482,24 +509,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 476, ../sass/styles.scss */
+  /* line 519, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 487, ../sass/styles.scss */
+/* line 530, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 490, ../sass/styles.scss */
+/* line 533, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 497, ../sass/styles.scss */
+/* line 540, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -507,4 +534,44 @@ select {
   opacity: 0;
   top: 0;
   left: 0;
+}
+
+/* line 551, ../sass/styles.scss */
+ac-autocomplete {
+  position: relative;
+}
+
+/* line 554, ../sass/styles.scss */
+ac-autocomplete > ul > li {
+  padding: 5px;
+}
+
+/* line 557, ../sass/styles.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 562, ../sass/styles.scss */
+.ac-autocomplete-panel {
+  position: absolute;
+  z-index: 1;
+  background-color: #eee;
+  margin-top: -10px;
+  width: 100%;
+  max-height: 235px;
+  overflow-y: auto;
+}
+
+/* line 573, ../sass/styles.scss */
+.ac-autocomplete-selected {
+  background-color: #77b300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
+  background-image: -webkit-linear-gradient(top, #77b300, #446600);
+  background-image: -moz-linear-gradient(top, #77b300, #446600);
+  background-image: -ms-linear-gradient(top, #77b300, #446600);
+  background-image: -o-linear-gradient(top, #77b300, #446600);
+  background-image: linear-gradient(to bottom, #77b300, #446600);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }

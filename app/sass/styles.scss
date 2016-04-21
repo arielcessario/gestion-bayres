@@ -548,6 +548,12 @@ select {
 
   }
 }
+ac-autocomplete{
+  position: relative;
+}
+ac-autocomplete > ul > li{
+  padding: 5px;
+}
 ul{
   margin:0;
   padding:0;
@@ -559,13 +565,13 @@ ul{
   background-color: #eee;
   //margin-top: 41px;
   margin-top: -10px;
-  left: 24.5%;
-  width: 50%;
-}
-ac-autocomplete > ul > li{
-  padding: 5px;
+  //left: 24.5%;
+  width: 100%;
+  max-height: 235px;
+  overflow-y: auto;
 }
 .ac-autocomplete-selected{
   @include degradado_principal($color2, $color3);
 }
+
 
