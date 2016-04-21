@@ -144,6 +144,7 @@ class Main
             echo 'Caught exception: ', $e->getMessage(), "\n";
         }
         if (!isset($this->db)) {
+//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
             $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }
