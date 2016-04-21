@@ -1,0 +1,507 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,100,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700italic,800,800italic,700,900,900italic);
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+//efectos
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1 \9
+  ; /* IE9 only */
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1 \9
+  ; /* IE9 only */
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    opacity: 1 \9
+  ; /* IE9 only */
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  //margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+  background: rgb(229, 112, 231); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0); /* IE6-9 */
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+.input {
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.lista {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+  background: rgb(229, 112, 231); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0); /* IE6-9 */
+
+  table {
+    width: 90%;
+    margin: 10px auto;
+    td {
+      padding: 10px;
+      background-color: #293333;
+      color: white;
+      text-align: left;
+
+    }
+    th {
+      padding: 10px;
+      font-size: 18px;
+      background-color: white;
+      color: #293333;
+      -webkit-border-radius: 2px;
+
+    }
+  }
+}
+
+.lista {
+  tbody {
+    tr {
+      -webkit-transform: scale(1);
+      -webkit-transition: all 0.3s ease-in-out;
+
+    }
+  }
+  table {
+    tbody {
+      tr:hover {
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        //transform:scale(1.1,1.1);
+
+        td {
+          background-color: white;
+          font-weight: bold;
+          color: #293333;
+          -webkit-transition: all 0.3s ease-in-out;
+        }
+
+      }
+
+    }
+  }
+}
+
+.lista {
+  table {
+    tfoot {
+      tr {
+        td {
+          padding: 0 !important;
+          .table-td {
+            display: flex;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+            background: rgb(238, 238, 238); /* Old browsers */
+            background: -moz-radial-gradient(center, ellipse cover, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* FF3.6-15 */
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at center, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+            font-weight: bolder;
+            color: black;
+            padding: 0.5px;
+            -webkit-border-radius: 2px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.paginacion-paginas,
+.paginacion-go-to {
+  margin: 20px auto;
+}
+
+button {
+  opacity: 0; /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  background-color: #293333;
+  -webkit-border-radius: 3px;
+
+}
+
+.ac-error-message {
+  padding: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  line-height: 26px;
+  width: 700px;
+  background-image: url('http://i.imgur.com/GnyDvKN.png');
+  background-repeat: no-repeat;
+  background: rgba(206, 3, 50, 1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(206, 3, 50, 1) 0%, rgba(171, 3, 42, 0.91) 44%, rgba(198, 6, 51, 0.8) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(206, 3, 50, 1)), color-stop(44%, rgba(171, 3, 42, 0.91)), color-stop(100%, rgba(198, 6, 51, 0.8)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(206, 3, 50, 1) 0%, rgba(171, 3, 42, 0.91) 44%, rgba(198, 6, 51, 0.8) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(206, 3, 50, 1) 0%, rgba(171, 3, 42, 0.91) 44%, rgba(198, 6, 51, 0.8) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(206, 3, 50, 1) 0%, rgba(171, 3, 42, 0.91) 44%, rgba(198, 6, 51, 0.8) 100%);
+  background: radial-gradient(ellipse at center, rgba(206, 3, 50, 1) 0%, rgba(171, 3, 42, 0.91) 44%, rgba(198, 6, 51, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0332', endColorstr='#c60633', GradientType=1);
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+
+}
+
+.error-message {
+  position: absolute;
+  top: 16px !important;
+  left: 0px !important;
+  background-color: #a90329;
+  color: white;
+  width: 266px;
+  margin-left: 26px;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-border-radius: 2px;
+  opacity: 0; /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+
+}
+
+button:hover {
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+  background: rgb(229, 112, 231); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e570e7', endColorstr='#a849a3', GradientType=0); /* IE6-9 */
+  color: #79996D;
+  -webkit-transition: all 0.3s ease-in-out;
+  color: white;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#facebook {
+  background-color: transparent;
+  background-image: url(facebook.svg)
+}
+
+#google {
+  background-color: transparent;
+  background-image: url(gmail.svg)
+}
+
+input.buscador {
+  width: 89%;
+  height: 40px;
+  margin: 30px auto;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #293333;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.form span {
+  color: white;
+
+}
+
+.form a {
+  color: white;
+
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.details {
+  padding: 10px;
+  background-color: transparent;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  -webkit-transform: translate(1000px, 0);
+  -moz-transform: translate(1000px, 0);
+  -ms-transform: translate(1000px, 0);
+  -o-transform: translate(1000px, 0);
+  transform: translate(1000px, 0);
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -ms-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+.details-open {
+  -webkit-transform: translate(0, 0) !important;
+  -moz-transform: translate(0, 0) !important;
+  -ms-transform: translate(0, 0) !important;
+  -o-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
+}
+
+.detalle-container {
+  color: white;
+  padding: 15px 30px 25px 30px;
+  width: 90%;
+  margin: 10px auto;
+  position: relative;
+  background-color: #536363;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  max-height: 100%;
+  overflow-y: auto;
+
+  input, textarea {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px;
+    color: #9d9e9e;
+    //text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    background: #fff;
+    //border: 1px solid #fff;
+    border-radius: 5px;
+    // box-shadow: inset 0 1px 1px rgba(0,0,0,0.50);
+    //-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    //-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+
+  }
+
+  select {
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+  }
+
+}
+
+.login-iconos {
+  .input {
+    position: relative;
+  }
+  .input::after {
+    content: '';
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: -21px;
+    top: 41px;
+  }
+
+  .input:nth-child(1):after {
+    background: url(mail.svg) center center no-repeat;
+    background-size: contain;
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  .input:nth-child(2):after {
+    background: url(pass.svg) center center no-repeat;
+    background-size: contain;
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+}
+
+select {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: 16px;
+  margin: auto;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+
+}
+
+.foto-container {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 100%;
+  @media (min-width: 400px) {
+    max-width: 400px;
+    min-width: 400px;
+  }
+
+  .foto {
+
+    position: relative;
+    .input-foto {
+      width: 50px;
+      height: 50px;
+      top: 0;
+      left: 0;
+    }
+
+    input {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+      top: 0;
+      left: 0;
+    }
+
+  }
+}
