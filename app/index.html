@@ -187,6 +187,7 @@
 <body ng-cloak ng-controller="AppCtrl as appCtrl">
 <ac-waiting texto="'Por favor aguarde...'"></ac-waiting>
 <div id="upper-bar" ng-if="appCtrl.user">
+    <img src="images/logo.png" alt="">
     <usuario-logout redirect="'/login'"></usuario-logout>
 </div>
 <div id="nav-bar" ng-if="appCtrl.user">
