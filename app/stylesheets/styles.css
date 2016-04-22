@@ -266,7 +266,8 @@ button:hover {
 }
 
 /* line 304, ../sass/styles.scss */
-ac-autocomplete input {
+ac-autocomplete input,
+input[type="number"] {
   min-width: 50%;
   margin: 10px auto;
   font-family: 'Raleway', sans-serif;
@@ -277,7 +278,7 @@ ac-autocomplete input {
   border: solid 1px black;
 }
 
-/* line 315, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 ac-autocomplete:focus {
   border: solid 1px #446600;
   color: #446600;
@@ -289,7 +290,7 @@ ac-autocomplete:focus {
   animation: all ease-in .4;
 }
 
-/* line 327, ../sass/styles.scss */
+/* line 328, ../sass/styles.scss */
 ac-autocomplete input ul li {
   background-color: #446600;
   color: white;
@@ -298,25 +299,28 @@ ac-autocomplete input ul li {
   font-size: 22px;
 }
 
-/* line 335, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 ac-waiting {
   font-weight: bolder;
   margin: 10px auto;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
 }
 
-/* line 340, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 345, ../sass/styles.scss */
+/* line 349, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 350, ../sass/styles.scss */
+/* line 354, ../sass/styles.scss */
 input.buscador {
   width: 89%;
   height: 40px;
@@ -332,17 +336,17 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 365, ../sass/styles.scss */
+/* line 369, ../sass/styles.scss */
 .form span {
   color: white;
 }
 
-/* line 370, ../sass/styles.scss */
+/* line 374, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 375, ../sass/styles.scss */
+/* line 379, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -351,9 +355,10 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 384, ../sass/styles.scss */
+/* line 388, ../sass/styles.scss */
 .details {
   padding: 10px;
+  padding-top: 30px !important;
   background: #a4b357;
   background: -moz-linear-gradient(top, #a4b357 0%, #75890c 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #a4b357), color-stop(100%, #75890c));
@@ -362,8 +367,9 @@ input.buscador {
   background: -ms-linear-gradient(top, #a4b357 0%, #75890c 100%);
   background: linear-gradient(to bottom, #a4b357 0%, #75890c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
-  width: 35%;
+  width: 40%;
   position: absolute;
+  border: solid 2px white;
   right: 0;
   top: 0;
   height: 100%;
@@ -381,7 +387,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 412, ../sass/styles.scss */
+/* line 419, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -390,7 +396,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 420, ../sass/styles.scss */
+/* line 427, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 20px;
@@ -405,11 +411,11 @@ input.buscador {
   overflow-y: auto;
   width: 85%;
 }
-/* line 434, ../sass/styles.scss */
+/* line 441, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
-  width: 90%;
+  width: 93%;
   font-size: 14px;
   font-weight: bold;
   color: black;
@@ -418,17 +424,17 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 454, ../sass/styles.scss */
-.detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
-  width: 85%;
-}
 /* line 461, ../sass/styles.scss */
+.detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
+  width: 93%;
+}
+/* line 468, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin: 10px;
 }
-/* line 467, ../sass/styles.scss */
+/* line 474, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -436,11 +442,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 478, ../sass/styles.scss */
+/* line 485, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 481, ../sass/styles.scss */
+/* line 488, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -449,7 +455,7 @@ input.buscador {
   left: -21px;
   top: 41px;
 }
-/* line 490, ../sass/styles.scss */
+/* line 497, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -470,7 +476,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 510, ../sass/styles.scss */
+/* line 517, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -492,7 +498,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 532, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -514,7 +520,7 @@ select {
   width: 97%;
 }
 
-/* line 554, ../sass/styles.scss */
+/* line 561, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -522,24 +528,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 554, ../sass/styles.scss */
+  /* line 561, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 565, ../sass/styles.scss */
+/* line 572, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 568, ../sass/styles.scss */
+/* line 575, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 575, ../sass/styles.scss */
+/* line 582, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -549,25 +555,25 @@ select {
   left: 0;
 }
 
-/* line 586, ../sass/styles.scss */
+/* line 593, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 589, ../sass/styles.scss */
+/* line 596, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 593, ../sass/styles.scss */
+/* line 600, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 598, ../sass/styles.scss */
+/* line 605, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -579,7 +585,7 @@ ul {
   color: #000;
 }
 
-/* line 610, ../sass/styles.scss */
+/* line 617, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -591,16 +597,21 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 615, ../sass/styles.scss */
+/* line 622, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
 }
-/* line 622, ../sass/styles.scss */
+/* line 629, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
+}
+
+/* line 641, ../sass/styles.scss */
+#ac-usuarios-login {
+  width: 300px !important;
 }
