@@ -266,6 +266,31 @@ button {
 
 }
 
+.ac-success-message {
+  padding: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  line-height: 26px;
+  width: 700px;
+  background-image: url('http://i.imgur.com/GnyDvKN.png');
+  background-repeat: no-repeat;
+  background: rgba(164, 179, 87, 1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 0.91) 44%, rgba(171, 184, 100, 0.8) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(164, 179, 87, 1)), color-stop(44%, rgba(171, 184, 100, 0.91)), color-stop(100%, rgba(171, 184, 100, 0.8)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 0.91) 44%, rgba(171, 184, 100, 0.8) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 0.91) 44%, rgba(171, 184, 100, 0.8) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 0.91) 44%, rgba(171, 184, 100, 0.8) 100%);
+  background: radial-gradient(ellipse at center, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 0.91) 44%, rgba(171, 184, 100, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0332', endColorstr='#c60633', GradientType=1);
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+
+}
+
 .error-message {
   position: absolute;
   top: 16px !important;
