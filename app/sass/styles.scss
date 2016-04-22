@@ -1,27 +1,25 @@
 //////////////////////////////////////////paleta de colores Bayres
 
 //botones
-$color1 : #334d00;
+$color1: #334d00;
 
 //degradado_principal
-$color2 : #77b300;
-$color3 : #446600;
-
-
+$color2: #77b300;
+$color3: #446600;
 
 @mixin degradado_principal($color2, $color3) {
   background-color: $color2;
   background-image: -webkit-gradient(linear, left top, left bottom, from($color2), to($color3));
   background-image: -webkit-linear-gradient(top, $color2, $color3);
-  background-image:    -moz-linear-gradient(top, $color2, $color3);
-  background-image:     -ms-linear-gradient(top, $color2, $color3);
-  background-image:      -o-linear-gradient(top, $color2, $color3);
-  background-image:         linear-gradient(top, $color2, $color3);
-  filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
+  background-image: -moz-linear-gradient(top, $color2, $color3);
+  background-image: -ms-linear-gradient(top, $color2, $color3);
+  background-image: -o-linear-gradient(top, $color2, $color3);
+  background-image: linear-gradient(top, $color2, $color3);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
 }
 
 //fondo body
-$color4 : white;
+$color4: white;
 
 @import "compass";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100italic,100,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700italic,800,800italic,700,900,900italic);
@@ -86,14 +84,14 @@ body {
   margin: 0;
   text-align: center;
   //background-color: $color4;
-  background: rgba(164,179,87,1);
-  background: -moz-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(171,184,100,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(171,184,100,1)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(171,184,100,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(171,184,100,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(164,179,87,1) 0%, rgba(171,184,100,1) 100%);
-  background: radial-gradient(ellipse at center, rgba(164,179,87,1) 0%, rgba(171,184,100,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#abb864', GradientType=1 );
+  background: rgba(164, 179, 87, 1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(164, 179, 87, 1)), color-stop(100%, rgba(171, 184, 100, 1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 1) 100%);
+  background: radial-gradient(ellipse at center, rgba(164, 179, 87, 1) 0%, rgba(171, 184, 100, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#abb864', GradientType=1);
 }
 
 .form {
@@ -115,7 +113,7 @@ body {
 
 }
 
-.form input, textarea{
+.form input, textarea {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 25px;
@@ -123,7 +121,6 @@ body {
   color: black;
   padding: 5px;
 }
-
 
 .lista {
   font-family: 'Raleway', sans-serif;
@@ -180,8 +177,7 @@ body {
   }
 }
 
-
-.lista img{
+.lista img {
   width: 50px !important;
   height: 50px !important;
 }
@@ -310,7 +306,7 @@ button:hover {
 }
 
 ac-autocomplete input,
-input[type="number"]{
+input[type="number"] {
   min-width: 50%;
   margin: 10px auto;
   font-family: 'Raleway', sans-serif;
@@ -321,7 +317,7 @@ input[type="number"]{
   border: solid 1px black;
 }
 
-ac-autocomplete:focus{
+ac-autocomplete:focus {
   border: solid 1px $color3;
   color: $color3;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -333,7 +329,7 @@ ac-autocomplete:focus{
 
 }
 
-ac-autocomplete input ul li{
+ac-autocomplete input ul li {
   background-color: $color3;
   color: white;
   width: 300px;
@@ -341,22 +337,22 @@ ac-autocomplete input ul li{
   font-size: 22px;
 }
 
-ac-waiting{
-  position: fixed;
-  background-color: rgba(59, 70, 70, 0.90);
-  width: 100%;
-  height: 100%;
-  font-weight: bolder;
-  z-index: 10000;
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 40px;
-  padding-top: 20%;
-  text-shadow:4px 4px #293333;
+ac-waiting {
+  div {
+    position: fixed;
+    background-color: rgba(59, 70, 70, 0.90);
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+    z-index: 10000;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    padding-top: 20%;
+    text-shadow: 4px 4px #293333;
+  }
 
- }
-
-
+}
 
 #facebook {
   background-color: transparent;
@@ -405,14 +401,14 @@ input.buscador {
 .details {
   padding: 10px;
   padding-top: 30px !important;
-  background: rgba(164,179,87,1);
-  background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
-  background: -webkit-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-  background: -o-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-  background: -ms-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-  background: linear-gradient(to bottom, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
+  background: rgba(164, 179, 87, 1);
+  background: -moz-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164, 179, 87, 1)), color-stop(100%, rgba(117, 137, 12, 1)));
+  background: -webkit-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: -o-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
   width: 40%;
   position: absolute;
   border: solid 2px white;
@@ -475,20 +471,13 @@ input.buscador {
 
   }
 
-
-
-
-
-  .detalle-container2{
+  .detalle-container2 {
     width: 93%;
-     }
+  }
 
-
-.detalle-container-login input{
-  background-color: red;
-}
-
-
+  .detalle-container-login input {
+    background-color: red;
+  }
 
   select {
     padding: 10px;
@@ -616,19 +605,23 @@ select {
 
   }
 }
-ac-autocomplete{
+
+ac-autocomplete {
   position: relative;
 }
-ac-autocomplete > ul > li{
+
+ac-autocomplete > ul > li {
   padding: 5px;
-  cursor:pointer;
+  cursor: pointer;
 }
-ul{
-  margin:0;
-  padding:0;
-  list-style:none;
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.ac-autocomplete-panel{
+
+.ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
   background-color: #eee;
@@ -638,12 +631,12 @@ ul{
   width: 100%;
   max-height: 220px;
   overflow-y: auto;
-  color:#000;
-}
-.ac-autocomplete-selected{
-  @include degradado_principal($color2, $color3);
+  color: #000;
 }
 
+.ac-autocomplete-selected {
+  @include degradado_principal($color2, $color3);
+}
 
 #cobros {
   background-color: rgba(59, 70, 70, 0.80);
@@ -651,14 +644,13 @@ ul{
   -webkit-border-radius: 5px;
   padding: 20px;
 
-  table{
-    input{
+  table {
+    input {
       font-size: 16px !important;
       margin-left: 5px !important;
       margin-right: 5px !important;
 
     }
-
 
   }
 
@@ -668,12 +660,13 @@ ul{
   width: 300px !important;
 }
 
-resumen-caja-diaria{
+resumen-caja-diaria {
   position: absolute;
   top: 0;
   height: 555px;
   overflow-y: auto;
 }
+
 .botonera {
   position: absolute;
   bottom: 0;
