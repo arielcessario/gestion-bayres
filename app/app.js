@@ -20,6 +20,7 @@
         'acCajas',
         'acCobros',
         'acResumenCajaDiaria',
+        'acAbrirCerrarCaja',
         'LangTables',
         'acUploads'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {
