@@ -381,8 +381,7 @@ input.buscador {
   border: solid 2px white;
   right: 0;
   top: 0;
-  height: 100%;
-  max-height: 100%;
+  height: 92%;
   overflow-y: auto;
   -webkit-transform: translate(1000px, 0);
   -moz-transform: translate(1000px, 0);
@@ -396,7 +395,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 427, ../sass/styles.scss */
+/* line 428, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -405,7 +404,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 435, ../sass/styles.scss */
+/* line 436, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 20px;
@@ -420,7 +419,7 @@ input.buscador {
   overflow-y: auto;
   width: 85%;
 }
-/* line 449, ../sass/styles.scss */
+/* line 450, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -433,22 +432,22 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 472, ../sass/styles.scss */
+/* line 473, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 477, ../sass/styles.scss */
+/* line 478, ../sass/styles.scss */
 .detalle-container .detalle-container-login input, .detalle-container2 .detalle-container-login input {
   background-color: red;
 }
-/* line 483, ../sass/styles.scss */
+/* line 484, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 490, ../sass/styles.scss */
+/* line 491, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -456,11 +455,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 501, ../sass/styles.scss */
+/* line 502, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 504, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -469,7 +468,7 @@ input.buscador {
   left: -21px;
   top: 28px;
 }
-/* line 513, ../sass/styles.scss */
+/* line 514, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -490,7 +489,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 533, ../sass/styles.scss */
+/* line 534, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -512,7 +511,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 555, ../sass/styles.scss */
+/* line 556, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -534,7 +533,7 @@ select {
   width: 97%;
 }
 
-/* line 577, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -542,24 +541,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 577, ../sass/styles.scss */
+  /* line 578, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 588, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 591, ../sass/styles.scss */
+/* line 592, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 598, ../sass/styles.scss */
+/* line 599, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -569,25 +568,25 @@ select {
   left: 0;
 }
 
-/* line 609, ../sass/styles.scss */
+/* line 610, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 612, ../sass/styles.scss */
+/* line 613, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 616, ../sass/styles.scss */
+/* line 617, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 621, ../sass/styles.scss */
+/* line 622, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -599,7 +598,7 @@ ul {
   color: #000;
 }
 
-/* line 633, ../sass/styles.scss */
+/* line 634, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -611,21 +610,35 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 638, ../sass/styles.scss */
+/* line 639, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
 }
-/* line 645, ../sass/styles.scss */
+/* line 646, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 657, ../sass/styles.scss */
+/* line 658, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
+}
+
+/* line 662, ../sass/styles.scss */
+resumen-caja-diaria {
+  position: absolute;
+  top: 0;
+  height: 555px;
+  overflow-y: auto;
+}
+
+/* line 668, ../sass/styles.scss */
+.botonera {
+  position: absolute;
+  bottom: 0;
 }
