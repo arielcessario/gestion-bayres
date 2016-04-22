@@ -19,6 +19,7 @@
         'acMovimientos',
         'acCajas',
         'acCobros',
+        'acResumenCajaDiaria',
         'LangTables',
         'acUploads'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {

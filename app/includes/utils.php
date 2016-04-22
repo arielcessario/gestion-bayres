@@ -125,9 +125,13 @@ class Main
             'createProducto' => 0,
             'updateProducto' => 0
         ),
-        'Cajas' => array('getProductos' => 0
+        'Cajas' => array(
+            'getTotalByCuenta' => 0,
+            'getSaldoInicial' => 0,
+            'getCajaDiaria' => 0
         ),
-        'Stocks' => array('getStocks' => 0
+        'Stocks' => array(
+            'getStocks' => 0, 'updateStock' => 0
         )
     );
 
@@ -144,8 +148,8 @@ class Main
             echo 'Caught exception: ', $e->getMessage(), "\n";
         }
         if (!isset($this->db)) {
-//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
-            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
+            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
+//            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }
 }
