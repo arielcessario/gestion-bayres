@@ -135,10 +135,15 @@ class Main
             'getSaldoFinalAnterior' => 0
         ),
         'Stocks' => array(
-            'getStocks' => 0, 'updateStock' => 0
+            'getStocks' => 0,
+            'updateStock' => 0,
+            'getPedidos' => 0
         ),
         'Reportes' => array(
             'cierreDeCaja' => 0, 'updateStock' => 0
+        ),
+        'Sucursales' => array(
+            'get' => 0, 'updateStock' => 0
         )
     );
 
@@ -155,7 +160,8 @@ class Main
             echo 'Caught exception: ', $e->getMessage(), "\n";
         }
         if (!isset($this->db)) {
-            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
+//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
+            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
 //            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }
