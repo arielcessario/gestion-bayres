@@ -16,6 +16,8 @@
         'acProductos',
         'acProductosAdministracion',
         'acStocks',
+        'acPedidosAdministracion',
+        'acPedidosDetalles',
         'acReportes',
         'acContacts',
         'acMovimientos',
@@ -127,6 +129,18 @@
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load('depositos/depositos.js');
+                    }]
+                }
+            });
+
+            $routeProvider.when('/stock/pedidos', {
+                templateUrl: 'pedidos/pedidos.html',
+                controller: 'PedidosController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('pedidos/pedidos.js');
                     }]
                 }
             });
