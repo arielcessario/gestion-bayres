@@ -74,42 +74,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #77b300;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
-  background-image: -webkit-linear-gradient(top, #77b300, #446600);
-  background-image: -moz-linear-gradient(top, #77b300, #446600);
-  background-image: -ms-linear-gradient(top, #77b300, #446600);
-  background-image: -o-linear-gradient(top, #77b300, #446600);
-  background-image: linear-gradient(to bottom, #77b300, #446600);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
+  background-color: #293333;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .input {
   display: flex;
   flex-direction: column-reverse;
 }
 
-/* line 116, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .lista {
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
   background-color: rgba(59, 70, 70, 0.8);
 }
-/* line 122, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 .lista table {
   width: 90%;
   margin: 10px auto;
 }
-/* line 125, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .lista table td {
   padding: 10px;
   background-color: #293333;
   color: white;
   text-align: left;
 }
-/* line 132, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .lista table th {
   padding: 10px;
   font-size: 18px;
@@ -118,17 +111,17 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 145, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .lista tbody tr {
   -webkit-transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 153, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .lista table tbody tr:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 158, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 .lista table tbody tr:hover td {
   background-color: white;
   font-weight: bold;
@@ -136,17 +129,17 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 172, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .lista img {
   width: 50px !important;
   height: 50px !important;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .lista table tfoot tr td {
   padding: 0 !important;
 }
-/* line 183, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 .lista table tfoot tr td .table-td {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
@@ -166,13 +159,13 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 203, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 .paginacion-paginas,
 .paginacion-go-to {
   margin: 20px auto;
 }
 
-/* line 208, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 button {
   opacity: 0;
   /* make things invisible upon start */
@@ -198,7 +191,7 @@ button {
   -webkit-border-radius: 3px;
 }
 
-/* line 234, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .ac-error-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -223,7 +216,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 259, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -254,7 +247,7 @@ button {
   animation-delay: 0.1s;
 }
 
-/* line 290, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
   background-color: #77b300;
@@ -272,9 +265,8 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 300, ../sass/styles.scss */
-ac-autocomplete input,
-input[type="number"] {
+/* line 304, ../sass/styles.scss */
+ac-autocomplete input {
   min-width: 50%;
   margin: 10px auto;
   font-family: 'Raleway', sans-serif;
@@ -285,7 +277,7 @@ input[type="number"] {
   border: solid 1px black;
 }
 
-/* line 312, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
 ac-autocomplete:focus {
   border: solid 1px #446600;
   color: #446600;
@@ -297,7 +289,7 @@ ac-autocomplete:focus {
   animation: all ease-in .4;
 }
 
-/* line 324, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 ac-autocomplete input ul li {
   background-color: #446600;
   color: white;
@@ -306,25 +298,25 @@ ac-autocomplete input ul li {
   font-size: 22px;
 }
 
-/* line 332, ../sass/styles.scss */
+/* line 335, ../sass/styles.scss */
 ac-waiting {
   font-weight: bolder;
   margin: 10px auto;
 }
 
-/* line 337, ../sass/styles.scss */
+/* line 340, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 342, ../sass/styles.scss */
+/* line 345, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 347, ../sass/styles.scss */
+/* line 350, ../sass/styles.scss */
 input.buscador {
   width: 89%;
   height: 40px;
@@ -340,17 +332,17 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 362, ../sass/styles.scss */
+/* line 365, ../sass/styles.scss */
 .form span {
   color: white;
 }
 
-/* line 367, ../sass/styles.scss */
+/* line 370, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 372, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -359,11 +351,18 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 381, ../sass/styles.scss */
+/* line 384, ../sass/styles.scss */
 .details {
   padding: 10px;
-  background-color: transparent;
-  width: 50%;
+  background: #a4b357;
+  background: -moz-linear-gradient(top, #a4b357 0%, #75890c 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #a4b357), color-stop(100%, #75890c));
+  background: -webkit-linear-gradient(top, #a4b357 0%, #75890c 100%);
+  background: -o-linear-gradient(top, #a4b357 0%, #75890c 100%);
+  background: -ms-linear-gradient(top, #a4b357 0%, #75890c 100%);
+  background: linear-gradient(to bottom, #a4b357 0%, #75890c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=0 );
+  width: 35%;
   position: absolute;
   right: 0;
   top: 0;
@@ -382,7 +381,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 403, ../sass/styles.scss */
+/* line 412, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -391,24 +390,26 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 411, ../sass/styles.scss */
+/* line 420, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
-  padding: 15px 30px 25px 30px;
+  padding: 20px;
   margin: 10px auto;
   position: relative;
-  background-color: #536363;
+  background-color: #536363 !important;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   max-height: 100%;
   overflow-y: auto;
+  width: 85%;
 }
-/* line 424, ../sass/styles.scss */
+/* line 434, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
+  width: 90%;
   font-size: 14px;
   font-weight: bold;
   color: black;
@@ -417,21 +418,17 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 442, ../sass/styles.scss */
-.detalle-container .detalle-container, .detalle-container2 .detalle-container {
-  width: 300px;
-}
-/* line 446, ../sass/styles.scss */
+/* line 454, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
-  width: 100%;
+  width: 85%;
 }
-/* line 453, ../sass/styles.scss */
+/* line 461, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin: 10px;
 }
-/* line 459, ../sass/styles.scss */
+/* line 467, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -439,11 +436,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 470, ../sass/styles.scss */
+/* line 478, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 473, ../sass/styles.scss */
+/* line 481, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -452,7 +449,7 @@ input.buscador {
   left: -21px;
   top: 41px;
 }
-/* line 482, ../sass/styles.scss */
+/* line 490, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -473,7 +470,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 502, ../sass/styles.scss */
+/* line 510, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -495,7 +492,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 524, ../sass/styles.scss */
+/* line 532, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -517,7 +514,7 @@ select {
   width: 97%;
 }
 
-/* line 546, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -525,24 +522,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 546, ../sass/styles.scss */
+  /* line 554, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 557, ../sass/styles.scss */
+/* line 565, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 560, ../sass/styles.scss */
+/* line 568, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 567, ../sass/styles.scss */
+/* line 575, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -552,25 +549,25 @@ select {
   left: 0;
 }
 
-/* line 578, ../sass/styles.scss */
+/* line 586, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 581, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 585, ../sass/styles.scss */
+/* line 593, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 590, ../sass/styles.scss */
+/* line 598, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -582,7 +579,7 @@ ul {
   color: #000;
 }
 
-/* line 602, ../sass/styles.scss */
+/* line 610, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -594,26 +591,16 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 607, ../sass/styles.scss */
+/* line 615, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
 }
-/* line 614, ../sass/styles.scss */
+/* line 622, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
-}
-
-/* line 625, ../sass/styles.scss */
-.row-right {
-  text-align: right !important;
-}
-
-/* line 628, ../sass/styles.scss */
-.row-center {
-  text-align: center !important;
 }
