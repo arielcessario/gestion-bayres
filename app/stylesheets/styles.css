@@ -658,3 +658,24 @@ ac-cobros > form > .botonera > button {
   bottom: 0;
   left: calc(100% - 55%);
 }
+
+/* line 682, ../sass/styles.scss */
+resumen-caja-diaria > div > .input-container {
+  margin-top: 20px;
+}
+
+/* line 685, ../sass/styles.scss */
+.table-row-result {
+  font-size: 1.2em;
+}
+
+/* line 690, ../sass/styles.scss */
+.table-row-caja {
+  text-align: left;
+  color: #fff;
+}
+
+/* line 694, ../sass/styles.scss */
+.btn-img {
+  cursor: pointer;
+}
