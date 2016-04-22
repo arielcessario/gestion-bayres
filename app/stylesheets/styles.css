@@ -95,14 +95,7 @@ body {
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
-  background-color: #77b300;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
-  background-image: -webkit-linear-gradient(top, #77b300, #446600);
-  background-image: -moz-linear-gradient(top, #77b300, #446600);
-  background-image: -ms-linear-gradient(top, #77b300, #446600);
-  background-image: -o-linear-gradient(top, #77b300, #446600);
-  background-image: linear-gradient(to bottom, #77b300, #446600);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
+  background-color: rgba(59, 70, 70, 0.8);
 }
 /* line 122, ../sass/styles.scss */
 .lista table {
@@ -143,11 +136,17 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
+.lista img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+/* line 181, ../sass/styles.scss */
 .lista table tfoot tr td {
   padding: 0 !important;
 }
-/* line 177, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .lista table tfoot tr td .table-td {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
@@ -167,13 +166,13 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .paginacion-paginas,
 .paginacion-go-to {
   margin: 20px auto;
 }
 
-/* line 202, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 button {
   opacity: 0;
   /* make things invisible upon start */
@@ -199,7 +198,7 @@ button {
   -webkit-border-radius: 3px;
 }
 
-/* line 228, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 .ac-error-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -224,7 +223,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 253, ../sass/styles.scss */
+/* line 259, ../sass/styles.scss */
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -255,7 +254,7 @@ button {
   animation-delay: 0.1s;
 }
 
-/* line 284, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
   background-color: #77b300;
@@ -273,7 +272,7 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 294, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 ac-autocomplete input {
   min-width: 50%;
   margin: 10px auto;
@@ -285,7 +284,7 @@ ac-autocomplete input {
   border: solid 1px black;
 }
 
-/* line 305, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 ac-autocomplete:focus {
   border: solid 1px #446600;
   color: #446600;
@@ -297,7 +296,7 @@ ac-autocomplete:focus {
   animation: all ease-in .4;
 }
 
-/* line 317, ../sass/styles.scss */
+/* line 323, ../sass/styles.scss */
 ac-autocomplete input ul li {
   background-color: #446600;
   color: white;
@@ -306,25 +305,25 @@ ac-autocomplete input ul li {
   font-size: 22px;
 }
 
-/* line 325, ../sass/styles.scss */
+/* line 331, ../sass/styles.scss */
 ac-waiting {
   font-weight: bolder;
   margin: 10px auto;
 }
 
-/* line 330, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 335, ../sass/styles.scss */
+/* line 341, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 340, ../sass/styles.scss */
+/* line 346, ../sass/styles.scss */
 input.buscador {
   width: 89%;
   height: 40px;
@@ -340,17 +339,17 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 355, ../sass/styles.scss */
+/* line 361, ../sass/styles.scss */
 .form span {
   color: white;
 }
 
-/* line 360, ../sass/styles.scss */
+/* line 366, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 365, ../sass/styles.scss */
+/* line 371, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -359,7 +358,7 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 374, ../sass/styles.scss */
+/* line 380, ../sass/styles.scss */
 .details {
   padding: 10px;
   background-color: transparent;
@@ -382,7 +381,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 396, ../sass/styles.scss */
+/* line 402, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -391,7 +390,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 404, ../sass/styles.scss */
+/* line 410, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 15px 30px 25px 30px;
@@ -405,7 +404,7 @@ input.buscador {
   max-height: 100%;
   overflow-y: auto;
 }
-/* line 417, ../sass/styles.scss */
+/* line 423, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -417,21 +416,21 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 435, ../sass/styles.scss */
+/* line 441, ../sass/styles.scss */
 .detalle-container .detalle-container, .detalle-container2 .detalle-container {
   width: 300px;
 }
-/* line 439, ../sass/styles.scss */
+/* line 445, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 100%;
 }
-/* line 446, ../sass/styles.scss */
+/* line 452, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin: 10px;
 }
-/* line 452, ../sass/styles.scss */
+/* line 458, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -439,11 +438,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 463, ../sass/styles.scss */
+/* line 469, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 466, ../sass/styles.scss */
+/* line 472, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -452,7 +451,7 @@ input.buscador {
   left: -21px;
   top: 41px;
 }
-/* line 475, ../sass/styles.scss */
+/* line 481, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -473,7 +472,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 495, ../sass/styles.scss */
+/* line 501, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -495,7 +494,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 517, ../sass/styles.scss */
+/* line 523, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -517,7 +516,7 @@ select {
   width: 97%;
 }
 
-/* line 539, ../sass/styles.scss */
+/* line 545, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -525,24 +524,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 539, ../sass/styles.scss */
+  /* line 545, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 550, ../sass/styles.scss */
+/* line 556, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 553, ../sass/styles.scss */
+/* line 559, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 560, ../sass/styles.scss */
+/* line 566, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -552,24 +551,24 @@ select {
   left: 0;
 }
 
-/* line 571, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 574, ../sass/styles.scss */
+/* line 580, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
 }
 
-/* line 577, ../sass/styles.scss */
+/* line 583, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 582, ../sass/styles.scss */
+/* line 588, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -580,7 +579,7 @@ ul {
   overflow-y: auto;
 }
 
-/* line 593, ../sass/styles.scss */
+/* line 599, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -592,10 +591,16 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 598, ../sass/styles.scss */
+/* line 604, ../sass/styles.scss */
 #cobros {
-  background-color: white;
-  margin: 20px auto;
+  background-color: rgba(59, 70, 70, 0.8);
+  margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
+}
+/* line 611, ../sass/styles.scss */
+#cobros table input {
+  font-size: 16px !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
 }

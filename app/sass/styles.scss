@@ -117,7 +117,7 @@ body {
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
-  @include degradado_principal($color2, $color3);
+  background-color: rgba(59, 70, 70, 0.80);
 
   table {
     width: 90%;
@@ -166,6 +166,12 @@ body {
 
     }
   }
+}
+
+
+.lista img{
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .lista {
@@ -596,9 +602,20 @@ ul{
 
 
 #cobros {
-  background-color: white;
-  margin: 20px auto;
+  background-color: rgba(59, 70, 70, 0.80);
+  margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
+
+  table{
+    input{
+      font-size: 16px !important;
+      margin-left: 5px !important;
+      margin-right: 5px !important;
+
+    }
+
+
+  }
 
 }
