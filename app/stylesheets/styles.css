@@ -641,9 +641,10 @@ resumen-caja-diaria {
   top: 0;
   height: 555px;
   overflow-y: auto;
+  width: 98%;
 }
 
-/* line 670, ../sass/styles.scss */
+/* line 671, ../sass/styles.scss */
 .botonera {
   position: absolute;
   bottom: 0;
