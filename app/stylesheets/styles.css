@@ -83,26 +83,36 @@ body {
   flex-direction: column-reverse;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
+.form input, textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+}
+
+/* line 128, ../sass/styles.scss */
 .lista {
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
   background-color: rgba(59, 70, 70, 0.8);
 }
-/* line 126, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .lista table {
   width: 90%;
   margin: 10px auto;
 }
-/* line 129, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .lista table td {
   padding: 10px;
   background-color: #293333;
   color: white;
   text-align: left;
 }
-/* line 136, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .lista table th {
   padding: 10px;
   font-size: 18px;
@@ -111,35 +121,34 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .lista tbody tr {
   -webkit-transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 157, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 .lista table tbody tr:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 162, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .lista table tbody tr:hover td {
   background-color: white;
-  font-weight: bold;
   color: #293333;
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 176, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 .lista img {
   width: 50px !important;
   height: 50px !important;
 }
 
-/* line 185, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .lista table tfoot tr td {
   padding: 0 !important;
 }
-/* line 187, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .lista table tfoot tr td .table-td {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
@@ -159,13 +168,13 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .paginacion-paginas,
 .paginacion-go-to {
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
-/* line 212, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 button {
   opacity: 0;
   /* make things invisible upon start */
@@ -191,7 +200,7 @@ button {
   -webkit-border-radius: 3px;
 }
 
-/* line 238, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 .ac-error-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -216,7 +225,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 263, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -247,7 +256,7 @@ button {
   animation-delay: 0.1s;
 }
 
-/* line 294, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
   background-color: #77b300;
@@ -265,7 +274,7 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 304, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 ac-autocomplete input,
 input[type="number"] {
   min-width: 50%;
@@ -278,7 +287,7 @@ input[type="number"] {
   border: solid 1px black;
 }
 
-/* line 316, ../sass/styles.scss */
+/* line 324, ../sass/styles.scss */
 ac-autocomplete:focus {
   border: solid 1px #446600;
   color: #446600;
@@ -290,7 +299,7 @@ ac-autocomplete:focus {
   animation: all ease-in .4;
 }
 
-/* line 328, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 ac-autocomplete input ul li {
   background-color: #446600;
   color: white;
@@ -299,7 +308,7 @@ ac-autocomplete input ul li {
   font-size: 22px;
 }
 
-/* line 336, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 ac-waiting {
   font-weight: bolder;
   margin: 10px auto;
@@ -308,19 +317,19 @@ ac-waiting {
   font-size: 22px;
 }
 
-/* line 344, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 349, ../sass/styles.scss */
+/* line 357, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 354, ../sass/styles.scss */
+/* line 362, ../sass/styles.scss */
 input.buscador {
   width: 89%;
   height: 40px;
@@ -336,17 +345,17 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 369, ../sass/styles.scss */
+/* line 377, ../sass/styles.scss */
 .form span {
   color: white;
 }
 
-/* line 374, ../sass/styles.scss */
+/* line 382, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 379, ../sass/styles.scss */
+/* line 387, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -355,7 +364,7 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 388, ../sass/styles.scss */
+/* line 396, ../sass/styles.scss */
 .details {
   padding: 10px;
   padding-top: 30px !important;
@@ -387,7 +396,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 419, ../sass/styles.scss */
+/* line 427, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -396,7 +405,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 427, ../sass/styles.scss */
+/* line 435, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 20px;
@@ -411,7 +420,7 @@ input.buscador {
   overflow-y: auto;
   width: 85%;
 }
-/* line 441, ../sass/styles.scss */
+/* line 449, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -424,17 +433,22 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 461, ../sass/styles.scss */
+/* line 472, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 468, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
+.detalle-container .detalle-container-login input, .detalle-container2 .detalle-container-login input {
+  background-color: red;
+}
+/* line 483, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-/* line 474, ../sass/styles.scss */
+/* line 490, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -442,20 +456,20 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 485, ../sass/styles.scss */
+/* line 501, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 488, ../sass/styles.scss */
+/* line 504, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
   width: 40px;
   position: absolute;
   left: -21px;
-  top: 41px;
+  top: 28px;
 }
-/* line 497, ../sass/styles.scss */
+/* line 513, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -476,7 +490,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 517, ../sass/styles.scss */
+/* line 533, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -498,7 +512,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 539, ../sass/styles.scss */
+/* line 555, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -512,15 +526,15 @@ select {
   border: 1px solid #AAA;
   color: #555;
   font-size: 16px;
-  margin: auto;
+  margin: 10px auto;
   overflow: hidden;
-  padding: 5px 10px;
+  padding: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 97%;
 }
 
-/* line 561, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -528,24 +542,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 561, ../sass/styles.scss */
+  /* line 577, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 572, ../sass/styles.scss */
+/* line 588, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 575, ../sass/styles.scss */
+/* line 591, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 582, ../sass/styles.scss */
+/* line 598, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -555,25 +569,25 @@ select {
   left: 0;
 }
 
-/* line 593, ../sass/styles.scss */
+/* line 609, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 596, ../sass/styles.scss */
+/* line 612, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 600, ../sass/styles.scss */
+/* line 616, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 605, ../sass/styles.scss */
+/* line 621, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -585,7 +599,7 @@ ul {
   color: #000;
 }
 
-/* line 617, ../sass/styles.scss */
+/* line 633, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -597,21 +611,21 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 622, ../sass/styles.scss */
+/* line 638, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
 }
-/* line 629, ../sass/styles.scss */
+/* line 645, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 641, ../sass/styles.scss */
+/* line 657, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
 }

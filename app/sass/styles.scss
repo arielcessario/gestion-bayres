@@ -115,6 +115,14 @@ body {
 
 }
 
+.form input, textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+}
 
 
 .lista {
@@ -161,7 +169,7 @@ body {
 
         td {
           background-color: white;
-          font-weight: bold;
+          //font-weight: bold;
           color: #293333;
           -webkit-transition: all 0.3s ease-in-out;
         }
@@ -206,7 +214,7 @@ body {
 
 .paginacion-paginas,
 .paginacion-go-to {
-  margin: 20px auto;
+  margin: 5px auto;
 }
 
 button {
@@ -458,17 +466,25 @@ input.buscador {
   }
 
 
+
+
+
   .detalle-container2{
     width: 93%;
      }
 
+
+.detalle-container-login input{
+  background-color: red;
+}
 
 
 
   select {
     padding: 10px;
     font-size: 14px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   span {
@@ -491,7 +507,7 @@ input.buscador {
     width: 40px;
     position: absolute;
     left: -21px;
-    top: 41px;
+    top: 28px;
   }
 
   .input:nth-child(1):after {
@@ -549,9 +565,9 @@ select {
   border: 1px solid #AAA;
   color: #555;
   font-size: 16px;
-  margin: auto;
+  margin: 10px auto;
   overflow: hidden;
-  padding: 5px 10px;
+  padding: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 97%;
