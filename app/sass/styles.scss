@@ -446,10 +446,29 @@ input.buscador {
 .control {
   display: flex;
   flex-direction: row;
-
   position: relative;
   overflow: hidden;
   max-width: 100%;
+}
+
+#gastosForm{
+  min-height: 700px;
+  padding-top: 30px;
+  select, input, textarea{
+    width: 300px;
+  }
+}
+
+
+
+
+
+.form-flex{
+padding-top: 30px;
+
+select, input[type="number"]{
+  width: 300px !important;
+}
 }
 
 .details {

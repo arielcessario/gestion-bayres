@@ -423,7 +423,26 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 455, ../sass/styles.scss */
+/* line 454, ../sass/styles.scss */
+#gastosForm {
+  min-height: 700px;
+  padding-top: 30px;
+}
+/* line 457, ../sass/styles.scss */
+#gastosForm select, #gastosForm input, #gastosForm textarea {
+  width: 300px;
+}
+
+/* line 466, ../sass/styles.scss */
+.form-flex {
+  padding-top: 30px;
+}
+/* line 469, ../sass/styles.scss */
+.form-flex select, .form-flex input[type="number"] {
+  width: 300px !important;
+}
+
+/* line 474, ../sass/styles.scss */
 .details {
   padding: 10px;
   padding-top: 30px !important;
@@ -454,7 +473,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 487, ../sass/styles.scss */
+/* line 506, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -463,7 +482,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 495, ../sass/styles.scss */
+/* line 514, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 20px;
@@ -478,7 +497,7 @@ input.buscador {
   overflow-y: auto;
   width: 85%;
 }
-/* line 509, ../sass/styles.scss */
+/* line 528, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -491,22 +510,22 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 528, ../sass/styles.scss */
+/* line 547, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 532, ../sass/styles.scss */
+/* line 551, ../sass/styles.scss */
 .detalle-container .detalle-container-login input, .detalle-container2 .detalle-container-login input {
   background-color: red;
 }
-/* line 536, ../sass/styles.scss */
+/* line 555, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 543, ../sass/styles.scss */
+/* line 562, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -514,11 +533,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 554, ../sass/styles.scss */
+/* line 573, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 557, ../sass/styles.scss */
+/* line 576, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -527,7 +546,7 @@ input.buscador {
   left: -21px;
   top: 28px;
 }
-/* line 566, ../sass/styles.scss */
+/* line 585, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -548,7 +567,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 586, ../sass/styles.scss */
+/* line 605, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -570,7 +589,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 608, ../sass/styles.scss */
+/* line 627, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -592,7 +611,7 @@ select {
   width: 97%;
 }
 
-/* line 630, ../sass/styles.scss */
+/* line 649, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -600,24 +619,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 630, ../sass/styles.scss */
+  /* line 649, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 641, ../sass/styles.scss */
+/* line 660, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 644, ../sass/styles.scss */
+/* line 663, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 651, ../sass/styles.scss */
+/* line 670, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -627,25 +646,25 @@ select {
   left: 0;
 }
 
-/* line 663, ../sass/styles.scss */
+/* line 682, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 667, ../sass/styles.scss */
+/* line 686, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 672, ../sass/styles.scss */
+/* line 691, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 678, ../sass/styles.scss */
+/* line 697, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -657,7 +676,7 @@ ul {
   color: #000;
 }
 
-/* line 691, ../sass/styles.scss */
+/* line 710, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -669,7 +688,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 695, ../sass/styles.scss */
+/* line 714, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
@@ -677,19 +696,19 @@ ul {
   padding: 20px;
   width: 80%;
 }
-/* line 703, ../sass/styles.scss */
+/* line 722, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 714, ../sass/styles.scss */
+/* line 733, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
 }
 
-/* line 718, ../sass/styles.scss */
+/* line 737, ../sass/styles.scss */
 resumen-caja-diaria {
   position: absolute;
   top: 0;
@@ -698,35 +717,35 @@ resumen-caja-diaria {
   width: 98%;
 }
 
-/* line 726, ../sass/styles.scss */
+/* line 745, ../sass/styles.scss */
 .botonera {
   margin: auto;
 }
 
-/* line 730, ../sass/styles.scss */
+/* line 749, ../sass/styles.scss */
 ac-cobros > form > .botonera > button {
   position: absolute;
   bottom: 0;
   left: calc(100% - 55%);
 }
 
-/* line 736, ../sass/styles.scss */
+/* line 755, ../sass/styles.scss */
 resumen-caja-diaria > div > .input-container {
   margin-top: 20px;
 }
 
-/* line 740, ../sass/styles.scss */
+/* line 759, ../sass/styles.scss */
 .table-row-result {
   font-size: 1.2em;
 }
 
-/* line 746, ../sass/styles.scss */
+/* line 765, ../sass/styles.scss */
 .table-row-caja {
   text-align: left;
   color: #fff;
 }
 
-/* line 751, ../sass/styles.scss */
+/* line 770, ../sass/styles.scss */
 .btn-img {
   cursor: pointer;
 }
