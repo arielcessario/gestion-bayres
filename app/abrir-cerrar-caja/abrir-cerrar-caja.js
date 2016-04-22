@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('gestionBayres.abrir_cerrar_cajas', ['ngRoute'])
+    angular.module('gestionBayres.abrir-cerrar-cajas', ['ngRoute'])
         .controller('AbrirCerrarCajasController', AbrirCerrarCajasController);
 
 

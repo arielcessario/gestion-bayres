@@ -90,13 +90,13 @@
             });
 
             $routeProvider.when('/caja/abrir_cerrar_caja', {
-                templateUrl: 'abrir_cerrar_caja/abrir_cerrar_caja.html',
+                templateUrl: 'abrir-cerrar-caja/abrir-cerrar-caja.html',
                 controller: 'AbrirCerrarCajasController',
                 data: {requiresLogin: true},
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
-                        return $ocLazyLoad.load('abrir_cerrar_caja/abrir_cerrar_caja.js');
+                        return $ocLazyLoad.load('abrir-cerrar-caja/abrir-cerrar-caja.js');
                     }]
                 }
             });
