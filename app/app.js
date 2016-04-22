@@ -21,6 +21,8 @@
         'acMovimientos',
         'acCajas',
         'acCobros',
+        'acGastos',
+        'acDepositos',
         'acResumenCajaDiaria',
         'acAbrirCerrarCaja',
         'LangTables',
@@ -100,6 +102,31 @@
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load('abrir-cerrar-caja/abrir-cerrar-caja.js');
+                    }]
+                }
+            });
+
+
+            $routeProvider.when('/caja/gastos', {
+                templateUrl: 'gastos/gastos.html',
+                controller: 'GastosController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('gastos/gastos.js');
+                    }]
+                }
+            });
+
+            $routeProvider.when('/caja/depositos', {
+                templateUrl: 'depositos/depositos.html',
+                controller: 'DepositosController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('depositos/depositos.js');
                     }]
                 }
             });
