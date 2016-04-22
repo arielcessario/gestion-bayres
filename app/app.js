@@ -139,6 +139,8 @@
         vm.isLogged = false;
         vm.user = undefined;
 
+        vm.menu = $location.path().split('/')[1];
+
         if (!UserService.getFromToken()) {
             $location.path('/login')
         } else {
