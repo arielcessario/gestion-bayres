@@ -128,10 +128,17 @@ class Main
         'Cajas' => array(
             'getTotalByCuenta' => 0,
             'getSaldoInicial' => 0,
-            'getCajaDiaria' => 0
+            'getCajaDiaria' => 0,
+            'checkEstado' => 0,
+            'cerrarCaja' => 0,
+            'abrirCaja' => 0,
+            'getSaldoFinalAnterior' => 0
         ),
         'Stocks' => array(
             'getStocks' => 0, 'updateStock' => 0
+        ),
+        'Reportes' => array(
+            'cierreDeCaja' => 0, 'updateStock' => 0
         )
     );
 

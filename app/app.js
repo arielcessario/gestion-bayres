@@ -16,6 +16,8 @@
         'acProductos',
         'acProductosAdministracion',
         'acStocks',
+        'acReportes',
+        'acContacts',
         'acMovimientos',
         'acCajas',
         'acCobros',
