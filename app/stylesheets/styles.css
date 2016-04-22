@@ -311,33 +311,59 @@ ac-autocomplete input ul li {
 }
 
 /* line 343, ../sass/styles.scss */
-ac-waiting div {
+ac-waiting #ac-waiting {
   position: fixed;
   background-color: rgba(59, 70, 70, 0.9);
   width: 100%;
   height: 100%;
-  font-weight: bolder;
   z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 353, ../sass/styles.scss */
+ac-waiting #ac-waiting span {
+  font-weight: bolder;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
   padding-top: 20%;
   text-shadow: 4px 4px #293333;
+  -webkit-animation: pulse 1.5s infinite;
+  -o-animation: pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
 }
 
-/* line 359, ../sass/styles.scss */
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+}
+/* line 386, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 364, ../sass/styles.scss */
+/* line 391, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 369, ../sass/styles.scss */
+/* line 396, ../sass/styles.scss */
 input.buscador {
   width: 89%;
   height: 40px;
@@ -353,17 +379,17 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 384, ../sass/styles.scss */
+/* line 411, ../sass/styles.scss */
 .form span {
   color: white;
 }
 
-/* line 389, ../sass/styles.scss */
+/* line 416, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 394, ../sass/styles.scss */
+/* line 421, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -372,7 +398,7 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 403, ../sass/styles.scss */
+/* line 430, ../sass/styles.scss */
 .details {
   padding: 10px;
   padding-top: 30px !important;
@@ -403,7 +429,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 435, ../sass/styles.scss */
+/* line 462, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -412,7 +438,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 443, ../sass/styles.scss */
+/* line 470, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 20px;
@@ -427,7 +453,7 @@ input.buscador {
   overflow-y: auto;
   width: 85%;
 }
-/* line 457, ../sass/styles.scss */
+/* line 484, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -440,22 +466,22 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 476, ../sass/styles.scss */
+/* line 503, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 480, ../sass/styles.scss */
+/* line 507, ../sass/styles.scss */
 .detalle-container .detalle-container-login input, .detalle-container2 .detalle-container-login input {
   background-color: red;
 }
-/* line 484, ../sass/styles.scss */
+/* line 511, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 491, ../sass/styles.scss */
+/* line 518, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -463,11 +489,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 502, ../sass/styles.scss */
+/* line 529, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 505, ../sass/styles.scss */
+/* line 532, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -476,7 +502,7 @@ input.buscador {
   left: -21px;
   top: 28px;
 }
-/* line 514, ../sass/styles.scss */
+/* line 541, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -497,7 +523,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 534, ../sass/styles.scss */
+/* line 561, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -519,7 +545,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 556, ../sass/styles.scss */
+/* line 583, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -541,7 +567,7 @@ select {
   width: 97%;
 }
 
-/* line 578, ../sass/styles.scss */
+/* line 605, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -549,24 +575,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 578, ../sass/styles.scss */
+  /* line 605, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 589, ../sass/styles.scss */
+/* line 616, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 592, ../sass/styles.scss */
+/* line 619, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 599, ../sass/styles.scss */
+/* line 626, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -576,25 +602,25 @@ select {
   left: 0;
 }
 
-/* line 611, ../sass/styles.scss */
+/* line 638, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 615, ../sass/styles.scss */
+/* line 642, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 620, ../sass/styles.scss */
+/* line 647, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 626, ../sass/styles.scss */
+/* line 653, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -606,7 +632,7 @@ ul {
   color: #000;
 }
 
-/* line 639, ../sass/styles.scss */
+/* line 666, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -618,7 +644,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 643, ../sass/styles.scss */
+/* line 670, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
@@ -626,19 +652,19 @@ ul {
   padding: 20px;
   width: 80%;
 }
-/* line 651, ../sass/styles.scss */
+/* line 678, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 662, ../sass/styles.scss */
+/* line 689, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
 }
 
-/* line 666, ../sass/styles.scss */
+/* line 693, ../sass/styles.scss */
 resumen-caja-diaria {
   position: absolute;
   top: 0;
@@ -647,35 +673,35 @@ resumen-caja-diaria {
   width: 98%;
 }
 
-/* line 674, ../sass/styles.scss */
+/* line 701, ../sass/styles.scss */
 .botonera {
   margin: auto;
 }
 
-/* line 677, ../sass/styles.scss */
+/* line 705, ../sass/styles.scss */
 ac-cobros > form > .botonera > button {
   position: absolute;
   bottom: 0;
   left: calc(100% - 55%);
 }
 
-/* line 682, ../sass/styles.scss */
+/* line 711, ../sass/styles.scss */
 resumen-caja-diaria > div > .input-container {
   margin-top: 20px;
 }
 
-/* line 685, ../sass/styles.scss */
+/* line 715, ../sass/styles.scss */
 .table-row-result {
   font-size: 1.2em;
 }
 
-/* line 690, ../sass/styles.scss */
+/* line 721, ../sass/styles.scss */
 .table-row-caja {
   text-align: left;
   color: #fff;
 }
 
-/* line 694, ../sass/styles.scss */
+/* line 726, ../sass/styles.scss */
 .btn-img {
   cursor: pointer;
 }
