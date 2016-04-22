@@ -559,27 +559,29 @@ ac-autocomplete {
 /* line 580, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
+  cursor: pointer;
 }
 
-/* line 583, ../sass/styles.scss */
+/* line 584, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 588, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
   background-color: #eee;
   margin-top: -10px;
   width: 100%;
-  max-height: 235px;
+  max-height: 220px;
   overflow-y: auto;
+  color: #000;
 }
 
-/* line 599, ../sass/styles.scss */
+/* line 601, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -591,14 +593,14 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 604, ../sass/styles.scss */
+/* line 606, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
 }
-/* line 611, ../sass/styles.scss */
+/* line 613, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
