@@ -44,7 +44,7 @@
             $routeProvider.when('/main', {
                 templateUrl: 'main/main.html',
                 controller: 'MainController',
-                data: {requiresMain: true},
+                data: {requiresLogin: true},
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
@@ -56,7 +56,7 @@
             $routeProvider.when('/administracion/productos', {
                 templateUrl: 'productos/productos.html',
                 controller: 'ProductosController',
-                data: {requiresMain: true},
+                data: {requiresLogin: true},
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
@@ -68,7 +68,7 @@
             $routeProvider.when('/administracion/usuarios', {
                 templateUrl: 'usuarios/usuarios.html',
                 controller: 'UsuariosController',
-                data: {requiresMain: true},
+                data: {requiresLogin: true},
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
@@ -80,11 +80,23 @@
             $routeProvider.when('/caja/cobros', {
                 templateUrl: 'cobros/cobros.html',
                 controller: 'CobrosController',
-                data: {requiresMain: true},
+                data: {requiresLogin: true},
                 resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load('cobros/cobros.js');
+                    }]
+                }
+            });
+
+            $routeProvider.when('/caja/abrir_cerrar_caja', {
+                templateUrl: 'abrir_cerrar_caja/abrir_cerrar_caja.html',
+                controller: 'AbrirCerrarCajasController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('abrir_cerrar_caja/abrir_cerrar_caja.js');
                     }]
                 }
             });
