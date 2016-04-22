@@ -651,3 +651,10 @@ resumen-caja-diaria {
 .botonera {
   margin: auto;
 }
+
+/* line 677, ../sass/styles.scss */
+ac-cobros > form > .botonera > button {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% - 55%);
+}
