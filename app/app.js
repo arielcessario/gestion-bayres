@@ -156,6 +156,7 @@
         vm.user = undefined;
         vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
 
+
         $interval(function(){
 
             vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
