@@ -281,7 +281,13 @@
 <div id="upper-bar" ng-if="appCtrl.user">
     <div></div>
     <img src="images/logo.png" height="88px" alt="">
-    <usuario-logout redirect="'/login'"></usuario-logout>
+    <div>
+        <span ng-bind="appCtrl.user.data.nombre"></span>
+        <span ng-bind="appCtrl.user.data.sucursal"></span>
+        <span ng-bind="appCtrl.time"></span>
+        <usuario-logout redirect="'/login'"></usuario-logout>
+    </div>
+
 </div>
 <div id="nav-bar" ng-if="appCtrl.user">
     <div>

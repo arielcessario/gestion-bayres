@@ -149,11 +149,17 @@
         }])
         .controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['UserService', '$location', '$rootScope'];
-    function AppCtrl(UserService, $location, $rootScope) {
+    AppCtrl.$inject = ['UserService', '$location', '$rootScope','$interval', 'SucursalesService'];
+    function AppCtrl(UserService, $location, $rootScope, $interval, SucursalesService) {
         var vm = this;
         vm.isLogged = false;
         vm.user = undefined;
+        vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
+
+        $interval(function(){
+
+            vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
+        }, 6000);
 
         vm.menu = $location.path().split('/')[1];
 
@@ -165,6 +171,7 @@
 
         $rootScope.$on('login-success', function () {
             vm.user = UserService.getFromToken();
+            //SucursalesService.getByParams('sucursal_id', 'nombre', 'true')
         });
 
         $rootScope.$on('login-error', function () {
