@@ -100,21 +100,22 @@ body {
   color: white;
   width: 80%;
   margin: auto;
+  min-height: 700px;
   background-color: rgba(59, 70, 70, 0.8);
 }
-/* line 133, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .lista table {
   width: 90%;
   margin: 10px auto;
 }
-/* line 136, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .lista table td {
   padding: 10px;
   background-color: #293333;
   color: white;
   text-align: left;
 }
-/* line 143, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .lista table th {
   padding: 10px;
   font-size: 18px;
@@ -123,34 +124,34 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 156, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 .lista tbody tr {
   -webkit-transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 164, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 .lista table tbody tr:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 169, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .lista table tbody tr:hover td {
   background-color: #a4b357;
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 182, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 .lista img {
   width: 50px !important;
   height: 50px !important;
 }
 
-/* line 191, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .lista table tfoot tr td {
   padding: 0 !important;
 }
-/* line 193, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 .lista table tfoot tr td .table-td {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
@@ -170,13 +171,13 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 213, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 .paginacion-paginas,
 .paginacion-go-to {
   margin: 5px auto;
 }
 
-/* line 218, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 button {
   opacity: 0;
   /* make things invisible upon start */
@@ -202,7 +203,7 @@ button {
   -webkit-border-radius: 3px;
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 .ac-error-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -227,7 +228,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 269, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 .ac-success-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -252,7 +253,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 294, ../sass/styles.scss */
+/* line 295, ../sass/styles.scss */
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -283,7 +284,7 @@ button {
   animation-delay: 0.1s;
 }
 
-/* line 325, ../sass/styles.scss */
+/* line 326, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
   background-color: #77b300;
@@ -301,7 +302,7 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 335, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 ac-autocomplete input,
 input[type="number"] {
   min-width: 50%;
@@ -314,7 +315,7 @@ input[type="number"] {
   border: solid 1px black;
 }
 
-/* line 347, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 ac-autocomplete:focus {
   border: solid 1px #446600;
   color: #446600;
@@ -326,7 +327,7 @@ ac-autocomplete:focus {
   animation: all ease-in .4;
 }
 
-/* line 359, ../sass/styles.scss */
+/* line 360, ../sass/styles.scss */
 ac-autocomplete input ul li {
   background-color: #446600;
   color: white;
@@ -335,7 +336,7 @@ ac-autocomplete input ul li {
   font-size: 22px;
 }
 
-/* line 368, ../sass/styles.scss */
+/* line 369, ../sass/styles.scss */
 ac-waiting #ac-waiting {
   position: fixed;
   background-color: rgba(59, 70, 70, 0.9);
@@ -347,13 +348,12 @@ ac-waiting #ac-waiting {
   justify-content: center;
   align-items: center;
 }
-/* line 378, ../sass/styles.scss */
+/* line 379, ../sass/styles.scss */
 ac-waiting #ac-waiting span {
   font-weight: bolder;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
-  padding-top: 20%;
   text-shadow: 4px 4px #293333;
   -webkit-animation: pulse 1.5s infinite;
   -o-animation: pulse 1.5s infinite;
