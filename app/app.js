@@ -146,6 +146,18 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/stock/confirmar', {
+                templateUrl: 'confirmar/confirmar.html',
+                controller: 'ConfirmarController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('confirmar/confirmar.js');
+                    }]
+                }
+            });
         }])
         .controller('AppCtrl', AppCtrl);
 
