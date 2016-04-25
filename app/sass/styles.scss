@@ -128,7 +128,8 @@ body {
   color: white;
   width: 80%;
   margin: auto;
-  min-height: 700px;
+  //min-height: 700px;
+  min-height: 600px;
   background-color: rgba(59, 70, 70, 0.80);
 
   table {
@@ -390,6 +391,7 @@ ac-waiting {
 
 }
 
+
 @keyframes pulse {
   0% {
     -webkit-transform: scale(1, 1);
@@ -482,7 +484,8 @@ select, input[type="number"]{
   background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
   background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
-  width: 40%;
+  //width: 40%;
+  width: 50%;
   position: absolute;
   border: solid 2px white;
   right: 0;
@@ -769,4 +772,27 @@ resumen-caja-diaria > div > .input-container {
 
 .btn-img {
   cursor: pointer;
+}
+ac-pedidos-detalles{
+  position: absolute;
+  top:0;
+}
+.line{
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: nowrap;
+  justify-content: center;
+  //align-content: stretch;
+  //align-items: flex-start;
+}
+.line > div > h2{
+  font-size: 1.2em;
+  margin: 10px 20px;
+}
+ac-pedidos-detalles > .input > label > h2 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+ac-pedidos-detalles > form > .line > .input {
+  margin: 0 5%;
 }
