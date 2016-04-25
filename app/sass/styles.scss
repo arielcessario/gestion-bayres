@@ -436,8 +436,7 @@ input.buscador {
 }
 
 .form span {
-  color: white;
-
+  //color: white;
 }
 
 .form a {
@@ -690,7 +689,9 @@ ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
-
+ac-autocomplete > ul > li > span {
+  //color:#000;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -712,6 +713,7 @@ ul {
 
 .ac-autocomplete-selected {
   @include degradado_principal($color2, $color3);
+  //color:#fff!important;
 }
 
 #cobros {
@@ -826,11 +828,18 @@ ac-pedidos-detalles > table > tbody > tr > td {
   font-size:0.8em;
   background-color: #293333;
   color: white;
-  text-align: left;
+  //text-align: left;
 }
 ac-pedidos-detalles > table > tbody > tr > td > input{
   margin-left: 0!important;
   margin-bottom: 5px!important;
   margin-top: 5px!important;
+}
+ac-pedidos-detalles > form > div > ac-autocomplete > input{
+  min-width: 60%;
+  margin-left: 0px!important;
+}
+ac-pedidos-detalles > div > div > span{
+  color: #fff;
 }
 

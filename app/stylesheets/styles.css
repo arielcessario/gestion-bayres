@@ -404,17 +404,12 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 438, ../sass/styles.scss */
-.form span {
-  color: white;
-}
-
-/* line 443, ../sass/styles.scss */
+/* line 442, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 448, ../sass/styles.scss */
+/* line 447, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -423,26 +418,26 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 456, ../sass/styles.scss */
+/* line 455, ../sass/styles.scss */
 #gastosForm {
   min-height: 700px;
   padding-top: 30px;
 }
-/* line 459, ../sass/styles.scss */
+/* line 458, ../sass/styles.scss */
 #gastosForm select, #gastosForm input, #gastosForm textarea {
   width: 300px;
 }
 
-/* line 468, ../sass/styles.scss */
+/* line 467, ../sass/styles.scss */
 .form-flex {
   padding-top: 30px;
 }
-/* line 471, ../sass/styles.scss */
+/* line 470, ../sass/styles.scss */
 .form-flex select, .form-flex input[type="number"] {
   width: 300px !important;
 }
 
-/* line 476, ../sass/styles.scss */
+/* line 475, ../sass/styles.scss */
 .details {
   padding: 10px;
   padding-top: 30px !important;
@@ -473,7 +468,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 509, ../sass/styles.scss */
+/* line 508, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -482,7 +477,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 517, ../sass/styles.scss */
+/* line 516, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   padding: 20px;
@@ -497,7 +492,7 @@ input.buscador {
   overflow-y: auto;
   width: 85%;
 }
-/* line 531, ../sass/styles.scss */
+/* line 530, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -510,22 +505,22 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 550, ../sass/styles.scss */
+/* line 549, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 554, ../sass/styles.scss */
+/* line 553, ../sass/styles.scss */
 .detalle-container .detalle-container-login input, .detalle-container2 .detalle-container-login input {
   background-color: red;
 }
-/* line 558, ../sass/styles.scss */
+/* line 557, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 565, ../sass/styles.scss */
+/* line 564, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 16px;
   font-weight: bold;
@@ -533,11 +528,11 @@ input.buscador {
   padding-top: 10px;
 }
 
-/* line 576, ../sass/styles.scss */
+/* line 575, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 579, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 40px;
@@ -546,7 +541,7 @@ input.buscador {
   left: -21px;
   top: 28px;
 }
-/* line 588, ../sass/styles.scss */
+/* line 587, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -567,7 +562,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 608, ../sass/styles.scss */
+/* line 607, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -589,7 +584,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 630, ../sass/styles.scss */
+/* line 629, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -611,7 +606,7 @@ select {
   width: 97%;
 }
 
-/* line 652, ../sass/styles.scss */
+/* line 651, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -619,24 +614,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 652, ../sass/styles.scss */
+  /* line 651, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 663, ../sass/styles.scss */
+/* line 662, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 666, ../sass/styles.scss */
+/* line 665, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 673, ../sass/styles.scss */
+/* line 672, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -646,25 +641,25 @@ select {
   left: 0;
 }
 
-/* line 685, ../sass/styles.scss */
+/* line 684, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 689, ../sass/styles.scss */
+/* line 688, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 694, ../sass/styles.scss */
+/* line 695, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 700, ../sass/styles.scss */
+/* line 701, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -676,7 +671,7 @@ ul {
   color: #000;
 }
 
-/* line 713, ../sass/styles.scss */
+/* line 714, ../sass/styles.scss */
 .ac-autocomplete-selected {
   background-color: #77b300;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
@@ -688,7 +683,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
 }
 
-/* line 717, ../sass/styles.scss */
+/* line 719, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
@@ -696,19 +691,19 @@ ul {
   padding: 20px;
   width: 80%;
 }
-/* line 725, ../sass/styles.scss */
+/* line 727, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 736, ../sass/styles.scss */
+/* line 738, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
 }
 
-/* line 740, ../sass/styles.scss */
+/* line 742, ../sass/styles.scss */
 resumen-caja-diaria {
   position: absolute;
   top: 0;
@@ -717,47 +712,47 @@ resumen-caja-diaria {
   width: 98%;
 }
 
-/* line 748, ../sass/styles.scss */
+/* line 750, ../sass/styles.scss */
 .botonera {
   margin: auto;
 }
 
-/* line 752, ../sass/styles.scss */
+/* line 754, ../sass/styles.scss */
 ac-cobros > form > .botonera > button {
   position: absolute;
   bottom: 0;
   left: calc(100% - 55%);
 }
 
-/* line 758, ../sass/styles.scss */
+/* line 760, ../sass/styles.scss */
 resumen-caja-diaria > div > .input-container {
   margin-top: 20px;
 }
 
-/* line 762, ../sass/styles.scss */
+/* line 764, ../sass/styles.scss */
 .table-row-result {
   font-size: 1.2em;
 }
 
-/* line 768, ../sass/styles.scss */
+/* line 770, ../sass/styles.scss */
 .table-row-caja {
   text-align: left;
   color: #fff;
 }
 
-/* line 773, ../sass/styles.scss */
+/* line 775, ../sass/styles.scss */
 .btn-img {
   cursor: pointer;
 }
 
-/* line 776, ../sass/styles.scss */
+/* line 778, ../sass/styles.scss */
 ac-pedidos-detalles {
   position: absolute;
   top: 0;
   width: 95%;
 }
 
-/* line 782, ../sass/styles.scss */
+/* line 783, ../sass/styles.scss */
 ac-pedidos-detalles > div:nth-child(1),
 ac-pedidos-detalles > div:nth-child(2) {
   display: flex;
@@ -765,52 +760,52 @@ ac-pedidos-detalles > div:nth-child(2) {
   justify-content: center;
 }
 
-/* line 788, ../sass/styles.scss */
+/* line 789, ../sass/styles.scss */
 ac-pedidos-detalles > form > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 793, ../sass/styles.scss */
+/* line 794, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > h2 {
   font-size: 1.2em;
   margin: 10px 20px;
 }
 
-/* line 797, ../sass/styles.scss */
+/* line 798, ../sass/styles.scss */
 ac-pedidos-detalles > div > .input > label > h2 {
   font-size: 1.2em;
   margin: 5px 0;
 }
 
-/* line 801, ../sass/styles.scss */
+/* line 802, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > .input {
   margin: 0 5%;
 }
 
-/* line 804, ../sass/styles.scss */
+/* line 805, ../sass/styles.scss */
 ac-pedidos-detalles > div > .input {
   width: 100%;
 }
 
-/* line 807, ../sass/styles.scss */
+/* line 808, ../sass/styles.scss */
 ac-pedidos-detalles > form > .input > input {
   margin-left: 0;
 }
 
 @media (min-width: 800px) {
-  /* line 811, ../sass/styles.scss */
+  /* line 812, ../sass/styles.scss */
   #nav-bar a {
     font-size: 16px;
   }
 }
-/* line 815, ../sass/styles.scss */
+/* line 816, ../sass/styles.scss */
 table > thead > tr {
   font-size: 0.8em;
 }
 
-/* line 818, ../sass/styles.scss */
+/* line 819, ../sass/styles.scss */
 ac-pedidos-detalles > table > thead > tr > th {
   padding: 5px 10px;
   font-size: 0.9em;
@@ -819,18 +814,28 @@ ac-pedidos-detalles > table > thead > tr > th {
   -webkit-border-radius: 2px;
 }
 
-/* line 825, ../sass/styles.scss */
+/* line 826, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td {
   padding: 0px 10px;
   font-size: 0.8em;
   background-color: #293333;
   color: white;
-  text-align: left;
 }
 
-/* line 832, ../sass/styles.scss */
+/* line 833, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td > input {
   margin-left: 0 !important;
   margin-bottom: 5px !important;
   margin-top: 5px !important;
+}
+
+/* line 838, ../sass/styles.scss */
+ac-pedidos-detalles > form > div > ac-autocomplete > input {
+  min-width: 60%;
+  margin-left: 0px !important;
+}
+
+/* line 842, ../sass/styles.scss */
+ac-pedidos-detalles > div > div > span {
+  color: #fff;
 }
