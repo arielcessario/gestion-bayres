@@ -161,12 +161,15 @@
         }])
         .controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['UserService', '$location', '$rootScope','$interval'];
-    function AppCtrl(UserService, $location, $rootScope, $interval) {
+    AppCtrl.$inject = ['UserService', '$location', '$rootScope','$interval', 'ProductService', 'StockService'];
+    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, StockService) {
         var vm = this;
         vm.isLogged = false;
         vm.user = undefined;
         vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
+
+        ProductService.get();
+        StockService.get();
 
         $interval(function(){
 
