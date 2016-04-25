@@ -754,28 +754,83 @@ resumen-caja-diaria > div > .input-container {
 ac-pedidos-detalles {
   position: absolute;
   top: 0;
+  width: 95%;
 }
 
-/* line 780, ../sass/styles.scss */
-.line {
+/* line 782, ../sass/styles.scss */
+ac-pedidos-detalles > div:nth-child(1),
+ac-pedidos-detalles > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 /* line 788, ../sass/styles.scss */
-.line > div > h2 {
+ac-pedidos-detalles > form > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 793, ../sass/styles.scss */
+ac-pedidos-detalles > div > div > h2 {
   font-size: 1.2em;
   margin: 10px 20px;
 }
 
-/* line 792, ../sass/styles.scss */
-ac-pedidos-detalles > .input > label > h2 {
+/* line 797, ../sass/styles.scss */
+ac-pedidos-detalles > div > .input > label > h2 {
   font-size: 1.2em;
   margin: 5px 0;
 }
 
-/* line 796, ../sass/styles.scss */
-ac-pedidos-detalles > form > .line > .input {
+/* line 801, ../sass/styles.scss */
+ac-pedidos-detalles > form > div > .input {
   margin: 0 5%;
+}
+
+/* line 804, ../sass/styles.scss */
+ac-pedidos-detalles > div > .input {
+  width: 100%;
+}
+
+/* line 807, ../sass/styles.scss */
+ac-pedidos-detalles > form > .input > input {
+  margin-left: 0;
+}
+
+@media (min-width: 800px) {
+  /* line 811, ../sass/styles.scss */
+  #nav-bar a {
+    font-size: 16px;
+  }
+}
+/* line 815, ../sass/styles.scss */
+table > thead > tr {
+  font-size: 0.8em;
+}
+
+/* line 818, ../sass/styles.scss */
+ac-pedidos-detalles > table > thead > tr > th {
+  padding: 5px 10px;
+  font-size: 0.9em;
+  background-color: white;
+  color: #293333;
+  -webkit-border-radius: 2px;
+}
+
+/* line 825, ../sass/styles.scss */
+ac-pedidos-detalles > table > tbody > tr > td {
+  padding: 0px 10px;
+  font-size: 0.8em;
+  background-color: #293333;
+  color: white;
+  text-align: left;
+}
+
+/* line 832, ../sass/styles.scss */
+ac-pedidos-detalles > table > tbody > tr > td > input {
+  margin-left: 0 !important;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
 }
