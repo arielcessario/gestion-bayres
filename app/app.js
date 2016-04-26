@@ -173,7 +173,7 @@
         vm.sub_menu = location[2];
 
         ProductService.get();
-        StockService.get();
+        //StockService.get();
 
         $interval(function () {
 
