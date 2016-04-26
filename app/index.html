@@ -98,14 +98,17 @@
             animation-delay: 0.1s;
         }
 
-        #nav-bar a:focus, #nav-bar a:active {
+        .menu-selected {
             text-decoration: underline;
             background-color: #293333;
             cursor: pointer;
-            color: white;
+            color: #fff!important;
         }
 
-
+        .sub-menu-selected {
+            background-color: #293333;
+            color: white !important;
+        }
 
         .sub-menu a {
             color: #A0B051 !important;
@@ -296,29 +299,45 @@
 </div>
 <div id="nav-bar" ng-if="appCtrl.user">
     <div>
-        <a href="#/main" ng-click="appCtrl.menu = 'principal'" ng-class="{'menu-selected':appCtrl.menu == 'principal'}">Principal</a>
-        <a href="#/caja/cobros" ng-click="appCtrl.menu = 'caja'">Caja</a>
-        <a href="#/reportes/stocks" ng-click="appCtrl.menu = 'Reportes'">Reportes</a>
-        <a href="#/stock/pedidos" ng-click="appCtrl.menu = 'stock'">Stock</a>
-        <a href="#/administracion/productos" ng-click="appCtrl.menu = 'administracion'">Administración</a>
+        <a href="#/main" ng-click="appCtrl.menu = 'principal'"
+           ng-class="{'menu-selected':appCtrl.menu == 'principal'}">Principal</a>
+        <a href="#/caja/cobros" ng-click="appCtrl.menu = 'caja'"
+           ng-class="{'menu-selected':appCtrl.menu == 'caja'}">Caja</a>
+        <a href="#/reportes/stocks" ng-click="appCtrl.menu = 'Reportes'"
+           ng-class="{'menu-selected':appCtrl.menu == 'Reportes'}">Reportes</a>
+        <a href="#/stock/pedidos" ng-click="appCtrl.menu = 'stock'"
+           ng-class="{'menu-selected':appCtrl.menu == 'stock'}">Stock</a>
+        <a href="#/administracion/productos" ng-click="appCtrl.menu = 'administracion'"
+           ng-class="{'menu-selected':appCtrl.menu == 'administracion'}">Administración</a>
     </div>
     <div class="sub-menu">
         <div ng-if="appCtrl.menu =='caja'">
-            <a href="#/caja/cobros">Cobros</a>
-            <a href="#/caja/abrir_cerrar_caja">Abrir/Cerrar</a>
-            <a href="#/caja/gastos">Gastos</a>
-            <a href="#/caja/depositos">Depositos</a>
+            <a href="#/caja/cobros" ng-click="appCtrl.sub_menu = 'cobros'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'cobros'}">Cobros</a>
+            <a href="#/caja/abrir_cerrar_caja" ng-click="appCtrl.sub_menu = 'abrir_cerrar_caja'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'abrir_cerrar_caja'}">Abrir/Cerrar</a>
+            <a href="#/caja/gastos" ng-click="appCtrl.sub_menu = 'gastos'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'gastos'}">Gastos</a>
+            <a href="#/caja/depositos" ng-click="appCtrl.sub_menu = 'depositos'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'depositos'}">Depositos</a>
         </div>
         <div ng-if="appCtrl.menu =='stock'">
-            <a href="#/stock/pedidos">Pedidos</a>
-            <a href="#/stock/confirmar">Confirmar Ped.</a>
-            <a href="#/stock/traslado">Traslado</a>
-            <a href="#/stock/fraccionado">Fraccionado</a>
+            <a href="#/stock/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'pedidos'}">Pedidos</a>
+            <a href="#/stock/confirmar" ng-click="appCtrl.sub_menu = 'confirmar'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'confirmar'}">Confirmar Ped.</a>
+            <a href="#/stock/traslado" ng-click="appCtrl.sub_menu = 'traslado'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'traslado'}">Traslado</a>
+            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'fraccionado'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'fraccionado'}">Fraccionado</a>
         </div>
         <div ng-if="appCtrl.menu == 'administracion'">
-            <a href="#/administracion/productos">Productos</a>
-            <a href="#/administracion/usuarios">Usuarios</a>
-            <a href="#/administracion/sucursalse">Sucursales</a>
+            <a href="#/administracion/productos" ng-click="appCtrl.sub_menu = 'productos'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'productos'}">Productos</a>
+            <a href="#/administracion/usuarios" ng-click="appCtrl.sub_menu = 'usuarios'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'usuarios'}">Usuarios</a>
+            <a href="#/administracion/sucursalse" ng-click="appCtrl.sub_menu = 'sucursalse'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'sucursalse'}">Sucursales</a>
         </div>
     </div>
 </div>
