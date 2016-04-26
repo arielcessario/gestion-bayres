@@ -353,6 +353,10 @@
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'traslado'}">Traslado</a>
             <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'fraccionado'"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'fraccionado'}">Fraccionado</a>
+            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'consulta'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'consulta'}">Consulta</a>
+            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'otro'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'otro'}">Otro</a>
         </div>
         <div ng-if="appCtrl.menu == 'administracion'">
             <a href="#/administracion/productos" ng-click="appCtrl.sub_menu = 'productos'"
