@@ -121,6 +121,7 @@ body {
   font-size: 16px;
   color: black;
   padding: 5px;
+  -webkit-border-radius: 3px;
 }
 
 .lista {
@@ -182,8 +183,8 @@ body {
 }
 
 .lista img {
-  width: 50px !important;
-  height: 50px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .lista {
@@ -526,11 +527,12 @@ input.buscador {
   max-height: 90%;
   overflow-y: auto;
   width: 85%;
+  text-align: center;
 
-  input, textarea {
+  input, textarea, {
     font-family: 'Raleway', sans-serif;
     padding: 10px;
-    width: 93%;
+    //width: 55%;
     font-size: 14px;
     font-weight: bold;
     color: black;
@@ -571,6 +573,20 @@ input.buscador {
 
   }
 
+  label{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
+
+.barra-logueado{
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: white;
+  font-weight: lighter;
 }
 
 .login-iconos {
@@ -646,7 +662,7 @@ select {
   padding: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 97%;
+  //width: 57%;
 
 }
 
@@ -794,11 +810,13 @@ ac-pedidos-detalles > form > div:nth-child(2) {
   justify-content: center;
 }
 ac-pedidos-detalles > div > div > h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin: 10px 20px;
+  color: white;
 }
 ac-pedidos-detalles > div > .input > label > h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
+  color: white;
   margin: 5px 0;
 }
 ac-pedidos-detalles > form > div > .input {
@@ -816,18 +834,18 @@ ac-pedidos-detalles > form > .input > input {
   }
 }
 table > thead > tr {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 ac-pedidos-detalles > table > thead > tr > th {
   padding:5px 10px;
-  font-size:0.9em;
+  font-size:1em;
   background-color: white;
   color: #293333;
   -webkit-border-radius: 2px;
 }
 ac-pedidos-detalles > table > tbody > tr > td {
   padding:0px 10px;
-  font-size:0.8em;
+  font-size:1em;
   background-color: #293333;
   color: white;
   //text-align: left;
@@ -842,7 +860,9 @@ ac-pedidos-detalles > form > div > ac-autocomplete > input{
   margin-left: 0px!important;
 }
 ac-pedidos-detalles > div > div > span{
-  color: #fff;
+  color: black;
+  font-size: 23px;
+  font-weight: bold;
 }
 ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel{
   width: 62%;
