@@ -120,7 +120,7 @@ class Main
             'create' => 0,
             'update' => 0
         ),
-        'Productos' => array('getProductos' => 0,
+        'Productos' => array('getProductos' => -1,
             'getCategorias' => -1,
             'createProducto' => 0,
             'updateProducto' => 0
@@ -143,7 +143,7 @@ class Main
             'cierreDeCaja' => 0, 'updateStock' => 0
         ),
         'Sucursales' => array(
-            'get' => 0, 'updateStock' => 0
+            'get' => -1, 'updateStock' => 0
         )
     );
 
@@ -161,7 +161,7 @@ class Main
         }
         if (!isset($this->db)) {
 //            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
-            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
+            $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
 //            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }
