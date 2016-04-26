@@ -309,10 +309,13 @@
     <div style="flex: 2;" >
         <img src="images/logo.png" height="88px" alt="">
     </div>
-    <div style="flex: 1;">
-        <span class="barra-logueado" ng-bind="appCtrl.user.data.nombre"></span>
-        <span  class="barra-logueado" ng-bind="appCtrl.user.data.sucursal"></span>
-        <span class="barra-logueado" ng-bind="appCtrl.time"></span>
+    <div style="flex:1;display:flex;flex-direction: row;justify-content: flex-start;align-items:center;">
+        <div>
+            <span class="barra-logueado" ng-bind="appCtrl.user.data.nombre"></span> -
+            <span  class="barra-logueado" ng-bind="appCtrl.user.data.sucursal"></span> -
+            <span  class="barra-logueado" ng-bind="appCtrl.user.data.caja"></span></br>
+            <span class="barra-logueado" ng-bind="appCtrl.time"></span>
+        </div>
         <usuario-logout redirect="'/login'"></usuario-logout>
     </div>
 

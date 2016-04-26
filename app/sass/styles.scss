@@ -586,9 +586,11 @@ input.buscador {
 
 .barra-logueado{
   font-family: 'Raleway', sans-serif;
-  font-size: 22px;
+  //font-size: 22px;
+  font-size: 14px;
   color: white;
-  font-weight: lighter;
+  //font-weight: lighter;
+  font-weight:bold;
 }
 
 .login-iconos {
@@ -665,7 +667,7 @@ select {
   text-overflow: ellipsis;
   white-space: nowrap;
   //width: 57%;
-
+  width: 95%;
 }
 
 .foto-container {
