@@ -882,13 +882,13 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   margin-left: 19%;
 }
 
-/* line 875, ../sass/styles.scss */
+/* line 890, ../sass/styles.scss */
 .ac-desarrollo {
   color: #293333;
   text-decoration: none;
 }
 
-/* line 879, ../sass/styles.scss */
+/* line 894, ../sass/styles.scss */
 .ac-desarrollo:hover {
   font-weight: bold;
   text-decoration: underline;
