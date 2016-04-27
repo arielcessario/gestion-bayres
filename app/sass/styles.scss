@@ -772,7 +772,7 @@ ul {
 #ac-usuarios-login {
   width: 300px !important;
 }
-
+/*
 resumen-caja-diaria {
   position: absolute;
   top: 0;
@@ -780,7 +780,7 @@ resumen-caja-diaria {
   overflow-y: auto;
   width: 98%;
 }
-
+*/
 .botonera {
   margin: auto;
 }
@@ -811,11 +811,13 @@ resumen-caja-diaria > div > .input-container {
   margin: 10px;
   margin-top: 23px;
 }
+/*
 ac-pedidos-detalles{
   position: absolute;
   top:0;
   width: 95%;
 }
+*/
 ac-pedidos-detalles > div:nth-child(1),
 ac-pedidos-detalles > div:nth-child(2) {
   display: flex;
