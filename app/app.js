@@ -158,6 +158,18 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/stock/fraccionado', {
+                templateUrl: 'fraccionado/fraccionado.html',
+                controller: 'FraccionadoController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('fraccionado/fraccionado.js');
+                    }]
+                }
+            });
         }])
         .controller('AppCtrl', AppCtrl);
 
