@@ -138,7 +138,8 @@ class Main
             'getStocks' => 0,
             'updateStock' => 0,
             'getPedidos' => 0,
-            'createStock' =>0
+            'createStock' =>0,
+            'trasladar' =>0
         ),
         'Reportes' => array(
             'cierreDeCaja' => 0, 'updateStock' => 0

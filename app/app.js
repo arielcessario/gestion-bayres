@@ -170,6 +170,18 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/stock/traslado', {
+                templateUrl: 'traslado/traslado.html',
+                controller: 'TrasladoController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('traslado/traslado.js');
+                    }]
+                }
+            });
         }])
         .controller('AppCtrl', AppCtrl);
 
