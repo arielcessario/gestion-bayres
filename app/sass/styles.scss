@@ -124,6 +124,15 @@ body {
   -webkit-border-radius: 3px;
 }
 
+.form span{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .lista {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -299,14 +308,14 @@ button {
 .error-message {
   position: absolute;
   top: 16px !important;
-  left: 0px !important;
+  left: -1px !important;
   background-color: #a90329;
   color: white;
-  width: 266px;
+  width: 88%;
   margin-left: 26px;
   font-size: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 1px;
   -webkit-border-radius: 2px;
   opacity: 0; /* make things invisible upon start */
   -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -339,11 +348,12 @@ button:hover {
 
 ac-autocomplete input,
 input[type="number"] {
-  min-width: 50%;
-  margin: 10px auto;
+  min-width: 60%;
+  margin: 10px;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   padding: 5px;
+  height: 30px;
   font-weight: bold;
   -webkit-border-radius: 2px;
   border: solid 1px black;
@@ -438,9 +448,7 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-.form span {
-  //color: white;
-}
+
 
 .form a {
   color: white;
@@ -462,7 +470,6 @@ input.buscador {
     width: 300px;
   }
 }
-
 
 
 
@@ -556,9 +563,14 @@ input.buscador {
     width: 93%;
   }
 
-  .detalle-container-login input {
-    background-color: red;
+
+
+
+  .detalle-container-login{
+    background-color: red !important
+
   }
+
 
   select {
     padding: 10px;
@@ -587,7 +599,7 @@ input.buscador {
 .barra-logueado{
   font-family: 'Raleway', sans-serif;
   //font-size: 22px;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   //font-weight: lighter;
   font-weight:bold;
@@ -599,11 +611,11 @@ input.buscador {
   }
   .input::after {
     content: '';
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     position: absolute;
-    left: -21px;
-    top: 28px;
+    left: -18px;
+    top: 53px;
   }
 
   .input:nth-child(1):after {
@@ -796,6 +808,8 @@ resumen-caja-diaria > div > .input-container {
 
 .btn-img {
   cursor: pointer;
+  margin: 10px;
+  margin-top: 23px;
 }
 ac-pedidos-detalles{
   position: absolute;
@@ -861,6 +875,7 @@ ac-pedidos-detalles > table > tbody > tr > td > input{
 }
 ac-pedidos-detalles > form > div > ac-autocomplete > input{
   min-width: 60%;
+  height: 30px !important;
   margin-left: 0px!important;
 }
 ac-pedidos-detalles > div > div > span{
