@@ -792,7 +792,27 @@ ac-cobros > form > .botonera > button {
 }
 
 resumen-caja-diaria > div > .input-container {
-  margin-top: 20px;
+  margin: 10px auto !important;
+}
+
+resumen-caja-diaria{
+  text-align: left !important;
+  table tr{
+    color: #A2B154 !important;
+    font-size: 22px !important;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 0x !important;
+
+      }
+  label{
+    margin: 10px auto;
+    color: white !important;
+    //font-weight: lighter !important;
+  }
+  select{
+    width: 300px;
+    margin-left: 30px !important;
+  }
 }
 
 .table-row-result {
