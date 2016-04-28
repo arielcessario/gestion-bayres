@@ -322,7 +322,7 @@ input[type="number"] {
   font-size: 16px;
   padding: 10px;
   margin: 10px auto;
-  height: 30px;
+  height: 40px;
   font-weight: bold;
   -webkit-border-radius: 2px;
   border: solid 1px black;
@@ -424,24 +424,25 @@ input.buscador {
 
 /* line 461, ../sass/styles.scss */
 #gastosForm {
+  text-align: -webkit-center;
   min-height: 700px;
   padding-top: 30px;
 }
-/* line 464, ../sass/styles.scss */
+/* line 466, ../sass/styles.scss */
 #gastosForm select, #gastosForm input, #gastosForm textarea {
   width: 300px;
 }
 
-/* line 472, ../sass/styles.scss */
+/* line 474, ../sass/styles.scss */
 .form-flex {
   padding-top: 30px;
 }
-/* line 475, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
 .form-flex select, .form-flex input[type="number"] {
   width: 300px !important;
 }
 
-/* line 480, ../sass/styles.scss */
+/* line 482, ../sass/styles.scss */
 .details {
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.4);
@@ -466,7 +467,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 508, ../sass/styles.scss */
+/* line 510, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -475,22 +476,22 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 516, ../sass/styles.scss */
+/* line 518, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   text-transform: uppercase;
   padding: 40px;
   margin: 10px;
   position: relative;
-  background: #a4b357;
-  background: -moz-linear-gradient(top, #a4b357 0%, #75890c 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #a4b357), color-stop(100%, #75890c));
-  background: -webkit-linear-gradient(top, #a4b357 0%, #75890c 100%);
-  background: -o-linear-gradient(top, #a4b357 0%, #75890c 100%);
-  background: -ms-linear-gradient(top, #a4b357 0%, #75890c 100%);
-  background: linear-gradient(to bottom, #a4b357 0%, #75890c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
-  border-radius: 5px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004f24+0,000000+100&0.65+0,0.43+100 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 79, 36, 0.65) 0%, black 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 79, 36, 0.65) 0%, black 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(0, 79, 36, 0.65) 0%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6004f24', endColorstr='#6e000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
@@ -499,39 +500,40 @@ input.buscador {
   width: 85%;
   text-align: center;
 }
-/* line 540, ../sass/styles.scss */
+/* line 537, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 600;
   color: black;
   margin-left: 25px;
   margin: 10px;
   background: #fff;
   border-radius: 5px;
 }
-/* line 561, ../sass/styles.scss */
+/* line 558, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 568, ../sass/styles.scss */
+/* line 565, ../sass/styles.scss */
 .detalle-container .detalle-container-login, .detalle-container2 .detalle-container-login {
   background-color: red !important;
 }
-/* line 574, ../sass/styles.scss */
+/* line 571, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 581, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* line 589, ../sass/styles.scss */
+/* line 586, ../sass/styles.scss */
 .detalle-container label, .detalle-container2 label {
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -541,7 +543,7 @@ input.buscador {
   margin-bottom: 15px;
 }
 
-/* line 601, ../sass/styles.scss */
+/* line 598, ../sass/styles.scss */
 .barra-logueado {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -549,11 +551,11 @@ input.buscador {
   font-weight: bold;
 }
 
-/* line 611, ../sass/styles.scss */
+/* line 608, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 614, ../sass/styles.scss */
+/* line 611, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 30px;
@@ -562,7 +564,7 @@ input.buscador {
   left: -18px;
   top: 53px;
 }
-/* line 623, ../sass/styles.scss */
+/* line 620, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -583,7 +585,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 643, ../sass/styles.scss */
+/* line 640, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -605,7 +607,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 665, ../sass/styles.scss */
+/* line 662, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -619,15 +621,15 @@ select {
   border: 1px solid #AAA;
   color: #555;
   font-size: 16px;
-  margin: 10px;
+  margin: 10px auto;
   overflow: hidden;
-  padding: 10px;
+  padding: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 52px;
+  height: 60px;
 }
 
-/* line 686, ../sass/styles.scss */
+/* line 683, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -635,24 +637,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 686, ../sass/styles.scss */
+  /* line 683, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 697, ../sass/styles.scss */
+/* line 694, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 700, ../sass/styles.scss */
+/* line 697, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 707, ../sass/styles.scss */
+/* line 704, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -662,18 +664,18 @@ select {
   left: 0;
 }
 
-/* line 719, ../sass/styles.scss */
+/* line 716, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 723, ../sass/styles.scss */
+/* line 720, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 730, ../sass/styles.scss */
+/* line 727, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -681,7 +683,7 @@ ul {
   background-color: #536363;
 }
 
-/* line 737, ../sass/styles.scss */
+/* line 734, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -695,7 +697,7 @@ ul {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* line 753, ../sass/styles.scss */
+/* line 750, ../sass/styles.scss */
 .ac-autocomplete-selected {
   color: black;
   background: #a4b357;
@@ -708,7 +710,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
 }
 
-/* line 764, ../sass/styles.scss */
+/* line 761, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
@@ -716,14 +718,14 @@ ul {
   padding: 20px;
   width: 95%;
 }
-/* line 772, ../sass/styles.scss */
+/* line 769, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 783, ../sass/styles.scss */
+/* line 780, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
 }
@@ -737,59 +739,59 @@ resumen-caja-diaria {
   width: 98%;
 }
 */
-/* line 795, ../sass/styles.scss */
+/* line 792, ../sass/styles.scss */
 .botonera {
   margin: auto;
 }
 
-/* line 799, ../sass/styles.scss */
+/* line 796, ../sass/styles.scss */
 ac-cobros > form > .botonera > button {
   position: absolute;
   bottom: 0;
   left: calc(100% - 55%);
 }
 
-/* line 805, ../sass/styles.scss */
+/* line 802, ../sass/styles.scss */
 resumen-caja-diaria > div > .input-container {
   margin: 10px auto !important;
 }
 
-/* line 809, ../sass/styles.scss */
+/* line 806, ../sass/styles.scss */
 resumen-caja-diaria {
   text-align: left !important;
 }
-/* line 811, ../sass/styles.scss */
+/* line 808, ../sass/styles.scss */
 resumen-caja-diaria table tr {
   color: #A2B154 !important;
   font-size: 22px !important;
   font-family: 'Raleway', sans-serif;
   margin-left: 0x !important;
 }
-/* line 818, ../sass/styles.scss */
+/* line 815, ../sass/styles.scss */
 resumen-caja-diaria label {
   margin: 10px;
   text-transform: uppercase;
   font-size: 20px;
   color: white !important;
 }
-/* line 825, ../sass/styles.scss */
+/* line 822, ../sass/styles.scss */
 resumen-caja-diaria select {
   width: 300px;
   margin-left: 30px !important;
 }
 
-/* line 831, ../sass/styles.scss */
+/* line 828, ../sass/styles.scss */
 .table-row-result {
   font-size: 1.2em;
 }
 
-/* line 837, ../sass/styles.scss */
+/* line 834, ../sass/styles.scss */
 .table-row-caja {
   text-align: left;
   color: #fff;
 }
 
-/* line 842, ../sass/styles.scss */
+/* line 839, ../sass/styles.scss */
 .btn-img {
   cursor: pointer;
   margin: 10px;
@@ -803,7 +805,7 @@ ac-pedidos-detalles{
   width: 95%;
 }
 */
-/* line 854, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 ac-pedidos-detalles > div:nth-child(1),
 ac-pedidos-detalles > div:nth-child(2) {
   display: flex;
@@ -811,14 +813,14 @@ ac-pedidos-detalles > div:nth-child(2) {
   justify-content: center;
 }
 
-/* line 860, ../sass/styles.scss */
+/* line 857, ../sass/styles.scss */
 ac-pedidos-detalles > form > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 865, ../sass/styles.scss */
+/* line 862, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > h2 {
   font-size: 20px;
   margin: 10px;
@@ -826,7 +828,7 @@ ac-pedidos-detalles > div > div > h2 {
   font-weight: light;
 }
 
-/* line 871, ../sass/styles.scss */
+/* line 868, ../sass/styles.scss */
 ac-pedidos-detalles > div > .input > label > h2 {
   font-size: 20px;
   color: white;
@@ -834,17 +836,17 @@ ac-pedidos-detalles > div > .input > label > h2 {
 }
 
 @media (min-width: 800px) {
-  /* line 878, ../sass/styles.scss */
+  /* line 875, ../sass/styles.scss */
   #nav-bar a {
     font-size: 16px;
   }
 }
-/* line 882, ../sass/styles.scss */
+/* line 879, ../sass/styles.scss */
 table > thead > tr {
   font-size: 1em;
 }
 
-/* line 885, ../sass/styles.scss */
+/* line 882, ../sass/styles.scss */
 ac-pedidos-detalles > table > thead > tr > th {
   padding: 5px 10px;
   font-size: 1em;
@@ -853,7 +855,7 @@ ac-pedidos-detalles > table > thead > tr > th {
   -webkit-border-radius: 2px;
 }
 
-/* line 892, ../sass/styles.scss */
+/* line 889, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td {
   padding: 0px 10px;
   font-size: 1em;
@@ -861,40 +863,40 @@ ac-pedidos-detalles > table > tbody > tr > td {
   color: white;
 }
 
-/* line 899, ../sass/styles.scss */
+/* line 896, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td > input {
   margin-left: 0 !important;
   margin-bottom: 5px !important;
   margin-top: 5px !important;
 }
 
-/* line 904, ../sass/styles.scss */
+/* line 901, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > ac-autocomplete > input {
   min-width: 60%;
-  height: 30px !important;
+  height: 40px !important;
   margin-left: 0px !important;
 }
 
-/* line 909, ../sass/styles.scss */
+/* line 906, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > span {
   color: black;
   font-size: 23px;
   font-weight: bold;
 }
 
-/* line 914, ../sass/styles.scss */
+/* line 911, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   width: 62%;
   margin-left: 19%;
 }
 
-/* line 918, ../sass/styles.scss */
+/* line 915, ../sass/styles.scss */
 .ac-desarrollo {
   color: #293333;
   text-decoration: none;
 }
 
-/* line 922, ../sass/styles.scss */
+/* line 919, ../sass/styles.scss */
 .ac-desarrollo:hover {
   font-weight: bold;
   text-decoration: underline;
