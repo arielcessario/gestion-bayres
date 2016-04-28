@@ -349,7 +349,7 @@ button:hover {
 
 ac-autocomplete input,
 input[type="number"] {
-  min-width: 300px;
+  min-width: 260px;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   padding: 10px;
@@ -667,7 +667,7 @@ select {
   border: 1px solid #AAA;
   color: #555;
   font-size: 16px;
-  margin: 10px auto;
+  margin: 10px;
   overflow: hidden;
   padding: 10px;
   text-overflow: ellipsis;
@@ -758,7 +758,7 @@ ul {
   margin: auto;
   -webkit-border-radius: 5px;
   padding: 20px;
-  width: 80%;
+  width: 95%;
 
   table {
     input {
