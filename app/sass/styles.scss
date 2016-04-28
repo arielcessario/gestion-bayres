@@ -521,11 +521,7 @@ input.buscador {
   padding: 40px;
   margin: 10px;
   position: relative;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004f24+0,000000+100&0.65+0,0.43+100 */
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,79,36,0.65) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,79,36,0.65) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center,  rgba(0,79,36,0.65) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6004f24', endColorstr='#6e000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-color: #515C4B;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
