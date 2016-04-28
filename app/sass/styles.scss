@@ -515,8 +515,9 @@ input.buscador {
 
 .detalle-container, .detalle-container2 {
   color: white;
+  text-transform: uppercase;
   padding: 40px;
-  margin: 10px auto;
+  margin: 10px;
   position: relative;
   //background-color: #536363 !important;
   background: rgba(164, 179, 87, 1);
@@ -590,6 +591,9 @@ input.buscador {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     //font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
 }
@@ -812,7 +816,9 @@ resumen-caja-diaria{
 
       }
   label{
-    margin: 10px auto;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
     color: white !important;
     //font-weight: lighter !important;
   }
