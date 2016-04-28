@@ -776,15 +776,18 @@ resumen-caja-diaria select {
 /* line 825, ../sass/styles.scss */
 .table-row-result {
   font-size: 1.2em;
+  padding-bottom: 35px;
+  border-top: 2px solid;
+  font-weight: bold;
 }
 
-/* line 831, ../sass/styles.scss */
+/* line 834, ../sass/styles.scss */
 .table-row-caja {
   text-align: left;
   color: #fff;
 }
 
-/* line 836, ../sass/styles.scss */
+/* line 839, ../sass/styles.scss */
 .btn-img {
   cursor: pointer;
 }
@@ -796,7 +799,7 @@ ac-pedidos-detalles{
   width: 95%;
 }
 */
-/* line 848, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 ac-pedidos-detalles > div:nth-child(1),
 ac-pedidos-detalles > div:nth-child(2) {
   display: flex;
@@ -804,14 +807,14 @@ ac-pedidos-detalles > div:nth-child(2) {
   justify-content: center;
 }
 
-/* line 854, ../sass/styles.scss */
+/* line 857, ../sass/styles.scss */
 ac-pedidos-detalles > form > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 859, ../sass/styles.scss */
+/* line 862, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > h2 {
   font-size: 20px;
   margin: 10px;
@@ -819,7 +822,7 @@ ac-pedidos-detalles > div > div > h2 {
   font-weight: light;
 }
 
-/* line 865, ../sass/styles.scss */
+/* line 868, ../sass/styles.scss */
 ac-pedidos-detalles > div > .input > label > h2 {
   font-size: 20px;
   color: white;
@@ -827,17 +830,17 @@ ac-pedidos-detalles > div > .input > label > h2 {
 }
 
 @media (min-width: 800px) {
-  /* line 872, ../sass/styles.scss */
+  /* line 875, ../sass/styles.scss */
   #nav-bar a {
     font-size: 16px;
   }
 }
-/* line 876, ../sass/styles.scss */
+/* line 879, ../sass/styles.scss */
 table > thead > tr {
   font-size: 1em;
 }
 
-/* line 879, ../sass/styles.scss */
+/* line 882, ../sass/styles.scss */
 ac-pedidos-detalles > table > thead > tr > th {
   padding: 5px 10px;
   font-size: 1em;
@@ -846,7 +849,7 @@ ac-pedidos-detalles > table > thead > tr > th {
   -webkit-border-radius: 2px;
 }
 
-/* line 886, ../sass/styles.scss */
+/* line 889, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td {
   padding: 0px 10px;
   font-size: 1em;
@@ -854,40 +857,40 @@ ac-pedidos-detalles > table > tbody > tr > td {
   color: white;
 }
 
-/* line 893, ../sass/styles.scss */
+/* line 896, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td > input {
   margin-left: 0 !important;
   margin-bottom: 5px !important;
   margin-top: 5px !important;
 }
 
-/* line 898, ../sass/styles.scss */
+/* line 901, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > ac-autocomplete > input {
   min-width: 60%;
   height: 40px !important;
   margin-left: 0px !important;
 }
 
-/* line 903, ../sass/styles.scss */
+/* line 906, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > span {
   color: black;
   font-size: 23px;
   font-weight: bold;
 }
 
-/* line 908, ../sass/styles.scss */
+/* line 911, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   width: 62%;
   margin-left: 19%;
 }
 
-/* line 912, ../sass/styles.scss */
+/* line 915, ../sass/styles.scss */
 .ac-desarrollo {
   color: #293333;
   text-decoration: none;
 }
 
-/* line 916, ../sass/styles.scss */
+/* line 919, ../sass/styles.scss */
 .ac-desarrollo:hover {
   font-weight: bold;
   text-decoration: underline;
