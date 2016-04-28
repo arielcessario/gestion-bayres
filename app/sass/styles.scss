@@ -479,23 +479,19 @@ input.buscador {
 
 .details {
   padding: 10px;
-  background: rgba(164, 179, 87, 1);
-  background: -moz-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164, 179, 87, 1)), color-stop(100%, rgba(117, 137, 12, 1)));
-  background: -webkit-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: -o-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
+  background-color: rgba(128, 128, 128, 0.4);
   //width: 40%;
   width: 50%;
   position: absolute;
-  border: solid 2px white;
+  //border: solid 2px white;
   right: 0;
   top: 0;
   //height: 100%;
   //max-height: 100%;
   bottom: 0;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
   overflow-y: auto;
   -webkit-transform: translate(1000px, 0);
   -moz-transform: translate(1000px, 0);
@@ -522,7 +518,15 @@ input.buscador {
   padding: 40px;
   margin: 10px auto;
   position: relative;
-  background-color: #536363 !important;
+  //background-color: #536363 !important;
+  background: rgba(164, 179, 87, 1);
+  background: -moz-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164, 179, 87, 1)), color-stop(100%, rgba(117, 137, 12, 1)));
+  background: -webkit-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: -o-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
@@ -537,7 +541,7 @@ input.buscador {
     padding: 10px;
     //width: 55%;
     font-size: 14px;
-    font-weight: bold;
+    //font-weight: bold;
     color: black;
     margin-left: 25px;
     margin: 10px;
