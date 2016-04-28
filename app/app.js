@@ -185,11 +185,13 @@
         }])
         .controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['UserService', '$location', '$rootScope', '$interval', 'ProductService', 'StockService'];
-    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, StockService) {
+    AppCtrl.$inject = ['UserService', '$location', '$rootScope', '$interval', 'ProductService', 'StockService', 'SucursalesService'];
+    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, StockService, SucursalesService) {
         var vm = this;
         vm.isLogged = false;
         vm.user = undefined;
+        vm.sucursal = '';
+        vm.caja = '';
         vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
 
         var location = $location.path().split('/');
@@ -207,13 +209,33 @@
         vm.menu = $location.path().split('/')[1];
 
         if (!UserService.getFromToken()) {
-            $location.path('/login')
+            $location.path('/login');
         } else {
             vm.user = UserService.getFromToken();
+            SucursalesService.get().then(function (data) {
+                for (var i in data) {
+                    if (vm.user.data.sucursal_id == data[i].sucursal_id) {
+
+                        vm.sucursal = data[i].nombre;
+                        vm.caja = 'Caja ' + vm.user.data.caja_id;
+
+                    }
+                }
+            });
         }
 
         $rootScope.$on('login-success', function () {
             vm.user = UserService.getFromToken();
+            SucursalesService.get().then(function (data) {
+                for (var i in data) {
+                    if (vm.user.data.sucursal_id == data[i].sucursal_id) {
+
+                        vm.sucursal = data[i].nombre;
+                        vm.caja = 'Caja ' + vm.user.data.caja_id;
+
+                    }
+                }
+            });
             //SucursalesService.getByParams('sucursal_id', 'nombre', 'true')
         });
 
