@@ -93,9 +93,10 @@ body {
   color: black;
   padding: 10px;
   -webkit-border-radius: 3px;
+  height: 20px;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .form span {
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -104,7 +105,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .lista {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -115,19 +116,19 @@ body {
   min-height: 600px;
   background-color: rgba(59, 70, 70, 0.8);
 }
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .lista table {
   width: 90%;
   margin: 10px auto;
 }
-/* line 151, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .lista table td {
   padding: 10px;
   background-color: #293333;
   color: white;
   text-align: left;
 }
-/* line 158, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .lista table th {
   padding: 10px;
   font-size: 18px;
@@ -136,34 +137,34 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 171, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .lista tbody tr {
   -webkit-transform: scale(1);
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 179, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .lista table tbody tr:hover {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/* line 184, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .lista table tbody tr:hover td {
   background-color: #a4b357;
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .lista img {
   width: 30px !important;
   height: 30px !important;
 }
 
-/* line 206, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 .lista table tfoot tr td {
   padding: 0 !important;
 }
-/* line 208, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 .lista table tfoot tr td .table-td {
   display: flex;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
@@ -183,13 +184,13 @@ body {
   -webkit-border-radius: 2px;
 }
 
-/* line 228, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 .paginacion-paginas,
 .paginacion-go-to {
   margin: 5px auto;
 }
 
-/* line 233, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 button {
   opacity: 0;
   /* make things invisible upon start */
@@ -215,7 +216,7 @@ button {
   -webkit-border-radius: 3px;
 }
 
-/* line 259, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .ac-error-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -240,7 +241,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 284, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .ac-success-message {
   padding: 30px;
   font-family: 'Raleway', sans-serif;
@@ -265,7 +266,7 @@ button {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
 }
 
-/* line 309, ../sass/styles.scss */
+/* line 310, ../sass/styles.scss */
 .error-message {
   position: absolute;
   top: 16px !important;
@@ -296,7 +297,7 @@ button {
   animation-delay: 0.1s;
 }
 
-/* line 340, ../sass/styles.scss */
+/* line 341, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
   background-color: #77b300;
@@ -314,21 +315,21 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* line 350, ../sass/styles.scss */
+/* line 351, ../sass/styles.scss */
 ac-autocomplete input,
 input[type="number"] {
-  min-width: 260px;
+  min-width: 200px;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   padding: 10px;
   margin: 10px auto;
-  height: 40px;
+  height: 18px;
   font-weight: bold;
   -webkit-border-radius: 2px;
   border: solid 1px black;
 }
 
-/* line 363, ../sass/styles.scss */
+/* line 364, ../sass/styles.scss */
 ac-autocomplete:focus {
   border: solid 1px #446600;
   color: red;
@@ -340,7 +341,7 @@ ac-autocomplete:focus {
   animation: all ease-in .4;
 }
 
-/* line 378, ../sass/styles.scss */
+/* line 379, ../sass/styles.scss */
 ac-waiting #ac-waiting {
   position: fixed;
   background-color: rgba(59, 70, 70, 0.9);
@@ -352,7 +353,7 @@ ac-waiting #ac-waiting {
   justify-content: center;
   align-items: center;
 }
-/* line 388, ../sass/styles.scss */
+/* line 389, ../sass/styles.scss */
 ac-waiting #ac-waiting span {
   font-weight: bolder;
   color: white;
@@ -380,19 +381,19 @@ ac-waiting #ac-waiting span {
     transform: scale(1.2, 1.2);
   }
 }
-/* line 421, ../sass/styles.scss */
+/* line 422, ../sass/styles.scss */
 #facebook {
   background-color: transparent;
   background-image: url(facebook.svg);
 }
 
-/* line 426, ../sass/styles.scss */
+/* line 427, ../sass/styles.scss */
 #google {
   background-color: transparent;
   background-image: url(gmail.svg);
 }
 
-/* line 431, ../sass/styles.scss */
+/* line 432, ../sass/styles.scss */
 input.buscador {
   width: 85%;
   height: 40px;
@@ -408,12 +409,12 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-/* line 448, ../sass/styles.scss */
+/* line 449, ../sass/styles.scss */
 .form a {
   color: white;
 }
 
-/* line 453, ../sass/styles.scss */
+/* line 454, ../sass/styles.scss */
 .control {
   display: flex;
   flex-direction: row;
@@ -422,27 +423,27 @@ input.buscador {
   max-width: 100%;
 }
 
-/* line 461, ../sass/styles.scss */
+/* line 462, ../sass/styles.scss */
 #gastosForm {
   text-align: -webkit-center;
   min-height: 700px;
   padding-top: 30px;
 }
-/* line 466, ../sass/styles.scss */
+/* line 467, ../sass/styles.scss */
 #gastosForm select, #gastosForm input, #gastosForm textarea {
-  width: 300px;
+  width: 200px;
 }
 
-/* line 474, ../sass/styles.scss */
+/* line 476, ../sass/styles.scss */
 .form-flex {
   padding-top: 30px;
 }
-/* line 477, ../sass/styles.scss */
+/* line 479, ../sass/styles.scss */
 .form-flex select, .form-flex input[type="number"] {
-  width: 300px !important;
+  width: 200px !important;
 }
 
-/* line 482, ../sass/styles.scss */
+/* line 484, ../sass/styles.scss */
 .details {
   padding: 10px;
   background-color: rgba(128, 128, 128, 0.4);
@@ -467,7 +468,7 @@ input.buscador {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 510, ../sass/styles.scss */
+/* line 512, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(0, 0) !important;
   -moz-transform: translate(0, 0) !important;
@@ -476,7 +477,7 @@ input.buscador {
   transform: translate(0, 0) !important;
 }
 
-/* line 518, ../sass/styles.scss */
+/* line 520, ../sass/styles.scss */
 .detalle-container, .detalle-container2 {
   color: white;
   text-transform: uppercase;
@@ -492,7 +493,7 @@ input.buscador {
   width: 85%;
   text-align: center;
 }
-/* line 533, ../sass/styles.scss */
+/* line 535, ../sass/styles.scss */
 .detalle-container input, .detalle-container textarea, .detalle-container2 input, .detalle-container2 textarea {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
@@ -504,28 +505,28 @@ input.buscador {
   background: #fff;
   border-radius: 5px;
 }
-/* line 554, ../sass/styles.scss */
+/* line 556, ../sass/styles.scss */
 .detalle-container .detalle-container2, .detalle-container2 .detalle-container2 {
   width: 93%;
 }
-/* line 561, ../sass/styles.scss */
+/* line 563, ../sass/styles.scss */
 .detalle-container .detalle-container-login, .detalle-container2 .detalle-container-login {
   background-color: red !important;
 }
-/* line 567, ../sass/styles.scss */
+/* line 569, ../sass/styles.scss */
 .detalle-container select, .detalle-container2 select {
   padding: 10px;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 574, ../sass/styles.scss */
+/* line 576, ../sass/styles.scss */
 .detalle-container span, .detalle-container2 span {
   font-size: 20px;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* line 582, ../sass/styles.scss */
+/* line 584, ../sass/styles.scss */
 .detalle-container label, .detalle-container2 label {
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -535,7 +536,7 @@ input.buscador {
   margin-bottom: 15px;
 }
 
-/* line 594, ../sass/styles.scss */
+/* line 596, ../sass/styles.scss */
 .barra-logueado {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -543,11 +544,11 @@ input.buscador {
   font-weight: bold;
 }
 
-/* line 604, ../sass/styles.scss */
+/* line 606, ../sass/styles.scss */
 .login-iconos .input {
   position: relative;
 }
-/* line 607, ../sass/styles.scss */
+/* line 609, ../sass/styles.scss */
 .login-iconos .input::after {
   content: '';
   height: 30px;
@@ -556,7 +557,7 @@ input.buscador {
   left: -18px;
   top: 53px;
 }
-/* line 616, ../sass/styles.scss */
+/* line 618, ../sass/styles.scss */
 .login-iconos .input:nth-child(1):after {
   background: url(mail.svg) center center no-repeat;
   background-size: contain;
@@ -577,7 +578,7 @@ input.buscador {
   -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 636, ../sass/styles.scss */
+/* line 638, ../sass/styles.scss */
 .login-iconos .input:nth-child(2):after {
   background: url(pass.svg) center center no-repeat;
   background-size: contain;
@@ -599,7 +600,7 @@ input.buscador {
   animation-delay: 0.4s;
 }
 
-/* line 658, ../sass/styles.scss */
+/* line 660, ../sass/styles.scss */
 select {
   -webkit-appearance: button;
   -webkit-border-radius: 2px;
@@ -615,14 +616,14 @@ select {
   font-size: 16px;
   margin: 10px auto;
   overflow: hidden;
-  padding: 20px;
+  padding: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 60px;
-  width: 95%;
+  height: 38px;
+  width: 100%;
 }
 
-/* line 680, ../sass/styles.scss */
+/* line 682, ../sass/styles.scss */
 .foto-container {
   display: flex;
   flex-direction: row;
@@ -630,24 +631,24 @@ select {
   min-width: 100%;
 }
 @media (min-width: 400px) {
-  /* line 680, ../sass/styles.scss */
+  /* line 682, ../sass/styles.scss */
   .foto-container {
     max-width: 400px;
     min-width: 400px;
   }
 }
-/* line 691, ../sass/styles.scss */
+/* line 693, ../sass/styles.scss */
 .foto-container .foto {
   position: relative;
 }
-/* line 694, ../sass/styles.scss */
+/* line 696, ../sass/styles.scss */
 .foto-container .foto .input-foto {
   width: 50px;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 701, ../sass/styles.scss */
+/* line 703, ../sass/styles.scss */
 .foto-container .foto input {
   position: absolute;
   width: 50px;
@@ -657,18 +658,18 @@ select {
   left: 0;
 }
 
-/* line 713, ../sass/styles.scss */
+/* line 715, ../sass/styles.scss */
 ac-autocomplete {
   position: relative;
 }
 
-/* line 717, ../sass/styles.scss */
+/* line 719, ../sass/styles.scss */
 ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
 
-/* line 724, ../sass/styles.scss */
+/* line 726, ../sass/styles.scss */
 ul {
   margin: 0;
   padding: 0;
@@ -676,7 +677,7 @@ ul {
   background-color: #536363;
 }
 
-/* line 731, ../sass/styles.scss */
+/* line 733, ../sass/styles.scss */
 .ac-autocomplete-panel {
   position: absolute;
   z-index: 1;
@@ -690,7 +691,7 @@ ul {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-/* line 747, ../sass/styles.scss */
+/* line 749, ../sass/styles.scss */
 .ac-autocomplete-selected {
   color: black;
   background: #a4b357;
@@ -703,7 +704,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
 }
 
-/* line 758, ../sass/styles.scss */
+/* line 760, ../sass/styles.scss */
 #cobros {
   background-color: rgba(59, 70, 70, 0.8);
   margin: auto;
@@ -711,14 +712,14 @@ ul {
   padding: 20px;
   width: 95%;
 }
-/* line 766, ../sass/styles.scss */
+/* line 768, ../sass/styles.scss */
 #cobros table input {
   font-size: 16px !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
 
-/* line 777, ../sass/styles.scss */
+/* line 779, ../sass/styles.scss */
 #ac-usuarios-login {
   width: 300px !important;
 }
@@ -732,48 +733,48 @@ resumen-caja-diaria {
   width: 98%;
 }
 */
-/* line 789, ../sass/styles.scss */
+/* line 791, ../sass/styles.scss */
 .botonera {
   margin: auto;
 }
 
-/* line 793, ../sass/styles.scss */
+/* line 795, ../sass/styles.scss */
 ac-cobros > form > .botonera > button {
   position: absolute;
   bottom: 0;
   left: calc(100% - 55%);
 }
 
-/* line 799, ../sass/styles.scss */
+/* line 801, ../sass/styles.scss */
 resumen-caja-diaria > div > .input-container {
   margin: 10px auto !important;
 }
 
-/* line 803, ../sass/styles.scss */
+/* line 805, ../sass/styles.scss */
 resumen-caja-diaria {
   text-align: left !important;
 }
-/* line 805, ../sass/styles.scss */
+/* line 807, ../sass/styles.scss */
 resumen-caja-diaria table tr {
   color: #A2B154 !important;
   font-size: 14px !important;
   font-family: 'Raleway', sans-serif;
   margin-left: 0x !important;
 }
-/* line 812, ../sass/styles.scss */
+/* line 814, ../sass/styles.scss */
 resumen-caja-diaria label {
   margin: 10px;
   text-transform: uppercase;
   font-size: 20px;
   color: white !important;
 }
-/* line 819, ../sass/styles.scss */
+/* line 821, ../sass/styles.scss */
 resumen-caja-diaria select {
-  width: 300px;
-  margin-left: 30px !important;
+  width: 200px;
+  margin-left: 38px !important;
 }
 
-/* line 825, ../sass/styles.scss */
+/* line 827, ../sass/styles.scss */
 .table-row-result {
   font-size: 1.2em;
   padding-bottom: 35px;
@@ -781,13 +782,13 @@ resumen-caja-diaria select {
   font-weight: bold;
 }
 
-/* line 834, ../sass/styles.scss */
+/* line 836, ../sass/styles.scss */
 .table-row-caja {
   text-align: left;
   color: #fff;
 }
 
-/* line 839, ../sass/styles.scss */
+/* line 841, ../sass/styles.scss */
 .btn-img {
   cursor: pointer;
 }
@@ -799,7 +800,7 @@ ac-pedidos-detalles{
   width: 95%;
 }
 */
-/* line 851, ../sass/styles.scss */
+/* line 853, ../sass/styles.scss */
 ac-pedidos-detalles > div:nth-child(1),
 ac-pedidos-detalles > div:nth-child(2) {
   display: flex;
@@ -807,14 +808,14 @@ ac-pedidos-detalles > div:nth-child(2) {
   justify-content: center;
 }
 
-/* line 857, ../sass/styles.scss */
+/* line 859, ../sass/styles.scss */
 ac-pedidos-detalles > form > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-/* line 862, ../sass/styles.scss */
+/* line 864, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > h2 {
   font-size: 20px;
   margin: 10px;
@@ -822,7 +823,7 @@ ac-pedidos-detalles > div > div > h2 {
   font-weight: light;
 }
 
-/* line 868, ../sass/styles.scss */
+/* line 870, ../sass/styles.scss */
 ac-pedidos-detalles > div > .input > label > h2 {
   font-size: 20px;
   color: white;
@@ -830,17 +831,17 @@ ac-pedidos-detalles > div > .input > label > h2 {
 }
 
 @media (min-width: 800px) {
-  /* line 875, ../sass/styles.scss */
+  /* line 877, ../sass/styles.scss */
   #nav-bar a {
     font-size: 16px;
   }
 }
-/* line 879, ../sass/styles.scss */
+/* line 881, ../sass/styles.scss */
 table > thead > tr {
   font-size: 1em;
 }
 
-/* line 882, ../sass/styles.scss */
+/* line 884, ../sass/styles.scss */
 ac-pedidos-detalles > table > thead > tr > th {
   padding: 5px 10px;
   font-size: 1em;
@@ -849,7 +850,7 @@ ac-pedidos-detalles > table > thead > tr > th {
   -webkit-border-radius: 2px;
 }
 
-/* line 889, ../sass/styles.scss */
+/* line 891, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td {
   padding: 0px 10px;
   font-size: 1em;
@@ -857,40 +858,40 @@ ac-pedidos-detalles > table > tbody > tr > td {
   color: white;
 }
 
-/* line 896, ../sass/styles.scss */
+/* line 898, ../sass/styles.scss */
 ac-pedidos-detalles > table > tbody > tr > td > input {
   margin-left: 0 !important;
   margin-bottom: 5px !important;
   margin-top: 5px !important;
 }
 
-/* line 901, ../sass/styles.scss */
+/* line 903, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > ac-autocomplete > input {
   min-width: 60%;
   height: 40px !important;
   margin-left: 0px !important;
 }
 
-/* line 906, ../sass/styles.scss */
+/* line 908, ../sass/styles.scss */
 ac-pedidos-detalles > div > div > span {
   color: black;
   font-size: 23px;
   font-weight: bold;
 }
 
-/* line 911, ../sass/styles.scss */
+/* line 913, ../sass/styles.scss */
 ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   width: 62%;
   margin-left: 19%;
 }
 
-/* line 915, ../sass/styles.scss */
+/* line 917, ../sass/styles.scss */
 .ac-desarrollo {
   color: #293333;
   text-decoration: none;
 }
 
-/* line 919, ../sass/styles.scss */
+/* line 921, ../sass/styles.scss */
 .ac-desarrollo:hover {
   font-weight: bold;
   text-decoration: underline;
