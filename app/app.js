@@ -243,6 +243,13 @@
             vm.user = undefined;
         });
 
+        $rootScope.$on('$routeChangeStart', function(event, next, current){
+
+            var location = next.$$route.originalPath.split('/');
+            vm.menu = location[1];
+            vm.sub_menu = location[2];
+        });
+
     }
 
 })();
