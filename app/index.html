@@ -310,7 +310,7 @@
 </head>
 <body ng-cloak ng-controller="AppCtrl as appCtrl">
 <ac-waiting texto="'Por favor aguarde...'"></ac-waiting>
-<div id="upper-bar" ng-if="appCtrl.user">
+<div id="upper-bar" ng-if="appCtrl.user" ng-class="{'is-moved':appCtrl.isMoved}">
     <div style="flex: 1;"></div>
     <div style="flex: 2;" >
         <img src="images/logo.png" height="88px" alt="">
@@ -326,7 +326,7 @@
     </div>
 
 </div>
-<div id="nav-bar" ng-if="appCtrl.user">
+<div id="nav-bar" ng-if="appCtrl.user"  ng-class="{'is-fixed':appCtrl.isMoved}">
     <div>
         <a href="#/main" ng-click="appCtrl.menu = 'principal'"
            ng-class="{'menu-selected':appCtrl.menu == 'principal'}">Principal</a>
@@ -380,7 +380,7 @@
         </div>
     </div>
 </div>
-<div ng-view id="view"></div>
+<div ng-view id="view" ng-class="{'is-body':appCtrl.isMoved}"></div>
 <div id="footer-bar" ng-if="appCtrl.user" style="color: #fff;padding: 10px;text-align: center; font-size: smaller;background-color: transparent">
     Copyright © 2016. All Rights Reserved - <a href="www.ac-desarrollos.com" class="ac-desarrollo">ac-desarrollos</a> - Versión: 2.0.0
 </div>

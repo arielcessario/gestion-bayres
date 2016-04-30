@@ -125,7 +125,7 @@ body {
   height: 20px;
 }
 
-.form span{
+.form span {
   color: white;
   font-family: 'Raleway', sans-serif;
   //font-weight: bold;
@@ -373,8 +373,6 @@ ac-autocomplete:focus {
 
 }
 
-
-
 ac-waiting {
   #ac-waiting {
     position: fixed;
@@ -399,7 +397,6 @@ ac-waiting {
   }
 
 }
-
 
 @keyframes pulse {
   0% {
@@ -444,8 +441,6 @@ input.buscador {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-
-
 .form a {
   color: white;
 
@@ -459,24 +454,21 @@ input.buscador {
   max-width: 100%;
 }
 
-#gastosForm{
+#gastosForm {
   text-align: -webkit-center;
   min-height: 700px;
   padding-top: 30px;
   //margin: 20px auto;
-  select, input, textarea{
+  select, input, textarea {
     width: 200px;
 
   }
 }
 
-
-
-
-.form-flex{
+.form-flex {
   padding-top: 30px;
 
-  select, input[type="number"]{
+  select, input[type="number"] {
     width: 200px !important;
   }
 }
@@ -493,9 +485,9 @@ input.buscador {
   //height: 100%;
   //max-height: 100%;
   bottom: 0;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
   -webkit-transform: translate(1000px, 0);
   -moz-transform: translate(1000px, 0);
@@ -536,7 +528,7 @@ input.buscador {
     font-family: 'Raleway', sans-serif;
     padding: 10px;
     //width: 55%;
-        font-size: 17px;
+    font-size: 17px;
     font-weight: 600;
     color: black;
     margin-left: 25px;
@@ -551,20 +543,14 @@ input.buscador {
 
   }
 
-
-
   .detalle-container2 {
     width: 93%;
   }
 
-
-
-
-  .detalle-container-login{
+  .detalle-container-login {
     background-color: red !important
 
   }
-
 
   select {
     padding: 10px;
@@ -581,7 +567,7 @@ input.buscador {
 
   }
 
-  label{
+  label {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
@@ -593,13 +579,13 @@ input.buscador {
 
 }
 
-.barra-logueado{
+.barra-logueado {
   font-family: 'Raleway', sans-serif;
   //font-size: 22px;
   font-size: 16px;
   color: white;
   //font-weight: lighter;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .login-iconos {
@@ -720,9 +706,11 @@ ac-autocomplete > ul > li {
   padding: 5px;
   cursor: pointer;
 }
+
 ac-autocomplete > ul > li > span {
   //color:#000;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -740,9 +728,9 @@ ul {
   width: 90%;
   max-height: 220px;
   overflow-y: auto;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -755,7 +743,8 @@ ul {
   background: -o-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
   background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
   background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%, rgba(117, 137, 12, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);}
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a4b357', endColorstr='#75890c', GradientType=0);
+}
 
 #cobros {
   background-color: rgba(59, 70, 70, 0.80);
@@ -779,6 +768,7 @@ ul {
 #ac-usuarios-login {
   width: 300px !important;
 }
+
 /*
 resumen-caja-diaria {
   position: absolute;
@@ -802,23 +792,23 @@ resumen-caja-diaria > div > .input-container {
   margin: 10px auto !important;
 }
 
-resumen-caja-diaria{
+resumen-caja-diaria {
   text-align: left !important;
-  table tr{
+  table tr {
     color: #A2B154 !important;
     font-size: 14px !important;
     font-family: 'Raleway', sans-serif;
     margin-left: 0x !important;
 
-      }
-  label{
+  }
+  label {
     margin: 10px;
     text-transform: uppercase;
     font-size: 20px;
     color: white !important;
     //font-weight: lighter !important;
   }
-  select{
+  select {
     width: 200px;
     margin-left: 38px !important;
   }
@@ -843,6 +833,7 @@ resumen-caja-diaria{
   //margin: 10px;
   //margin-top: 23px;
 }
+
 /*
 ac-pedidos-detalles{
   position: absolute;
@@ -856,17 +847,20 @@ ac-pedidos-detalles > div:nth-child(2) {
   flex-direction: row;
   justify-content: center;
 }
+
 ac-pedidos-detalles > form > div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 ac-pedidos-detalles > div > div > h2 {
   font-size: 20px;
   margin: 10px;
   color: white;
   font-weight: light;
 }
+
 ac-pedidos-detalles > div > .input > label > h2 {
   font-size: 20px;
   color: white;
@@ -878,49 +872,94 @@ ac-pedidos-detalles > div > .input > label > h2 {
     font-size: 16px;
   }
 }
+
 table > thead > tr {
   font-size: 1em;
 }
+
 ac-pedidos-detalles > table > thead > tr > th {
-  padding:5px 10px;
-  font-size:1em;
+  padding: 5px 10px;
+  font-size: 1em;
   background-color: white;
   color: #293333;
   -webkit-border-radius: 2px;
 }
+
 ac-pedidos-detalles > table > tbody > tr > td {
-  padding:0px 10px;
-  font-size:1em;
+  padding: 0px 10px;
+  font-size: 1em;
   background-color: #293333;
   color: white;
   //text-align: left;
 }
-ac-pedidos-detalles > table > tbody > tr > td > input{
-  margin-left: 0!important;
-  margin-bottom: 5px!important;
-  margin-top: 5px!important;
+
+ac-pedidos-detalles > table > tbody > tr > td > input {
+  margin-left: 0 !important;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
 }
-ac-pedidos-detalles > form > div > ac-autocomplete > input{
+
+ac-pedidos-detalles > form > div > ac-autocomplete > input {
   min-width: 60%;
   height: 40px !important;
-  margin-left: 0px!important;
+  margin-left: 0px !important;
 }
-ac-pedidos-detalles > div > div > span{
+
+ac-pedidos-detalles > div > div > span {
   color: black;
   font-size: 23px;
   font-weight: bold;
 }
-ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel{
+
+ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   width: 62%;
   margin-left: 19%;
 }
-.ac-desarrollo{
-  color:#293333;
+
+.ac-desarrollo {
+  color: #293333;
   text-decoration: none;
 }
-.ac-desarrollo:hover{
+
+.ac-desarrollo:hover {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.is-moved {
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transition: transform .3s;
+  -moz-transition: transform .3s;
+  -ms-transition: transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+}
+
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  z-index: 200;
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+
+}
+.is-body {
+  margin-top: 41px;
 }
 
 

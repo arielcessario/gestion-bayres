@@ -185,14 +185,15 @@
         }])
         .controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['UserService', '$location', '$rootScope', '$interval', 'ProductService', 'StockService', 'SucursalesService'];
-    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, StockService, SucursalesService) {
+    AppCtrl.$inject = ['UserService', '$location', '$rootScope', '$interval', 'ProductService', 'StockService', 'SucursalesService', '$window', '$scope'];
+    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, StockService, SucursalesService, $window, $scope) {
         var vm = this;
         vm.isLogged = false;
         vm.user = undefined;
         vm.sucursal = '';
         vm.caja = '';
         vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
+        vm.isMoved = false;
 
         var location = $location.path().split('/');
         vm.menu = location[1];
@@ -200,6 +201,13 @@
 
         ProductService.get();
         //StockService.get();
+
+        angular.element($window).bind("scroll", function (e) {
+            vm.isMoved = this.pageYOffset > 88;
+            if(!$scope.$$pahse){
+                $scope.$apply();
+            }
+        });
 
         $interval(function () {
 
@@ -243,7 +251,7 @@
             vm.user = undefined;
         });
 
-        $rootScope.$on('$routeChangeStart', function(event, next, current){
+        $rootScope.$on('$routeChangeStart', function (event, next, current) {
 
             var location = next.$$route.originalPath.split('/');
             vm.menu = location[1];
