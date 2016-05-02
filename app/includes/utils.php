@@ -132,20 +132,24 @@ class Main
             'checkEstado' => 0,
             'cerrarCaja' => 0,
             'abrirCaja' => 0,
-            'getSaldoFinalAnterior' => 0
+            'getSaldoFinalAnterior' => 0,
+            'getResultado' => 0
         ),
         'Stocks' => array(
             'getStocks' => 0,
             'updateStock' => 0,
             'getPedidos' => 0,
-            'createStock' =>0,
-            'trasladar' =>0
+            'createStock' => 0,
+            'trasladar' => 0
         ),
         'Reportes' => array(
             'cierreDeCaja' => 0, 'updateStock' => 0
         ),
         'Sucursales' => array(
             'get' => -1, 'updateStock' => 0
+        ),
+        'Movimientos' => array(
+            'save' => 0, 'saveDetalle' => 0, 'deleteAsiento' => 0
         )
     );
 
@@ -164,6 +168,7 @@ class Main
         if (!isset($this->db)) {
 //            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
             $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
+//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
 //            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }

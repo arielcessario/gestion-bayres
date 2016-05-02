@@ -182,6 +182,18 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/reportes/stock', {
+                templateUrl: 'reportes/reportes.html',
+                controller: 'ReportesController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('reportes/reportes.js');
+                    }]
+                }
+            });
         }])
         .controller('AppCtrl', AppCtrl);
 
