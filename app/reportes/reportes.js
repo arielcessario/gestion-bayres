@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('gestionBayres.reportes', ['ngRoute'])
+    angular.module('gestionBayres.reportes', [['bower_components/ac-angular-reportes/ac-reportes.js', 'bower_components/ac-angular-reportes/ac-reporte-stock.js']])
         .controller('ReportesController', ReportesController);
 
 
