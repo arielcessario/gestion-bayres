@@ -133,7 +133,10 @@ class Main
             'cerrarCaja' => 0,
             'abrirCaja' => 0,
             'getSaldoFinalAnterior' => 0,
-            'getResultado' => 0
+            'getResultado' => 0,
+            'createEncomienda' => 0,
+            'updateEncomienda' => 0,
+            'getEncomiendas' => 0
         ),
         'Stocks' => array(
             'getStocks' => 0,
