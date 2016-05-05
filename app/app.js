@@ -194,6 +194,18 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/caja/encomiendas', {
+                templateUrl: 'encomiendas/encomiendas.html',
+                controller: 'EncomiendasController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('encomiendas/encomiendas.js');
+                    }]
+                }
+            });
         }])
         .controller('AppCtrl', AppCtrl);
 
