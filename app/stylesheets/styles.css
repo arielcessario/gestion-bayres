@@ -156,8 +156,8 @@ body {
 
 /* line 198, ../sass/styles.scss */
 .lista img {
-  width: 30px !important;
-  height: 30px !important;
+  width: 80px !important;
+  height: 80px !important;
 }
 
 /* line 207, ../sass/styles.scss */
@@ -643,8 +643,8 @@ select {
 }
 /* line 682, ../sass/styles.scss */
 .foto-container .foto .input-foto {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   top: 0;
   left: 0;
 }
