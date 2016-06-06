@@ -338,9 +338,9 @@
            ng-class="{'menu-selected':appCtrl.menu == 'reportes'}">Reportes</a>
         <a href="#/stock/pedidos" ng-click="appCtrl.menu = 'stock'"
            ng-class="{'menu-selected':appCtrl.menu == 'stock'}">Stock</a>
-        <a href="#/administracion/productos" ng-click="appCtrl.menu = 'administracion'"
+        <a href="#/administracion/productos" ng-click="appCtrl.menu = 'administracion'" ng-if="appCtrl.user.data.rol == 0"
            ng-class="{'menu-selected':appCtrl.menu == 'administracion'}">Administración</a>
-        <a href="#/web/ventas" ng-click="appCtrl.menu = 'ventas'"
+        <a href="#/web/ventas" ng-click="appCtrl.menu = 'ventas'" ng-if="appCtrl.user.data.rol == 0"
            ng-class="{'menu-selected':appCtrl.menu == 'ventas'}">Ventas Web</a>
     </div>
     <div class="sub-menu">
@@ -361,7 +361,7 @@
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'stock'}">Stock</a>
         </div>
         <div ng-if="appCtrl.menu =='stock'">
-            <a href="#/stock/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'"
+            <a href="#/stock/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'pedidos'}">Pedidos</a>
             <a href="#/stock/confirmar" ng-click="appCtrl.sub_menu = 'confirmar'"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'confirmar'}">Confirmar Ped.</a>
@@ -369,21 +369,21 @@
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'traslado'}">Traslado</a>
             <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'fraccionado'"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'fraccionado'}">Fraccionado</a>
-            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'consulta'"
+            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'consulta'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'consulta'}">Consulta</a>
-            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'otro'"
+            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'otro'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'otro'}">Otro</a>
         </div>
         <div ng-if="appCtrl.menu == 'administracion'">
-            <a href="#/administracion/productos" ng-click="appCtrl.sub_menu = 'productos'"
+            <a href="#/administracion/productos" ng-click="appCtrl.sub_menu = 'productos'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'productos'}">Productos</a>
-            <a href="#/administracion/usuarios" ng-click="appCtrl.sub_menu = 'usuarios'"
+            <a href="#/administracion/usuarios" ng-click="appCtrl.sub_menu = 'usuarios'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'usuarios'}">Usuarios</a>
-            <a href="#/administracion/sucursalse" ng-click="appCtrl.sub_menu = 'sucursalse'"
+            <a href="#/administracion/sucursalse" ng-click="appCtrl.sub_menu = 'sucursalse'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'sucursalse'}">Sucursales</a>
         </div>
         <div ng-if="appCtrl.menu == 'ventas'">
-            <a href="#/web/ventas" ng-click="appCtrl.sub_menu = 'ventas'"
+            <a href="#/web/ventas" ng-click="appCtrl.sub_menu = 'ventas'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'ventas'}">Ventas</a>
         </div>
     </div>

@@ -126,33 +126,33 @@ class Main
             'updateProducto' => 0
         ),
         'Cajas' => array(
-            'getTotalByCuenta' => 0,
-            'getSaldoInicial' => 0,
-            'getCajaDiaria' => 0,
-            'checkEstado' => 0,
-            'cerrarCaja' => 0,
-            'abrirCaja' => 0,
-            'getSaldoFinalAnterior' => 0,
-            'getResultado' => 0,
-            'createEncomienda' => 0,
-            'updateEncomienda' => 0,
-            'getEncomiendas' => 0
+            'getTotalByCuenta' => 1,
+            'getSaldoInicial' => 1,
+            'getCajaDiaria' => 1,
+            'checkEstado' => 1,
+            'cerrarCaja' => 1,
+            'abrirCaja' => 1,
+            'getSaldoFinalAnterior' => 1,
+            'getResultado' => 1,
+            'createEncomienda' => 1,
+            'updateEncomienda' => 1,
+            'getEncomiendas' => 1
         ),
         'Stocks' => array(
-            'getStocks' => 0,
-            'updateStock' => 0,
-            'getPedidos' => 0,
-            'createStock' => 0,
-            'trasladar' => 0
+            'getStocks' => 1,
+            'updateStock' => 1,
+            'getPedidos' => 1,
+            'createStock' => 1,
+            'trasladar' => 1
         ),
         'Reportes' => array(
-            'cierreDeCaja' => 0, 'updateStock' => 0
+            'cierreDeCaja' => 1, 'updateStock' => 1
         ),
         'Sucursales' => array(
             'get' => -1, 'updateStock' => 0
         ),
         'Movimientos' => array(
-            'save' => 0, 'saveDetalle' => 0, 'deleteAsiento' => 0
+            'save' => 1, 'saveDetalle' => 1, 'deleteAsiento' => 1
         )
     );
 
@@ -170,8 +170,8 @@ class Main
         }
         if (!isset($this->db)) {
 //            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
-            $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
-//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
+//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
+            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
 //            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }
