@@ -14,6 +14,7 @@
         'acAutocomplete',
         'acUsuarios',
         'acUsuariosAdministracion',
+        'acUsuariosNuevo',
         'acProductos',
         'acProductosAdministracion',
         'acStocks',
