@@ -35,7 +35,7 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="row in mainCtrl.reponer">
-                        <td>{{row.nombre}}</td>
+                        <td title="{{row.nombre}}">{{row.nombre.length > 20 ? row.nombre.substring(0,20) + "..." : row.nombre}}</td>
                         <td>{{row.cant_actual}}</td>
                         <td>{{row.pto_repo}}</td>
                     </tr>
@@ -60,7 +60,7 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="row in mainCtrl.encomiendas">
-                        <td>{{row.cliente}}</td>
+                        <td title="{{row.cliente}}">{{row.cliente.length > 20 ? row.cliente.substring(0,20) + "..." : row.cliente}}</td>
                         <td>{{ row.fecha_entrega }}</td>
                     </tr>
                     </tbody>
@@ -85,7 +85,7 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="row in mainCtrl.pedidos">
-                        <td>{{row.proveedor_nombre}}</td>
+                        <td title="{{row.proveedor_nombre}}">{{row.proveedor_nombre.length > 20 ? row.proveedor_nombre.substring(0,20) + "..." : row.proveedor_nombre}}</td>
                         <td>{{ row.fecha_pedido }}</td>
                     </tr>
                     </tbody>

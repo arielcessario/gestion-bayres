@@ -997,7 +997,19 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   -webkit-border-radius: 3px;
 }
 
-/* line 1023, ../sass/styles.scss */
+/* line 1020, ../sass/styles.scss */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1024, ../sass/styles.scss */
+.dashboard-titulo {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+
+/* line 1029, ../sass/styles.scss */
 .nuevos-avisos {
   background-color: darkred;
   -webkit-animation: nuevos-avisos .4s infinite;
