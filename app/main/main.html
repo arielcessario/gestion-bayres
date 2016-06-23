@@ -1,3 +1,34 @@
-<div ng-controller="MainController as mainCtrl">
+<div ng-controller="MainController as mainCtrl" id="main" class="lista">
+    <div id="main-resumen-caja">
+        <h2>Saldo inicial</h2>
+        <span>{{mainCtrl.saldoInicial}}</span>
+        <h2>Ahorro</h2>
+        <span>{{mainCtrl.ahorro}}</span>
+        <h2>Total</h2>
+        <span>{{mainCtrl.saldoFinal}}</span>
+        <h2></h2>
+        <button>Detalle</button>
+    </div>
+    <div id="main-a-reponer">
+        <table>
+            <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Cantidad Actual</td>
+                <td>Punto de Reposición</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in mainCtrl.reponer">
+                <td>{{row.nombre}}</td>
+                <td>{{row.cant_actual}}</td>
+                <td>{{row.pto_repo}}</td>
+            </tr>
+            </tbody>
+        </table>
+        <span ng-repeat=""></span>
+    </div>
+    <div id="main-encomiendas"></div>
+    <div id="main-pedidos"></div>
 
 </div>

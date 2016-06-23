@@ -956,3 +956,9 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+/* line 983, ../sass/styles.scss */
+#main {
+  display: flex;
+  flex-direction: row;
+}
