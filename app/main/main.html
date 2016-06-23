@@ -1,65 +1,98 @@
 <div ng-controller="MainController as mainCtrl" id="main" class="lista">
-    <div id="main-resumen-caja">
-        <h2>Saldo inicial</h2>
-        <span>{{mainCtrl.saldoInicial}}</span>
-        <h2>Ahorro</h2>
-        <span>{{mainCtrl.ahorro}}</span>
-        <h2>Total</h2>
-        <span>{{mainCtrl.saldoFinal}}</span>
-        <h2></h2>
-        <button>Detalle</button>
-    </div>
-    <div id="main-a-reponer">
-        <table>
-            <thead>
-            <tr>
-                <td>Nombre</td>
-                <td>Cantidad Actual</td>
-                <td>Punto de Reposición</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="row in mainCtrl.reponer">
-                <td>{{row.nombre}}</td>
-                <td>{{row.cant_actual}}</td>
-                <td>{{row.pto_repo}}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div id="main-encomiendas">
-        <table>
-            <thead>
-            <tr>
-                <td>Nombre</td>
-                <td>Fecha Entrega</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="row in mainCtrl.encomiendas">
-                <td>{{row.cliente}}</td>
-                <td>{{ row.fecha_entrega }}</td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="dashboard-container">
+        <div class="colum-1">
+            <div class="dashboard-titulo">
+                <label>Resumen de Caja</label>
+                <img src="images/add.png" style="width: 16px!important; height: 16px!important;">
+                <img src="images/remove.png" style="width: 16px!important; height: 16px!important;">
+            </div>
+            <div id="main-resumen-caja">
+                <h2>Saldo inicial</h2>
+                <span>{{mainCtrl.saldoInicial}}</span>
+                <h2>Ahorro</h2>
+                <span>{{mainCtrl.ahorro}}</span>
+                <h2>Total</h2>
+                <span>{{mainCtrl.saldoFinal}}</span>
+                <h2></h2>
+                <button>Detalle</button>
+            </div>
+        </div>
 
-    </div>
-    <div id="main-pedidos">
+        <div class="colum-2">
+            <div class="dashboard-titulo">
+                <label>Productos a Reponer</label>
+                <img src="images/add.png" style="width: 16px!important; height: 16px!important;">
+                <img src="images/remove.png" style="width: 16px!important; height: 16px!important;">
+            </div>
+            <div id="main-a-reponer">
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Cantidad Actual</td>
+                        <td>Punto de Reposición</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in mainCtrl.reponer">
+                        <td>{{row.nombre}}</td>
+                        <td>{{row.cant_actual}}</td>
+                        <td>{{row.pto_repo}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-        <table>
-            <thead>
-            <tr>
-                <td>Nombre</td>
-                <td>Fecha</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="row in mainCtrl.pedidos">
-                <td>{{row.proveedor_nombre}}</td>
-                <td>{{ row.fecha_pedido }}</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="colum-3">
+            <div class="dashboard-titulo">
+                <label>Encomiendas Pendientes</label>
+                <img src="images/add.png" style="width: 16px!important; height: 16px!important;">
+                <img src="images/remove.png" style="width: 16px!important; height: 16px!important;">
+            </div>
+            <div id="main-encomiendas">
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Fecha Entrega</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in mainCtrl.encomiendas">
+                        <td>{{row.cliente}}</td>
+                        <td>{{ row.fecha_entrega }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="colum-4">
+            <div class="dashboard-titulo">
+                <label>Pedidos Pendientes</label>
+                <img src="images/add.png" style="width: 16px!important; height: 16px!important;">
+                <img src="images/remove.png" style="width: 16px!important; height: 16px!important;">
+            </div>
+            <div id="main-pedidos">
+                <table>
+                    <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Fecha</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in mainCtrl.pedidos">
+                        <td>{{row.proveedor_nombre}}</td>
+                        <td>{{ row.fecha_pedido }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+
 
 </div>

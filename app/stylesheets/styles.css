@@ -113,7 +113,7 @@ body {
 /* line 142, ../sass/styles.scss */
 .lista {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   width: 95%;
   margin: auto;
@@ -961,9 +961,11 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 #main {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-/* line 989, ../sass/styles.scss */
+/* line 991, ../sass/styles.scss */
 #index-mensajes {
   z-index: 1000;
   position: fixed;
@@ -979,7 +981,30 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   background-color: #293333;
 }
 
-/* line 1003, ../sass/styles.scss */
+/* line 1005, ../sass/styles.scss */
 #index-mensajes:hover {
   top: 0px;
+}
+
+/* line 1010, ../sass/styles.scss */
+#main-resumen-caja, #main-a-reponer, #main-encomiendas, #main-pedidos {
+  min-width: 250px;
+  height: 360px;
+  margin: 5px;
+  overflow: auto;
+  padding: 5px;
+  border: 1px solid black;
+  -webkit-border-radius: 3px;
+}
+
+/* line 1019, ../sass/styles.scss */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1023, ../sass/styles.scss */
+.dashboard-titulo {
+  border: 1px solid #fff;
+  padding: 10px 20px;
 }

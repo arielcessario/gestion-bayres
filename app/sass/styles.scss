@@ -1016,3 +1016,11 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   border: 1px solid black;
   -webkit-border-radius: 3px;
 }
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+}
+.dashboard-titulo{
+  border:1px solid #fff;
+  padding: 10px 20px;
+}
