@@ -143,7 +143,8 @@ class Main
             'updateStock' => 1,
             'getPedidos' => 1,
             'createStock' => 1,
-            'trasladar' => 1
+            'trasladar' => 1,
+            'getAReponer' => 1
         ),
         'Reportes' => array(
             'cierreDeCaja' => 1, 'updateStock' => 1
@@ -153,6 +154,9 @@ class Main
         ),
         'Movimientos' => array(
             'save' => 1, 'saveDetalle' => 1, 'deleteAsiento' => 1
+        ),
+        'Avisos' => array(
+            'get' => 1, 'create' => 0, 'update' => 0, 'remove' => 0
         )
     );
 
@@ -170,8 +174,8 @@ class Main
         }
         if (!isset($this->db)) {
 //            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
-//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
-            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
+            $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
+//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
 //            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
         }
     }
