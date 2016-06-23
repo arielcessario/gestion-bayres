@@ -1016,11 +1016,35 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   border: 1px solid black;
   -webkit-border-radius: 3px;
 }
-.dashboard-container {
-  display: flex;
-  flex-direction: row;
+
+
+
+
+.nuevos-avisos {
+  background-color: darkred;
+  -webkit-animation: nuevos-avisos .4s infinite;
+  -o-animation: nuevos-avisos .4s infinite;
+  animation: nuevos-avisos .4s infinite;
 }
-.dashboard-titulo{
-  border:1px solid #fff;
-  padding: 10px 20px;
+
+
+@keyframes nuevos-avisos {
+  0%{
+    -webkit-transform: translateY(-190px);
+    -moz-transform: translateY(-190px);
+    -ms-transform: translateY(-190px);
+    -o-transform: translateY(-190px);
+    transform: translateY(-190px);
+
+  }
+
+  100%{
+    -webkit-transform: translateY(-140px);
+    -moz-transform: translateY(-140px);
+    -ms-transform: translateY(-140px);
+    -o-transform: translateY(-140px);
+    transform: translateY(-140px);
+
+  }
+
 }
