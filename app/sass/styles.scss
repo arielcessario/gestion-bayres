@@ -141,7 +141,7 @@ body {
 
 .lista {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   //font-weight: bold;
   color: white;
   width: 95%;
@@ -983,6 +983,8 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 #main{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 
@@ -1002,4 +1004,15 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 }
 #index-mensajes:hover{
   top: 0px;
+}
+
+
+#main-resumen-caja, #main-a-reponer, #main-encomiendas, #main-pedidos{
+  min-width: 250px;
+  height: 360px;
+  margin: 5px;
+  overflow: auto;
+  padding: 5px;
+  border: 1px solid black;
+  -webkit-border-radius: 3px;
 }
