@@ -966,6 +966,17 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 .is-body {
   margin-top: 41px;
 }
+#cantidad{
+  text-align: right;
+}
 
-
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
