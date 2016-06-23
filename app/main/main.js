@@ -1,11 +1,12 @@
 (function () {
     'use strict';
-    angular.module('gestionBayres.main', ['ngRoute'])
+    angular.module('gestionBayres.main', [['bower_components/ac-angular-cajas/ac-encomiendas.js',
+            'bower_components/ac-angular-cajas/ac-encomiendas-administracion.js']])
         .controller('MainController', MainController);
 
 
-    MainController.$inject = ['CajasService', 'UserService', 'StockService'];
-    function MainController(CajasService, UserService, StockService) {
+    MainController.$inject = ['CajasService', 'UserService', 'StockService', 'EncomiendasService', 'PedidoVars', 'PedidoService'];
+    function MainController(CajasService, UserService, StockService, EncomiendasService, PedidoVars, PedidoService) {
 
         var vm = this;
 
@@ -13,6 +14,27 @@
         vm.saldoInicial = 0;
         vm.ahorro = 0;
         vm.reponer = [];
+        vm.encomiendas = [];
+        vm.pedidos = [];
+
+
+        PedidoVars.all = false;
+        PedidoService.get(
+            function (data) {
+                vm.pedidos = data;
+                //console.log(vm.pedidos);
+            }
+        );
+
+
+        EncomiendasService.get().then(function (data) {
+
+            for (var i = 0; i < data.length; i++) {
+                data[i].fecha_entrega = (new Date(data[i].fecha_entrega)).getDate() + '/' + ((new Date(data[i].fecha_entrega)).getMonth() + 1) + '/'+ (new Date(data[i].fecha_entrega)).getFullYear();
+            }
+            vm.encomiendas = data;
+
+        });
 
         StockService.getAReponer(UserService.getFromToken().data.sucursal_id).then(function (data) {
             vm.reponer = data;

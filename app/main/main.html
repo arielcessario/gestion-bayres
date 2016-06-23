@@ -26,9 +26,40 @@
             </tr>
             </tbody>
         </table>
-        <span ng-repeat=""></span>
     </div>
-    <div id="main-encomiendas"></div>
-    <div id="main-pedidos"></div>
+    <div id="main-encomiendas">
+        <table>
+            <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Fecha Entrega</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in mainCtrl.encomiendas">
+                <td>{{row.cliente}}</td>
+                <td>{{ row.fecha_entrega }}</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div id="main-pedidos">
+
+        <table>
+            <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Fecha</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="row in mainCtrl.pedidos">
+                <td>{{row.proveedor_nombre}}</td>
+                <td>{{ row.fecha_pedido }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
 </div>

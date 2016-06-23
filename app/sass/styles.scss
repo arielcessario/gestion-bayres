@@ -985,3 +985,21 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   flex-direction: row;
 }
 
+
+#index-mensajes{
+  z-index: 1000;
+  position: fixed;
+  height: 200px;
+  width: 800px;
+  left: calc(50% - 400px);
+  top: -190px;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s ;
+  -ms-transition: all .4s ;
+  -o-transition: all .4s ;
+  transition: all .4s ;
+  background-color: #293333;
+}
+#index-mensajes:hover{
+  top: 0px;
+}
