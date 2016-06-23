@@ -134,6 +134,11 @@ body {
   margin-bottom: 10px;
 }
 
+
+.form input:hover{
+  cursor: pointer;
+}
+
 .lista {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -198,6 +203,10 @@ body {
 .lista img {
   width: 80px !important;
   height: 80px !important;
+}
+
+.lista label{
+  text-align: left!important;
 }
 
 .lista {
@@ -547,10 +556,6 @@ input.buscador {
     width: 93%;
   }
 
-  .detalle-container-login {
-    background-color: red !important
-
-  }
 
   select {
     padding: 10px;
