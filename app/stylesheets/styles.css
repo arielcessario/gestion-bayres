@@ -986,9 +986,8 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   background-color: #293333;
 }
 
-/* line 1010, ../sass/styles.scss */
+/* line 1011, ../sass/styles.scss */
 #index-mensajes:hover {
-  top: 0px;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -996,30 +995,34 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   transform: translateY(0px);
 }
 
-/* line 1020, ../sass/styles.scss */
+/* line 1021, ../sass/styles.scss */
 #main-resumen-caja, #main-a-reponer, #main-encomiendas, #main-pedidos {
   min-width: 250px;
   height: 360px;
   margin: 5px;
   overflow: auto;
-  padding: 5px;
+  padding: 10px;
+  text-align: left;
   border: 1px solid black;
   -webkit-border-radius: 3px;
 }
 
-/* line 1030, ../sass/styles.scss */
+/* line 1032, ../sass/styles.scss */
 .dashboard-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/* line 1034, ../sass/styles.scss */
+/* line 1037, ../sass/styles.scss */
 .dashboard-titulo {
-  border: 1px solid #fff;
+  background-color: #293333;
   padding: 10px 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-/* line 1039, ../sass/styles.scss */
+/* line 1046, ../sass/styles.scss */
 .nuevos-avisos {
   background-color: darkred;
   -webkit-animation: nuevos-avisos .4s infinite;

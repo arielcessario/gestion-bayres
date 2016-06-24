@@ -988,7 +988,7 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 }
 
 
-#index-mensajes{
+#index-mensajes {
   z-index: 1000;
   position: fixed;
   height: 200px;
@@ -1007,8 +1007,9 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   transition: all 1s;
   background-color: #293333;
 }
-#index-mensajes:hover{
-  top: 0px;
+
+#index-mensajes:hover {
+
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -1022,7 +1023,8 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   height: 360px;
   margin: 5px;
   overflow: auto;
-  padding: 5px;
+  padding: 10px;
+  text-align: left;
   border: 1px solid black;
   -webkit-border-radius: 3px;
 }
@@ -1030,10 +1032,15 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 .dashboard-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .dashboard-titulo{
-  border:1px solid #fff;
+  background-color: #293333;
   padding: 10px 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+
 }
 
 .nuevos-avisos {
