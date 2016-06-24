@@ -1072,10 +1072,9 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   padding: 10px 20px;
   margin-left: 5px;
   margin-right: 5px;
-  text-align: left;
-  display: flex;
-
-
+  //text-align: left;
+  //display: flex;
+  height: 20px;
 }
 
 .contenedor-barra-minimizar{
@@ -1109,6 +1108,7 @@ right: 0px!important;
     transform: translateY(-140px);
 
   }
+
 
 }
 
