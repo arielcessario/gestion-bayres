@@ -33,15 +33,15 @@
                     <thead>
                     <tr>
                         <th>Nombre</th>
-                        <th>Cantidad Actual</th>
-                        <th>Punto de Reposición</th>
+                        <th style="width: 95px;text-align: center;">Cantidad Actual</th>
+                        <th style="width: 95px;text-align: center;">Punto de Reposición</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr ng-repeat="row in mainCtrl.reponer">
                         <td title="{{row.nombre}}">{{row.nombre.length > 20 ? row.nombre.substring(0,20) + "..." : row.nombre}}</td>
-                        <td>{{row.cant_actual}}</td>
-                        <td>{{row.pto_repo}}</td>
+                        <td style="text-align: center;">{{row.cant_actual}}</td>
+                        <td style="text-align: center;">{{row.pto_repo}}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -59,13 +59,13 @@
                     <thead>
                     <tr>
                         <th>Nombre</th>
-                        <th>Fecha Entrega</th>
+                        <th style="width: 95px;text-align: center;">Fecha Entrega</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr ng-repeat="row in mainCtrl.encomiendas">
                         <td title="{{row.cliente}}">{{row.cliente.length > 20 ? row.cliente.substring(0,20) + "..." : row.cliente}}</td>
-                        <td>{{ row.fecha_entrega }}</td>
+                        <td style="text-align: center;">{{ row.fecha_entrega }}</td>
                     </tr>
                     </tbody>
                 </table>

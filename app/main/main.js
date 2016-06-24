@@ -32,11 +32,19 @@
             for (var i = 0; i < data.length; i++) {
                 data[i].fecha_entrega = (new Date(data[i].fecha_entrega)).getDate() + '/' + ((new Date(data[i].fecha_entrega)).getMonth() + 1) + '/'+ (new Date(data[i].fecha_entrega)).getFullYear();
             }
-            vm.encomiendas = data;
 
+            data.sort(function (a, b) {
+                return b.fecha_entrega - a.fecha_entrega;
+            });
+
+            vm.encomiendas = data;
         });
 
         StockService.getAReponer(UserService.getFromToken().data.sucursal_id).then(function (data) {
+            data.sort(function (a, b) {
+                return a.nombre - b.nombre;
+            });
+
             vm.reponer = data;
         });
 
