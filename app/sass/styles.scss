@@ -155,15 +155,16 @@ body {
     width: 90%;
     margin: 10px auto;
     td {
-      padding: 10px;
+      padding: 5px;
       background-color: #293333;
       color: white;
       text-align: left;
+      font-weight: lighter;
 
     }
     th {
-      padding: 10px;
-      font-size: 18px;
+      padding: 5px;
+      font-size: 16px;
       background-color: white;
       color: #293333;
       -webkit-border-radius: 2px;
@@ -201,8 +202,8 @@ body {
 }
 
 .lista img {
-  width: 80px !important;
-  height: 80px !important;
+  width: 60px !important;
+  height: 30px !important;
 }
 
 .lista label{
