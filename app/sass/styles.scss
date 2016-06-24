@@ -1027,6 +1027,9 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   text-align: left;
   border: 1px solid black;
   -webkit-border-radius: 3px;
+  h2{
+    font-weight: lighter!important;
+  }
 }
 
 .dashboard-container {
@@ -1039,7 +1042,14 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   padding: 10px 20px;
   margin-left: 5px;
   margin-right: 5px;
+  text-align: left;
+  display: flex;
 
+
+}
+
+.contenedor-barra-minimizar{
+right: 0px!important;
 
 }
 
