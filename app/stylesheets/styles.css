@@ -1006,66 +1006,62 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
-  min-width: 200px;
+  min-width: 250px;
   height: 375px;
   margin: 5px;
   overflow: auto;
   text-align: left;
+  border: 1px solid black;
   -webkit-border-radius: 3px;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
   overflow: auto;
 }
-/* line 1042, ../sass/styles.scss */
+/* line 1043, ../sass/styles.scss */
 #main-resumen-caja h2, #main-a-reponer h2, #main-encomiendas h2, #main-pedidos h2 {
   font-weight: lighter !important;
 }
-/* line 1045, ../sass/styles.scss */
+/* line 1046, ../sass/styles.scss */
 #main-resumen-caja span, #main-a-reponer span, #main-encomiendas span, #main-pedidos span {
   margin-left: 5px;
   font-weight: bolder;
   font-size: 25px;
 }
-/* line 1050, ../sass/styles.scss */
+/* line 1051, ../sass/styles.scss */
 #main-resumen-caja table, #main-a-reponer table, #main-encomiendas table, #main-pedidos table {
   width: 100% !important;
 }
 
-/* line 1055, ../sass/styles.scss */
+/* line 1056, ../sass/styles.scss */
 #main-resumen-caja h2 {
   background-color: #293333;
   font-size: 18px !important;
   padding: 5px;
 }
 
-/* line 1061, ../sass/styles.scss */
+/* line 1062, ../sass/styles.scss */
 .dashboard-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-/* line 1066, ../sass/styles.scss */
+/* line 1067, ../sass/styles.scss */
 .dashboard-titulo {
-  -webkit-border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
   background-color: #293333;
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin-left: 5px;
   margin-right: 5px;
   height: 20px;
-  font-size: 20px;
 }
 
-/* line 1081, ../sass/styles.scss */
+/* line 1077, ../sass/styles.scss */
 .contenedor-barra-minimizar {
   right: 0px !important;
 }
 
-/* line 1086, ../sass/styles.scss */
+/* line 1082, ../sass/styles.scss */
 .nuevos-avisos {
   background-color: darkred;
   -webkit-animation: nuevos-avisos .4s infinite;
