@@ -306,7 +306,7 @@
             vm.sub_menu = location[2];
         });
 
-        if(vm.user.data.sucursal_id =! undefined ){
+        if (vm.user != undefined) {
             $interval(getAvisos, 6000);
             getAvisos();
         }
@@ -324,7 +324,7 @@
                     }
                 }
 
-                if(vm.nuevos_avisos || vm.avisos_index.length == 0){
+                if (vm.nuevos_avisos || vm.avisos_index.length == 0) {
                     vm.avisos_index = data;
                 }
 
