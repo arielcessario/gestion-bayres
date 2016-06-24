@@ -166,8 +166,8 @@
         window.app = 'appName';
         window.mailAdmin = 'arielcessario@gmail.com';
         //        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail:'tantopc@hotmail.com'}];
-        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}];
-        //        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail: 'tantopc@hotmail.com'}, {mail: 'rafa_710@hotmail.com'}, {mail:'rafa710@gmail.com'}];
+//        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}];
+                window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail: 'tantopc@hotmail.com'}, {mail: 'rafa_710@hotmail.com'}, {mail:'rafa710@gmail.com'}];
 
         // include angular loader, which allows the files to load in any order
         //@@NG_LOADER_START@@
@@ -398,15 +398,18 @@
     </div>
 </div>
 <div ng-view id="view" ng-class="{'is-body':appCtrl.isMoved}"></div>
-<div id="index-mensajes" ng-class="{'nuevos-avisos': appCtrl.nuevos_avisos}" ng-mouseover="appCtrl.updateValorCaja(); appCtrl.nuevos_avisos = false;">
-    {{appCtrl.saldoInicial}}
-    {{appCtrl.saldoFinal}}
-
-    <div ng-repeat="aviso in appCtrl.avisos_index" style="pointer-events: none;">
-        {{aviso.aviso}}
+<div id="index-mensajes" ng-mouseover="appCtrl.updateValorCaja(); appCtrl.nuevos_avisos = false;">
+    <h3>Estado de Caja</h3>
+    <div>
+        Saldo Inicial: {{appCtrl.saldoInicial | currency}} / Saldo Actual: {{appCtrl.saldoFinal | currency}}
     </div>
+    <h3>Avisos</h3>
+    <span style="pointer-events: none;">{{appCtrl.avisos_index[0].nombre}}: {{appCtrl.avisos_index[0].aviso}}</span>
+    <span style="pointer-events: none;">{{appCtrl.avisos_index[1].nombre}}: {{appCtrl.avisos_index[1].aviso}}</span>
+    <span style="pointer-events: none;">{{appCtrl.avisos_index[2].nombre}}: {{appCtrl.avisos_index[2].aviso}}</span>
+    <span style="pointer-events: none;">{{appCtrl.avisos_index[3].nombre}}: {{appCtrl.avisos_index[3].aviso}}</span>
 
-    <img src="images/exclamation_sign.svg" height="50" width="50" class="avisos-exclamacion">
+    <img ng-class="{'nuevos-avisos': appCtrl.nuevos_avisos}" src="images/exclamation_sign.svg" height="30" width="30" class="avisos-exclamacion">
 </div>
 <div id="footer-bar" ng-if="appCtrl.user"
      style="color: #fff;padding: 10px;text-align: center; font-size: smaller;background-color: transparent">

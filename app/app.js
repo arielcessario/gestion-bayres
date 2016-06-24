@@ -312,13 +312,10 @@
         }
 
         function getAvisos() {
-            console.log('entra');
             AvisosService.get().then(function (data) {
-                console.log(data);
                 if (vm.avisos_index.length > 0 && vm.nuevos_avisos == false) {
                     for (var i = 0; i < data.length; i++) {
                         if (vm.avisos_index[i].aviso !== data[i].aviso) {
-                            console.log('nuevo');
                             vm.nuevos_avisos = true;
                         }
                     }
