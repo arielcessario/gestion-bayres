@@ -324,7 +324,10 @@
                     }
                 }
 
-                vm.avisos_index = data;
+                if(vm.nuevos_avisos || vm.avisos_index.length == 0){
+                    vm.avisos_index = data;
+                }
+
             });
         }
 
