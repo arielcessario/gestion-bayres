@@ -5,8 +5,8 @@
         .controller('MainController', MainController);
 
 
-    MainController.$inject = ['CajasService', 'UserService', 'StockService', 'EncomiendasService', 'PedidoVars', 'PedidoService'];
-    function MainController(CajasService, UserService, StockService, EncomiendasService, PedidoVars, PedidoService) {
+    MainController.$inject = ['CajasService', 'UserService', 'StockService', 'EncomiendasService', 'PedidoVars', 'PedidoService', '$location'];
+    function MainController(CajasService, UserService, StockService, EncomiendasService, PedidoVars, PedidoService, $location) {
 
         var vm = this;
 
@@ -17,6 +17,13 @@
         vm.encomiendas = [];
         vm.pedidos = [];
 
+
+        vm.goToPagina = goToPagina;
+
+
+        function goToPagina(pagina) {
+            $location.path(pagina);
+        }
 
         PedidoVars.all = false;
         PedidoService.get(
