@@ -399,11 +399,11 @@
 </div>
 <div ng-view id="view" ng-class="{'is-body':appCtrl.isMoved}"></div>
 <div id="index-mensajes" ng-mouseover="appCtrl.updateValorCaja(); appCtrl.nuevos_avisos = false;">
-    <h3>Estado de Caja</h3>
-    <div>
+    <h3 style="pointer-events: none;">Estado de Caja</h3>
+    <div style="pointer-events: none;">
         Saldo Inicial: {{appCtrl.saldoInicial | currency}} / Saldo Actual: {{appCtrl.saldoFinal | currency}}
     </div>
-    <h3>Avisos</h3>
+    <h3 style="pointer-events: none;">Avisos</h3>
     <span style="pointer-events: none;">{{appCtrl.avisos_index[0].nombre}}: {{appCtrl.avisos_index[0].aviso}}</span>
     <span style="pointer-events: none;">{{appCtrl.avisos_index[1].nombre}}: {{appCtrl.avisos_index[1].aviso}}</span>
     <span style="pointer-events: none;">{{appCtrl.avisos_index[2].nombre}}: {{appCtrl.avisos_index[2].aviso}}</span>
