@@ -37,14 +37,32 @@
 
         function removeProducto(id) {
             console.log('remover producto ' + id);
+
+            if (confirm("¿Esta seguro que desea borrar el producto seleccionado?") == true) {
+                console.log('borrar producto');
+            } else {
+                console.log('No se borra el producto');
+            }
         }
 
         function removeEncomienda(id) {
             console.log('remover encomienda ' + id);
+
+            if (confirm("¿Esta seguro que desea borrar la encomienda seleccionado?") == true) {
+                console.log('borrar encomienda');
+            } else {
+                console.log('No se borra la encomienda');
+            }
         }
 
         function removePedido(id) {
             console.log('remover pedido ' + id);
+
+            if (confirm("¿Esta seguro que desea borrar el pedido seleccionado?") == true) {
+                console.log('borrar pedido');
+            } else {
+                console.log('No se borra el pedido');
+            }
         }
 
 
