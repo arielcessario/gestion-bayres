@@ -20,14 +20,33 @@
         vm.showProducto = true;
         vm.showEncomienda = true;
         vm.showPedido = true;
+        vm.cliente_id;
+        vm.pedido_id;
+        vm.producto_id;
 
-
+        //FUNCIONES
         vm.goToPagina = goToPagina;
+        vm.removeProducto = removeProducto;
+        vm.removeEncomienda = removeEncomienda;
+        vm.removePedido = removePedido;
 
 
         function goToPagina(pagina) {
             $location.path(pagina);
         }
+
+        function removeProducto(id) {
+            console.log('remover producto ' + id);
+        }
+
+        function removeEncomienda(id) {
+            console.log('remover encomienda ' + id);
+        }
+
+        function removePedido(id) {
+            console.log('remover pedido ' + id);
+        }
+
 
         PedidoVars.all = false;
         PedidoService.get(
