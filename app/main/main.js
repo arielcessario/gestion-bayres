@@ -16,6 +16,10 @@
         vm.reponer = [];
         vm.encomiendas = [];
         vm.pedidos = [];
+        vm.showCaja = true;
+        vm.showProducto = true;
+        vm.showEncomienda = true;
+        vm.showPedido = true;
 
 
         vm.goToPagina = goToPagina;
