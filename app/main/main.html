@@ -42,7 +42,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="row in mainCtrl.reponer">
-                            <td title="{{row.nombre}}" ng-click="mainCtrl.producto_id = row.producto_id;">
+                            <td title="{{row.nombre}}" ng-click="mainCtrl.producto = row;">
                                 {{row.nombre.length > 20 ? row.nombre.substring(0,20) + "..." : row.nombre}}
                             </td>
                             <td style="text-align: center;">{{row.cant_actual}}</td>
@@ -53,9 +53,10 @@
                 </div>
                 <div class="dashboard-titulo">
                     <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/traslado');">Reponer</button>
-                    <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/traslado');">Detalle</button>
+                    <button style="float: left;margin: 0; padding: 2px 15px;"
+                            ng-click="mainCtrl.detalleProducto(mainCtrl.producto);">Detalle</button>
                     <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;cursor: pointer;"
-                         ng-click="mainCtrl.removeProducto(mainCtrl.producto_id);">
+                         ng-click="mainCtrl.removeProducto(mainCtrl.producto);">
                 </div>
             </div>
         </div>
@@ -77,7 +78,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="row in mainCtrl.encomiendas">
-                            <td title="{{row.cliente}}" ng-click="mainCtrl.cliente_id = row.cliente_id;">
+                            <td title="{{row.cliente}}" ng-click="mainCtrl.cliente = row;">
                                 {{row.cliente.length > 20 ? row.cliente.substring(0,20) + "..." : row.cliente}}
                             </td>
                             <td style="text-align: center;">{{ row.fecha_entrega }}</td>
@@ -86,9 +87,10 @@
                     </table>
                 </div>
                 <div class="dashboard-titulo">
-                    <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/pedidos');">Detalle</button>
+                    <button style="float: left;margin: 0; padding: 2px 15px;"
+                            ng-click="mainCtrl.detalleEncomienda(mainCtrl.cliente);">Detalle</button>
                     <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;cursor: pointer;"
-                         ng-click="mainCtrl.removeEncomienda(mainCtrl.cliente_id);">
+                         ng-click="mainCtrl.removeEncomienda(mainCtrl.cliente);">
                 </div>
             </div>
         </div>
@@ -110,7 +112,7 @@
                         </thead>
                         <tbody>
                         <tr ng-repeat="row in mainCtrl.pedidos">
-                            <td title="{{row.proveedor_nombre}}" ng-click="mainCtrl.pedido_id = row.pedido_id;">
+                            <td title="{{row.proveedor_nombre}}" ng-click="mainCtrl.pedido = row;">
                                 {{row.proveedor_nombre.length > 20 ? row.proveedor_nombre.substring(0,20) + "..." : row.proveedor_nombre}}
                             </td>
                             <td>{{ row.fecha_pedido }}</td>
@@ -121,7 +123,7 @@
                 <div class="dashboard-titulo">
                     <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/pedidos');">Detalle</button>
                     <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;cursor: pointer"
-                         ng-click="mainCtrl.removePedido(mainCtrl.pedido_id);">
+                         ng-click="mainCtrl.removePedido(mainCtrl.pedido);">
                 </div>
             </div>
         </div>

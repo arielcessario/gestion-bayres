@@ -20,51 +20,60 @@
         vm.showProducto = true;
         vm.showEncomienda = true;
         vm.showPedido = true;
-        vm.cliente_id;
-        vm.pedido_id;
-        vm.producto_id;
+        vm.cliente;
+        vm.pedido;
+        vm.producto;
 
         //FUNCIONES
         vm.goToPagina = goToPagina;
         vm.removeProducto = removeProducto;
         vm.removeEncomienda = removeEncomienda;
         vm.removePedido = removePedido;
+        vm.detalleProducto = detalleProducto;
+        vm.detalleEncomienda = detalleEncomienda;
 
 
         function goToPagina(pagina) {
             $location.path(pagina);
         }
 
-        function removeProducto(id) {
-            console.log('remover producto ' + id);
+        function removeProducto(producto) {
+            console.log(producto);
 
-            if (confirm("¿Esta seguro que desea borrar el producto seleccionado?") == true) {
+            if (confirm("¿Esta seguro que desea borrar el producto " + producto.nombre + "?") == true) {
                 console.log('borrar producto');
             } else {
                 console.log('No se borra el producto');
             }
         }
 
-        function removeEncomienda(id) {
-            console.log('remover encomienda ' + id);
+        function removeEncomienda(cliente) {
+            console.log(cliente);
 
-            if (confirm("¿Esta seguro que desea borrar la encomienda seleccionado?") == true) {
+            if (confirm("¿Esta seguro que desea borrar la encomienda del cliente " + cliente.cliente + "?") == true) {
                 console.log('borrar encomienda');
             } else {
                 console.log('No se borra la encomienda');
             }
         }
 
-        function removePedido(id) {
-            console.log('remover pedido ' + id);
+        function removePedido(pedido) {
+            console.log(pedido);
 
-            if (confirm("¿Esta seguro que desea borrar el pedido seleccionado?") == true) {
+            if (confirm("¿Esta seguro que desea borrar el pedido " + pedido + "?") == true) {
                 console.log('borrar pedido');
             } else {
                 console.log('No se borra el pedido');
             }
         }
 
+        function detalleProducto(producto) {
+            console.log(producto);
+        }
+
+        function detalleEncomienda(encomenda) {
+            console.log(encomenda);
+        }
 
         PedidoVars.all = false;
         PedidoService.get(
