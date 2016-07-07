@@ -313,18 +313,19 @@
 
         function getAvisos() {
             AvisosService.get().then(function (data) {
-                if (vm.avisos_index.length > 0 && vm.nuevos_avisos == false) {
-                    for (var i = 0; i < data.length; i++) {
-                        if (vm.avisos_index[i].aviso !== data[i].aviso) {
-                            vm.nuevos_avisos = true;
+                if(data != undefined) {
+                    if (vm.avisos_index.length > 0 && vm.nuevos_avisos == false) {
+                        for (var i = 0; i < data.length; i++) {
+                            if (vm.avisos_index[i].aviso !== data[i].aviso) {
+                                vm.nuevos_avisos = true;
+                            }
                         }
                     }
-                }
 
-                if (vm.nuevos_avisos || vm.avisos_index.length == 0) {
-                    vm.avisos_index = data;
+                    if (vm.nuevos_avisos || vm.avisos_index.length == 0) {
+                        vm.avisos_index = data;
+                    }
                 }
-
             });
         }
 
