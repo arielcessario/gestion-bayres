@@ -6,11 +6,11 @@ session_start();
 
 // Token
 
-if (file_exists('../../../includes/MyDBi.php')) {
-    require_once '../../../includes/MyDBi.php';
+if (file_exists('../../../includes/MysqlDb.php')) {
+    require_once '../../../includes/MysqlDb.php';
     require_once '../../../includes/utils.php';
 } else {
-    require_once 'MyDBi.php';
+    require_once 'MysqlDb.php';
 }
 
 
@@ -50,6 +50,7 @@ class Sucursales extends Main
      * @description Crea una categoría, esta es la tabla paramétrica, la funcion createSucursales crea las relaciones
      * @param $sucursal
      */
+    /*
     function create($sucursal)
     {
         $db = new MysqliDb();
@@ -71,6 +72,27 @@ class Sucursales extends Main
             $db->rollback();
             echo json_encode(-1);
         }
+    }
+    */
+
+    function create($sucursal)
+    {
+        /*
+        $sucursal_decoded = json_decode($sucursal);
+
+        $asiento_id = $sucursal_decoded->asiento_id;
+        */
+        /*
+        for($sucursal_decoded["despues"] as $item){
+            $despues .= "stock_id:" . $item->stock_id . " - Cant Actual:" . $item->cantidad_actual . "\n";
+        }
+        */
+
+        $file = 'ventas.log';
+        $current = file_get_contents($file);
+        $current .= date('Y-m-d H:i:s') . ": " . 'hola' . "\n";
+        //$current .= $despues . "\n";
+        file_put_contents($file, $current);
     }
 
 
@@ -138,6 +160,8 @@ class Sucursales extends Main
 
         return $detalle;
     }
+
+
 }
 
 
