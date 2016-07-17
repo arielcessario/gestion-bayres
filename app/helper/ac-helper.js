@@ -2,13 +2,12 @@
     'use strict';
 
 
-    angular.module('acSucursales', ['ngRoute'])
-        .factory('SucursalesService', SucursalesService)
-        .service('SucursalesVars', SucursalesVars);
+    angular.module('acHelper', ['ngRoute'])
+        .factory('HelperService', HelperService);
 
 
-    SucursalesService.$inject = ['$http', '$q'];
-    function SucursalesService($http, $q) {
+    HelperService.$inject = ['$http', '$q'];
+    function HelperService($http, $q) {
         var service = {};
         var url = './helper/includes/ac-helper.php';
 
