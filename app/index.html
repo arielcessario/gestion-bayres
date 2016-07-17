@@ -167,7 +167,7 @@
         window.mailAdmin = 'arielcessario@gmail.com';
         //        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail:'tantopc@hotmail.com'}];
         window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}];
-//                window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail: 'tantopc@hotmail.com'}, {mail: 'rafa_710@hotmail.com'}, {mail:'rafa710@gmail.com'}];
+        //                window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail: 'tantopc@hotmail.com'}, {mail: 'rafa_710@hotmail.com'}, {mail:'rafa710@gmail.com'}];
 
         // include angular loader, which allows the files to load in any order
         //@@NG_LOADER_START@@
@@ -281,7 +281,8 @@
                         'bower_components/ac-angular-cajas/ac-abrir-cerrar-caja.js',
                         'bower_components/ac-angular-movimientos/movimientos-list.js',
                         'bower_components/ac-angular-movimientos/movimientos-service.js',
-                        'includes/LangTables.js'
+                        'includes/LangTables.js',
+                        'helper/ac-helper.js'
                     ], 'segundo');
 
 
@@ -404,12 +405,13 @@
         Saldo Inicial: {{appCtrl.saldoInicial | currency}} / Saldo Actual: {{appCtrl.saldoFinal | currency}}
     </div>
     <h3 style="pointer-events: none;">Avisos</h3>
-    <span style="pointer-events: none;">{{appCtrl.avisos_index[0].nombre}}: {{appCtrl.avisos_index[0].aviso}}</span>
+    <span style="pointer-events: none;">{{appCtrl.avisos_index[0].nombre}} dice: {{appCtrl.avisos_index[0].aviso}}</span>
     <span style="pointer-events: none;">{{appCtrl.avisos_index[1].nombre}}: {{appCtrl.avisos_index[1].aviso}}</span>
     <span style="pointer-events: none;">{{appCtrl.avisos_index[2].nombre}}: {{appCtrl.avisos_index[2].aviso}}</span>
     <span style="pointer-events: none;">{{appCtrl.avisos_index[3].nombre}}: {{appCtrl.avisos_index[3].aviso}}</span>
 
-    <img ng-class="{'nuevos-avisos': appCtrl.nuevos_avisos}" src="images/exclamation_sign.svg" height="30" width="30" class="avisos-exclamacion">
+    <img ng-class="{'nuevos-avisos': appCtrl.nuevos_avisos}" src="images/exclamation_sign.svg" height="30" width="30"
+         class="avisos-exclamacion">
 </div>
 <div id="footer-bar" ng-if="appCtrl.user"
      style="color: #fff;padding: 10px;text-align: center; font-size: smaller;background-color: transparent">

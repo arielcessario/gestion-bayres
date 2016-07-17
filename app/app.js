@@ -33,7 +33,8 @@
         'LangTables',
         'acUploads',
         'acAvisos',
-        'acAvisosAdministracion'
+        'acAvisosAdministracion',
+        'acHelper'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {
             authProvider.init({
                 domain: 'ac-desarrollos.auth0.com',
