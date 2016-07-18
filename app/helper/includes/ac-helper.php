@@ -68,12 +68,13 @@ function create($data){
         }
     }
 
-    $file = 'ventas.log';
+    $file = 'ventas_user_' . $usuario_id . '_' . date('Y-m-d') . '.log';
     $current = file_get_contents($file);
     $current .= date('Y-m-d H:i:s') . ": asiento_id: " . $asiento_id . "\n";
     $current .= ": usuario_id: " . $usuario_id . "\n";
     $current .= ": email: " . $mail . "\n";
     $current .= $despues;
+    $current .= "------------------------------------------------------------------------------\n";
     $current .= $detalles . "\n";
     $current .= "/***************************************************************************/\n";
     file_put_contents($file, $current);
