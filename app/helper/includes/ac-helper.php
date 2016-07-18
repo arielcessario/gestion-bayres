@@ -1,174 +1,100 @@
 <?php
-
-
 session_start();
-
-
-// Token
-
-if (file_exists('../../../includes/MysqlDb.php')) {
-    require_once '../../../includes/MysqlDb.php';
-    require_once '../../../includes/utils.php';
+/*
+if (file_exists('../../../includes/MyDBi.php')) {
+    require_once '../../../includes/MyDBi.php';
+    //require_once '../../../includes/utils.php';
 } else {
-    require_once 'MysqlDb.php';
+    require_once 'MyDBi.php';
+}
+*/
+
+$data = file_get_contents("php://input");
+
+$decoded = json_decode($data);
+if ($decoded != null) {
+    if ($decoded->function == 'create') {
+        create($decoded->sucursal);
+    }elseif($decoded->function == 'save') {
+        save($decoded->sucursal);
+    }
+} else {
+    /*
+    $function = $_GET["function"];
+    if ($function == 'getNoticias') {
+        getNoticias();
+    }
+    */
 }
 
+function create($sucursal){
 
-class Sucursales extends Main
-{
-    private static $instance;
+    $sucursal_decoded = json_decode($sucursal);
+    $asiento_id = $sucursal_decoded->asiento_id;
 
-    public static function init($decoded)
-    {
-        self::$instance = new Main(get_class(), $decoded['function']);
-        try {
-            call_user_func(get_class() . '::' . $decoded['function'], $decoded);
-        } catch (Exception $e) {
-
-            $file = 'error.log';
-            $current = file_get_contents($file);
-            $current .= date('Y-m-d H:i:s') . ": " . $e . "\n";
-            file_put_contents($file, $current);
-
-            header('HTTP/1.0 500 Internal Server Error');
-            echo $e;
-        }
-    }
-
-
-    function get()
-    {
-        $db = self::$instance->db;
-
-        $results = $db->get('sucursales');
-
-        echo json_encode($results);
-    }
-
-
-    /**
-     * @description Crea una categoría, esta es la tabla paramétrica, la funcion createSucursales crea las relaciones
-     * @param $sucursal
-     */
     /*
-    function create($sucursal)
-    {
-        $db = new MysqliDb();
-        $db->startTransaction();
-        $sucursal_decoded = checkSucursal(json_decode($sucursal));
-
-        $data = array(
-            'nombre' => $sucursal_decoded->nombre,
-            'direccion' => $sucursal_decoded->direccion,
-            'telefono' => $sucursal_decoded->telefono,
-            'pos_cantidad' => $sucursal_decoded->pos_cantidad
-        );
-
-        $result = $db->insert('sucursales', $data);
-        if ($result > -1) {
-            $db->commit();
-            echo json_encode($result);
-        } else {
-            $db->rollback();
-            echo json_encode(-1);
-        }
+    for($sucursal_decoded->despues as $item){
+        $despues .= "stock_id:" . $item->stock_id . " - Cant Actual:" . $item->cantidad_actual . "\n";
     }
     */
 
-    function create($sucursal)
-    {
-        /*
-        $sucursal_decoded = json_decode($sucursal);
-
-        $asiento_id = $sucursal_decoded->asiento_id;
-        */
-        /*
-        for($sucursal_decoded["despues"] as $item){
-            $despues .= "stock_id:" . $item->stock_id . " - Cant Actual:" . $item->cantidad_actual . "\n";
-        }
-        */
-
-        $file = 'ventas.log';
-        $current = file_get_contents($file);
-        $current .= date('Y-m-d H:i:s') . ": " . 'hola' . "\n";
-        //$current .= $despues . "\n";
-        file_put_contents($file, $current);
-    }
-
-
-    /**
-     * @description Modifica una sucursal
-     * @param $sucursal
-     */
-    function update($sucursal)
-    {
-        $db = new MysqliDb();
-        $db->startTransaction();
-        $sucursal_decoded = checkSucursal(json_decode($sucursal));
-        $db->where('sucursal_id', $sucursal_decoded->sucursal_id);
-        $data = array(
-            'nombre' => $sucursal_decoded->nombre,
-            'direccion' => $sucursal_decoded->direccion,
-            'telefono' => $sucursal_decoded->telefono,
-            'pos_cantidad' => $sucursal_decoded->pos_cantidad
-        );
-
-        $result = $db->update('sucursales', $data);
-        if ($result) {
-            $db->commit();
-            echo json_encode($result);
-        } else {
-            $db->rollback();
-            echo json_encode(-1);
-        }
-    }
-
-
-    /**
-     * @description Elimina una sucursal
-     * @param $sucursal_id
-     */
-    function remove($sucursal_id)
-    {
-        $db = new MysqliDb();
-
-        $db->where("sucursal_id", $sucursal_id);
-        $results = $db->delete('sucursales');
-
-        if ($results) {
-
-            echo json_encode(1);
-        } else {
-            echo json_encode(-1);
-
-        }
-    }
-
-
-    /**
-     * @description Verifica todos los campos de detalle del carrito para que existan
-     * @param $detalle
-     * @return mixed
-     */
-    function checkSucursal($detalle)
-    {
-        $detalle->sucursal_id = (!array_key_exists("sucursal_id", $detalle)) ? -1 : $detalle->sucursal_id;
-        $detalle->nombre = (!array_key_exists("nombre", $detalle)) ? 0 : $detalle->nombre;
-        $detalle->direccion = (!array_key_exists("direccion", $detalle)) ? 0 : $detalle->direccion;
-        $detalle->telefono = (!array_key_exists("telefono", $detalle)) ? 0 : $detalle->telefono;
-        $detalle->pos_cantidad = (!array_key_exists("pos_cantidad", $detalle)) ? 1 : $detalle->pos_cantidad;
-
-        return $detalle;
-    }
-
+    $file = 'ventas.log';
+    $current = file_get_contents($file);
+    $current .= date('Y-m-d H:i:s') . ": asiento_id: " . $asiento_id . "\n";
+    //$current .= $despues . "\n";
+    file_put_contents($file, $current);
 
 }
 
+function save($sucursal){
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $data = file_get_contents("php://input");
-    $decoded = json_decode($data);
-    Sucursales::init(json_decode(json_encode($decoded), true));
-} else {
-    Sucursales::init($_GET);
+    $decoded = json_decode($sucursal);
+    $asiento_id = $decoded->asiento_id;
+
+    $despues = "";
+    $detalles = "";
+
+    foreach($decoded->despues as $item){
+        $despues .= "DESPUES: stock_id: " . $item->stock_id . " - cant_actual: " . $item->cant_actual . "\n";
+    }
+
+    foreach($decoded->detalles as $item){
+        $detalles .= "DETALLES: cantidad: " . $item->cantidad . " - iva: " . $item->iva .
+            " - precio_total: " . $item->precio_total . " - producto_id: " . $item->producto_id .
+            " - producto_nombre: " . $item->producto_nombre . " - productos_tipo: " . $item->productos_tipo .
+            "\n";
+
+        foreach($item->productos_kit as $item1){
+            $detalles .= " -- producto_id: " . $item1->producto_id . " - producto_kit_id: " . $item1->producto_kit_id ."\n";
+
+            foreach($item1->stock as $stock){
+                $detalles .= " *** STOCK: stock_id: " . $stock->stock_id . " - cant_actual: " . $stock->cant_actual .
+                    " - costo_uni: " . $stock->costo_uni . " - sucursal_id: " . $stock->sucursal_id .
+                    "\n";
+            }
+            foreach($item1->stocks as $stocks){
+                $detalles .= " === STOCKS: stock_id: " . $stocks->stock_id . " - cant_actual: " . $stocks->cant_actual .
+                    " - costo_uni: " . $stocks->costo_uni . " - sucursal_id: " . $stocks->sucursal_id .
+                    "\n";
+            }
+        }
+
+        foreach($item->stock as $item2){
+            $detalles .= " -- stock_id: " . $item2->stock_id . " - cant_actual: " . $item2->cant_actual .
+                " - costo_uni: " . $item2->costo_uni . " - sucursal_id: " . $item2->sucursal_id .
+                "\n";
+        }
+    }
+
+    $file = 'ventas.log';
+    $current = file_get_contents($file);
+    $current .= date('Y-m-d H:i:s') . ": asiento_id: " . $asiento_id . "\n";
+    $current .= $despues;
+    $current .= $detalles . "\n";
+    $current .= "/***************************************************************************/\n";
+    file_put_contents($file, $current);
+
+
+    echo json_encode($sucursal);
+
 }
