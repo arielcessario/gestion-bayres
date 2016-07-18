@@ -14,9 +14,7 @@ $data = file_get_contents("php://input");
 $decoded = json_decode($data);
 if ($decoded != null) {
     if ($decoded->function == 'create') {
-        create($decoded->sucursal);
-    }elseif($decoded->function == 'save') {
-        save($decoded->sucursal);
+        create($decoded->data);
     }
 } else {
     /*
@@ -27,29 +25,13 @@ if ($decoded != null) {
     */
 }
 
-function create($sucursal){
 
-    $sucursal_decoded = json_decode($sucursal);
-    $asiento_id = $sucursal_decoded->asiento_id;
+function create($data){
 
-    /*
-    for($sucursal_decoded->despues as $item){
-        $despues .= "stock_id:" . $item->stock_id . " - Cant Actual:" . $item->cantidad_actual . "\n";
-    }
-    */
-
-    $file = 'ventas.log';
-    $current = file_get_contents($file);
-    $current .= date('Y-m-d H:i:s') . ": asiento_id: " . $asiento_id . "\n";
-    //$current .= $despues . "\n";
-    file_put_contents($file, $current);
-
-}
-
-function save($sucursal){
-
-    $decoded = json_decode($sucursal);
+    $decoded = json_decode($data);
     $asiento_id = $decoded->asiento_id;
+    $usuario_id = $decoded->usuario_id;
+    $mail = $decoded->mail;
 
     $despues = "";
     $detalles = "";
@@ -89,12 +71,14 @@ function save($sucursal){
     $file = 'ventas.log';
     $current = file_get_contents($file);
     $current .= date('Y-m-d H:i:s') . ": asiento_id: " . $asiento_id . "\n";
+    $current .= ": usuario_id: " . $usuario_id . "\n";
+    $current .= ": email: " . $mail . "\n";
     $current .= $despues;
     $current .= $detalles . "\n";
     $current .= "/***************************************************************************/\n";
     file_put_contents($file, $current);
 
 
-    echo json_encode($sucursal);
+    echo json_encode($data);
 
 }

@@ -5,14 +5,13 @@
         .factory('HelperService', HelperService);
 
 
-    HelperService.$inject = ['$http', '$q'];
-    function HelperService($http, $q) {
+    HelperService.$inject = ['$http', '$q', 'UserService'];
+    function HelperService($http, $q, UserService) {
         var service = {};
         var url = './helper/includes/ac-helper.php';
 
 
         service.create = create;
-        service.save = save;
 
         return service;
 
@@ -23,16 +22,18 @@
          * @param callback
          * @returns {*}
          */
-        function create(sucursal) {
-            console.log(sucursal);
+        function create(data) {
+
+            data.usuario_id = UserService.getFromToken().data.id;
+            data.mail = UserService.getFromToken().data.mail;
+
             return $http.post(url,
                 {
                     'function': 'create',
-                    'sucursal': JSON.stringify(sucursal)
+                    'data': JSON.stringify(data)
                 })
                 .then(function (data) {
                     console.log(data);
-                    console.log('ok');
                 })
                 .catch(function (data) {
                     console.log(data);
@@ -40,20 +41,6 @@
                 });
         }
 
-        function save(sucursal, callback) {
-            console.log(sucursal);
-            return $http.post(url,
-                {
-                    function: 'save',
-                    'sucursal': JSON.stringify(sucursal)
-                })
-                .success(function (data) {
-                    callback(sucursal);
-                })
-                .error(function (data) {
-                    console.log('error');
-                });
-        }
 
 
     }
