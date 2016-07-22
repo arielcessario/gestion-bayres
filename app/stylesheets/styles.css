@@ -1187,14 +1187,16 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   align-items: center;
   height: 5200px;
   max-height: 5200px;
+  margin-top: -100px;
 }
-/* line 1203, ../sass/styles.scss */
+/* line 1204, ../sass/styles.scss */
 #encomiendas-list .encomienda {
   align-content: center;
   text-align: center;
+  margin: 25px 25px;
 }
 
-/* line 1215, ../sass/styles.scss */
+/* line 1216, ../sass/styles.scss */
 .encomienda.ng-enter,
 .encomienda.ng-leave {
   -webkit-transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
@@ -1218,7 +1220,7 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   */
 }
 
-/* line 1239, ../sass/styles.scss */
+/* line 1240, ../sass/styles.scss */
 .encomienda.ng-enter.ng-enter-active,
 .encomienda.ng-leave {
   opacity: 1;
@@ -1229,14 +1231,14 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   transform: scaleY(1);
   height: 100px !important;
   margin: 10px !important;
-}
-/* line 1250, ../sass/styles.scss */
-.encomienda.ng-enter.ng-enter-active img,
-.encomienda.ng-leave img {
-  width: 150px !important;
+  /*
+  img {
+    width: 150px !important;
+  }
+  */
 }
 
-/* line 1255, ../sass/styles.scss */
+/* line 1258, ../sass/styles.scss */
 .encomienda.ng-leave.ng-leave-active,
 .encomienda.ng-enter {
   opacity: 0;
@@ -1247,14 +1249,14 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   transform: scaleY(0);
   height: 0px !important;
   margin: 10px 0px 10px 0px !important;
-}
-/* line 1266, ../sass/styles.scss */
-.encomienda.ng-leave.ng-leave-active img,
-.encomienda.ng-enter img {
-  width: 0px !important;
+  /*
+  img {
+    width: 0px !important;
+  }
+  */
 }
 
-/* line 1272, ../sass/styles.scss */
+/* line 1277, ../sass/styles.scss */
 .encomienda-title {
   -webkit-border-radius: 3px;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
@@ -1264,9 +1266,11 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   padding: 10px 10px;
   height: 20px;
   font-size: 18px;
+  position: absolute;
+  width: 610px;
 }
 
-/* line 1282, ../sass/styles.scss */
+/* line 1289, ../sass/styles.scss */
 .encomienda-body {
   background: rgba(255, 255, 255, 0.4);
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
@@ -1287,13 +1291,13 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   overflow: auto;
 }
 
-/* line 1302, ../sass/styles.scss */
+/* line 1309, ../sass/styles.scss */
 .row1 {
   display: flex;
   flex-direction: row;
 }
 
-/* line 1306, ../sass/styles.scss */
+/* line 1313, ../sass/styles.scss */
 .row-title {
   width: 200px;
   padding: 5px;
@@ -1303,7 +1307,7 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
   -webkit-border-radius: 2px;
 }
 
-/* line 1314, ../sass/styles.scss */
+/* line 1321, ../sass/styles.scss */
 .row-body {
   width: 200px;
   padding: 5px;
