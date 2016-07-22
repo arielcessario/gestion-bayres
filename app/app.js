@@ -34,7 +34,8 @@
         'acUploads',
         'acAvisos',
         'acAvisosAdministracion',
-        'acHelper'
+        'acHelper',
+        'acEncomiendas'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {
             authProvider.init({
                 domain: 'ac-desarrollos.auth0.com',
@@ -226,8 +227,10 @@
         }])
         .controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['UserService', '$location', '$rootScope', '$interval', 'ProductService', 'CajasService', 'SucursalesService', '$window', '$scope', 'AvisosService'];
-    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, CajasService, SucursalesService, $window, $scope, AvisosService) {
+    AppCtrl.$inject = ['UserService', '$location', '$rootScope', '$interval', 'ProductService', 'CajasService', 'SucursalesService',
+        '$window', '$scope', 'AvisosService', 'EncomiendasService', '$timeout'];
+    function AppCtrl(UserService, $location, $rootScope, $interval, ProductService, CajasService, SucursalesService,
+                     $window, $scope, AvisosService, EncomiendasService, $timeout) {
         var vm = this;
         vm.isLogged = false;
         vm.user = undefined;
@@ -237,6 +240,7 @@
         vm.isMoved = false;
         vm.avisos_index = [];
         vm.nuevos_avisos = false;
+        vm.encomiendas = [];
 
         var location = $location.path().split('/');
         vm.menu = location[1];
@@ -247,6 +251,11 @@
         ProductService.get();
         //StockService.get();
 
+        EncomiendasService.get().then(function(data){
+            console.log(data);
+            vm.encomiendas = data;
+        });
+
         angular.element($window).bind("scroll", function (e) {
             vm.isMoved = this.pageYOffset > 88;
             if (!$scope.$$pahse) {
@@ -254,8 +263,18 @@
             }
         });
 
-        $interval(function () {
+        autoChangeEncomienda();
 
+        $interval(autoChangeEncomienda, 5000);
+        function autoChangeEncomienda() {
+            var elem01 = vm.encomiendas.shift();
+
+            $timeout(function () {
+                vm.encomiendas.push(elem01);
+            }, 0);
+        }
+
+        $interval(function () {
             vm.time = new Date().format('dddd, mmmm d, yyyy h:MM TT');
         }, 6000);
 

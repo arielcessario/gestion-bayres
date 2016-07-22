@@ -1167,3 +1167,149 @@ ac-pedidos-detalles > form > div > ac-autocomplete > .ac-autocomplete-panel {
 .showDashboard {
   display: inline !important;
 }
+
+/* line 1185, ../sass/styles.scss */
+#encomiendas-slider {
+  height: 110px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* line 1191, ../sass/styles.scss */
+#encomiendas-list {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  height: 5200px;
+  max-height: 5200px;
+}
+/* line 1203, ../sass/styles.scss */
+#encomiendas-list .encomienda {
+  align-content: center;
+  text-align: center;
+  margin-top: 50px !important;
+}
+
+/* line 1214, ../sass/styles.scss */
+.encomienda.ng-enter,
+.encomienda.ng-leave {
+  -webkit-transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 5s cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  position: relative;
+  display: block;
+  /*
+  img {
+    -webkit-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 10s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+
+  }
+  */
+}
+
+/* line 1238, ../sass/styles.scss */
+.encomienda.ng-enter.ng-enter-active,
+.encomienda.ng-leave {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+  height: 100px !important;
+  margin: 10px !important;
+}
+/* line 1249, ../sass/styles.scss */
+.encomienda.ng-enter.ng-enter-active img,
+.encomienda.ng-leave img {
+  width: 150px !important;
+}
+
+/* line 1254, ../sass/styles.scss */
+.encomienda.ng-leave.ng-leave-active,
+.encomienda.ng-enter {
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform: scaleY(0);
+  height: 0px !important;
+  margin: 10px 0px 10px 0px !important;
+}
+/* line 1265, ../sass/styles.scss */
+.encomienda.ng-leave.ng-leave-active img,
+.encomienda.ng-enter img {
+  width: 0px !important;
+}
+
+/* line 1271, ../sass/styles.scss */
+.encomienda-title {
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+  background-color: #293333;
+  padding: 10px 10px;
+  height: 20px;
+  font-size: 18px;
+}
+
+/* line 1281, ../sass/styles.scss */
+.encomienda-body {
+  background: rgba(255, 255, 255, 0.4);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(47%, rgba(246, 246, 246, 0.4)), color-stop(100%, rgba(237, 237, 237, 0.4)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(246, 246, 246, 0.4) 47%, rgba(237, 237, 237, 0.4) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+  min-width: 200px;
+  height: 375px;
+  overflow: auto;
+  text-align: left;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+  overflow: auto;
+}
+
+/* line 1301, ../sass/styles.scss */
+.row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 1305, ../sass/styles.scss */
+.row-title {
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  background-color: white;
+  color: #293333;
+  -webkit-border-radius: 2px;
+}
+
+/* line 1313, ../sass/styles.scss */
+.row-body {
+  width: 200px;
+  padding: 5px;
+  background-color: #293333;
+  color: #fff;
+  text-align: left;
+  font-weight: lighter;
+}

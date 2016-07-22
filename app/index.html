@@ -282,7 +282,8 @@
                         'bower_components/ac-angular-movimientos/movimientos-list.js',
                         'bower_components/ac-angular-movimientos/movimientos-service.js',
                         'includes/LangTables.js',
-                        'helper/ac-helper.js'
+                        'helper/ac-helper.js',
+                        'bower_components/ac-angular-cajas/ac-encomiendas.js'
                     ], 'segundo');
 
 
@@ -317,9 +318,27 @@
 <body ng-cloak ng-controller="AppCtrl as appCtrl">
 <ac-waiting texto="'Por favor aguarde...'"></ac-waiting>
 <div id="upper-bar" ng-if="appCtrl.user" ng-class="{'is-moved':appCtrl.isMoved}">
-    <div style="flex: 1;"></div>
-    <div style="flex: 2;">
+    <div style="flex: 1;">
         <img src="images/logo.png" height="88px" alt="">
+    </div>
+    <div style="flex: 2;" id="encomiendas-slider">
+        <div class="encomienda-title">
+            <label style="color:#fff;">Encomiendas Pendientes</label>
+        </div>
+        <div id="encomiendas-list" class="encomienda-body">
+            <div class="encomienda" ng-repeat="encomienda in appCtrl.encomiendas">
+                <a ng-href="{{encomienda.cliente}}" target="_blank" style="text-decoration: none;">
+                    <div class="row1">
+                        <div class="row-title">Cliente</div>
+                        <div class="row-title">Fecha Entrega</div>
+                    </div>
+                    <div class="row1">
+                        <div class="row-body">{{encomienda.cliente}}</div>
+                        <div class="row-body">{{encomienda.fecha}}</div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     <div style="flex:1;display:flex;flex-direction: row;justify-content: flex-start;align-items:center;">
         <div>
