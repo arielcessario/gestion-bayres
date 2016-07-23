@@ -253,6 +253,7 @@
 
         EncomiendasService.get().then(function(data){
             console.log(data);
+            console.log('Encomiendas:' + data.length);
             vm.encomiendas = data;
         });
 

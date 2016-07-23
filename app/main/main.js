@@ -85,14 +85,9 @@
 
 
         EncomiendasService.get().then(function (data) {
-
             for (var i = 0; i < data.length; i++) {
                 data[i].fecha_entrega = (new Date(data[i].fecha_entrega)).getDate() + '/' + ((new Date(data[i].fecha_entrega)).getMonth() + 1) + '/'+ (new Date(data[i].fecha_entrega)).getFullYear();
             }
-
-            data.sort(function (a, b) {
-                return b.fecha_entrega - a.fecha_entrega;
-            });
 
             vm.encomiendas = data;
         });
@@ -143,6 +138,7 @@
         func();
         function func() {
             CajasService.getTotalByCuenta('1.1.1.3' + UserService.getFromToken().data.sucursal_id, UserService.getFromToken().data.sucursal_id, function (data) {
+                console.log(data);
                 if (data[0] == undefined) {
 
                     vm.ahorro = 0;
@@ -150,6 +146,7 @@
 
                     vm.ahorro = data[0].importe;
                     CajasService.getResultado('1.1.1.3' + UserService.getFromToken().data.sucursal_id, function (data) {
+                        console.log(data);
                         vm.ahorro = parseFloat(vm.ahorro) + parseFloat(data[0].total);
                     });
                 }
