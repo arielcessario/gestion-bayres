@@ -84,7 +84,7 @@
         );
 
 
-        EncomiendasService.get().then(function (data) {
+        EncomiendasService.get(false).then(function (data) {
             for (var i = 0; i < data.length; i++) {
                 data[i].fecha_entrega = (new Date(data[i].fecha_entrega)).getDate() + '/' + ((new Date(data[i].fecha_entrega)).getMonth() + 1) + '/'+ (new Date(data[i].fecha_entrega)).getFullYear();
             }

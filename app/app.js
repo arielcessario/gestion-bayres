@@ -251,9 +251,8 @@
         ProductService.get();
         //StockService.get();
 
-        EncomiendasService.get().then(function(data){
-            console.log(data);
-            console.log('Encomiendas:' + data.length);
+        EncomiendasService.get(false).then(function(data){
+            //console.log(data);
             vm.encomiendas = data;
         });
 
