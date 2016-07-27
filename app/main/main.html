@@ -2,129 +2,114 @@
     <div class="dashboard-container">
         <div class="colum-1">
             <div class="dashboard-titulo">
-                <label style="float: left;cursor: pointer" ng-click="mainCtrl.showCaja = !mainCtrl.showCaja">Resumen de Caja</label>
+                <label style="float: left">Resumen de Caja</label>
                 <img src="images/add.png" style="width: 16px!important; height: 16px!important;float: right;">
                 <img src="images/remove.png" style="width: 16px!important; height: 16px!important;float: right;">
             </div>
-            <div style="display: none;" ng-class="{'showDashboard':mainCtrl.showCaja == true}">
-                <div id="main-resumen-caja">
-                    <h2>Saldo inicial</h2>
-                    <span>{{mainCtrl.saldoInicial}}</span>
-                    <h2>Ahorro</h2>
-                    <span>{{mainCtrl.ahorro}}</span>
-                    <h2>Total</h2>
-                    <span>{{mainCtrl.saldoFinal}}</span>
-                    <h2></h2>
-                    <!--button>Detalle</button-->
-                </div>
-                <div class="dashboard-titulo">
-                    <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/caja/cobros');">Detalle</button>
-                </div>
+            <div id="main-resumen-caja">
+                <h2>Saldo inicial</h2>
+                <span>{{mainCtrl.saldoInicial}}</span>
+                <h2>Ahorro</h2>
+                <span>{{mainCtrl.ahorro}}</span>
+                <h2>Total</h2>
+                <span>{{mainCtrl.saldoFinal}}</span>
+                <h2></h2>
+                <!--button>Detalle</button-->
             </div>
-
+            <div class="dashboard-titulo">
+                <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/caja/cobros');">Detalle</button>
+            </div>
         </div>
 
         <div class="colum-2">
             <div class="dashboard-titulo">
-                <label style="float: left;cursor: pointer" ng-click="mainCtrl.showProducto = !mainCtrl.showProducto">Productos a Reponer</label>
+                <label style="float: left">Productos a Reponer</label>
                 <img src="images/add.png" style="width: 16px!important; height: 16px!important;float: right;">
                 <img src="images/remove.png" style="width: 16px!important; height: 16px!important;float: right;">
+                <!--div class="contenedor-barra-minimizar">
+                <img src="images/add.png" style="width: 16px!important; height: 16px!important;">
+                <img src="images/remove.png" style="width: 16px!important; height: 16px!important;">
+                </div-->
             </div>
-            <div style="display: none;" ng-class="{'showDashboard':mainCtrl.showProducto == true}">
-                <div id="main-a-reponer">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th style="width: 95px;text-align: center;">Cantidad Actual</th>
-                            <th style="width: 95px;text-align: center;">Punto de Reposición</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="row in mainCtrl.reponer">
-                            <td title="{{row.nombre}}" ng-click="mainCtrl.producto = row;">
-                                {{row.nombre.length > 20 ? row.nombre.substring(0,20) + "..." : row.nombre}}
-                            </td>
-                            <td style="text-align: center;">{{row.cant_actual}}</td>
-                            <td style="text-align: center;">{{row.pto_repo}}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashboard-titulo">
-                    <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/traslado');">Reponer</button>
-                    <button style="float: left;margin: 0; padding: 2px 15px;"
-                            ng-click="mainCtrl.detalleProducto(mainCtrl.producto);">Detalle</button>
-                    <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;cursor: pointer;"
-                         ng-click="mainCtrl.removeProducto(mainCtrl.producto);">
-                </div>
+            <div id="main-a-reponer">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th style="width: 95px;text-align: center;">Cantidad Actual</th>
+                        <th style="width: 95px;text-align: center;">Punto de Reposición</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in mainCtrl.reponer">
+                        <td title="{{row.nombre}}">{{row.nombre.length > 20 ? row.nombre.substring(0,20) + "..." : row.nombre}}</td>
+                        <td style="text-align: center;">{{row.cant_actual}}</td>
+                        <td style="text-align: center;">{{row.pto_repo}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="dashboard-titulo">
+                <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/traslado');">Reponer</button>
+                <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/traslado');">Detalle</button>
+                <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;">
             </div>
         </div>
 
         <div class="colum-3">
             <div class="dashboard-titulo">
-                <label style="float: left;cursor: pointer" ng-click="mainCtrl.showEncomienda = !mainCtrl.showEncomienda">Encomiendas Pendientes</label>
+                <label style="float: left">Encomiendas Pendientes</label>
                 <img src="images/add.png" style="width: 16px!important; height: 16px!important;float: right;">
                 <img src="images/remove.png" style="width: 16px!important; height: 16px!important;float: right;">
             </div>
-            <div style="display: none;" ng-class="{'showDashboard':mainCtrl.showEncomienda == true}">
-                <div id="main-encomiendas">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th style="width: 95px;text-align: center;">Fecha Entrega</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="row in mainCtrl.encomiendas">
-                            <td title="{{row.cliente}}" ng-click="mainCtrl.cliente = row;">
-                                {{row.cliente.length > 20 ? row.cliente.substring(0,20) + "..." : row.cliente}}
-                            </td>
-                            <td style="text-align: center;">{{ row.fecha_entrega }}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashboard-titulo">
-                    <button style="float: left;margin: 0; padding: 2px 15px;"
-                            ng-click="mainCtrl.detalleEncomienda(mainCtrl.cliente);">Detalle</button>
-                    <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;cursor: pointer;"
-                         ng-click="mainCtrl.removeEncomienda(mainCtrl.cliente);">
-                </div>
+            <div id="main-encomiendas">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th style="width: 95px;text-align: center;">Fecha Entrega</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in mainCtrl.encomiendas">
+                        <td title="{{row.cliente}}">{{row.cliente.length > 20 ? row.cliente.substring(0,20) + "..." : row.cliente}}</td>
+                        <td style="text-align: center;">{{ row.fecha_entrega }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="dashboard-titulo">
+                <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/pedidos');">Detalle</button>
+                <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;">
             </div>
         </div>
 
         <div class="colum-4">
             <div class="dashboard-titulo">
-                <label style="float: left;cursor: pointer" ng-click="mainCtrl.showPedido = !mainCtrl.showPedido">Pedidos Pendientes</label>
+                <label style="float: left">Pedidos Pendientes</label>
                 <img src="images/add.png" style="width: 16px!important; height: 16px!important;float: right;">
                 <img src="images/remove.png" style="width: 16px!important; height: 16px!important;float: right;">
             </div>
-            <div style="display: none;" ng-class="{'showDashboard':mainCtrl.showPedido == true}">
-                <div id="main-pedidos">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Fecha</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="row in mainCtrl.pedidos">
-                            <td title="{{row.proveedor_nombre}}" ng-click="mainCtrl.pedido = row;">
-                                {{row.proveedor_nombre.length > 20 ? row.proveedor_nombre.substring(0,20) + "..." : row.proveedor_nombre}}
-                            </td>
-                            <td>{{ row.fecha_pedido }}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="dashboard-titulo">
-                    <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/pedidos');">Detalle</button>
-                    <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;cursor: pointer"
-                         ng-click="mainCtrl.removePedido(mainCtrl.pedido);">
-                </div>
+            <div id="main-pedidos">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="row in mainCtrl.pedidos">
+                        <td title="{{row.proveedor_nombre}}">{{row.proveedor_nombre.length > 20 ? row.proveedor_nombre.substring(0,20) + "..." : row.proveedor_nombre}}</td>
+                        <td>{{ row.fecha_pedido }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="dashboard-titulo">
+                <button style="float: left;margin: 0; padding: 2px 15px;" ng-click="mainCtrl.goToPagina('/stock/pedidos');">Detalle</button>
+                <img src="images/trash.png" style="width: 16px!important; height: 16px!important;float: right;">
             </div>
         </div>
     </div>
