@@ -1189,7 +1189,7 @@ width: 50%;
   height: 110px;
   background-color: transparent;
   overflow: hidden;
-  max-width: 580px;
+  max-width: 440px;
 }
 #encomiendas-list{
   display: flex;
@@ -1214,15 +1214,15 @@ width: 50%;
 }
 
 //************************************************************************
-//ANIMACIÓN PARA LA SECCIÓN DE ENCOMIENDAS
+//ANIMACIï¿½N PARA LA SECCIï¿½N DE ENCOMIENDAS
 //************************************************************************
 .encomienda.ng-enter,
 .encomienda.ng-leave {
-  -webkit-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -moz-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -ms-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  -o-transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-  transition: 5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -webkit-transition: 5s cubic-bezier(0.250, 0.250, 0.250, 0.250) all;
+  -moz-transition: 5s cubic-bezier(0.250, 0.250, 0.250, 0.250) all;
+  -ms-transition: 5s cubic-bezier(0.250, 0.250, 0.250, 0.250) all;
+  -o-transition: 5s cubic-bezier(0.250, 0.250, 0.250, 0.250) all;
+  transition: 5s cubic-bezier(0.250, 0.250, 0.250, 0.250) all;
   position: relative;
   display: block;
   /*
@@ -1246,9 +1246,9 @@ width: 50%;
   -ms-transform: scaleY(1);
   -o-transform: scaleY(1);
   transform: scaleY(1);
-  //width: 180px !important;
-  height: 100px !important;
-  margin: 10px !important;
+  width: 100% !important;
+  height: 80px !important;
+  margin: 5px 0px 5px 0px !important;
   /*
   img {
     width: 150px !important;
@@ -1259,14 +1259,15 @@ width: 50%;
 .encomienda.ng-leave.ng-leave-active,
 .encomienda.ng-enter {
   opacity: 0;
-  -webkit-transform: scaleY(0);
-  -moz-transform: scaleY(0);
-  -ms-transform: scaleY(0);
-  -o-transform: scaleY(0);
-  transform: scaleY(0);
-  //width: 0px !important;
+  //-webkit-transform: scaleY(0);
+  //-moz-transform: scaleY(0);
+  //-ms-transform: scaleY(0);
+  //-o-transform: scaleY(0);
+  //transform: scaleY(0);
+  width: 100% !important;
   height: 0px !important;
-  margin: 10px 0px 10px 0px !important;
+  margin: 5px 0px 5px 0px !important;
+
   /*
   img {
     width: 0px !important;
@@ -1284,7 +1285,8 @@ width: 50%;
   height: 20px;
   font-size: 18px;
   position: absolute;
-  width: 580px;
+  width: 440px;
+  z-index: 10000;
 }
 .encomienda-body{
   background: rgba(255, 255, 255, 0.4);
