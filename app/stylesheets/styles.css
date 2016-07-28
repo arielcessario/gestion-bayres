@@ -1372,8 +1372,8 @@ ul.enlarge li:hover {
 ul.enlarge span img {
   padding: 2px;
   background: #ccc;
-  height: 150px !important;
-  width: 150px !important;
+  height: 250px !important;
+  width: 250px !important;
 }
 
 /* line 1382, ../sass/styles.scss */
