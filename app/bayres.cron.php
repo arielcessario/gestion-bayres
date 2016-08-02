@@ -17,57 +17,78 @@ $dia = date("d", mktime(0,0,0, $mes_ant+1, 0, $anio_ant));
 $fecha_desde =  date('Y-m-d', mktime(0,0,0, $mes_ant, 1, $anio_ant));
 $fecha_hasta = date('Y-m-d', mktime(0,0,0, $mes_ant, $dia, $anio_ant));
 
-//OBTENGO EL TOTAL DE LOS MOVIMIENTOS PARA DETERMINADAS CUENTAS DEL MES QUE CERRO
-$results = $db->rawQuery("SELECT
-                            cuenta_id as cuenta_id,
-                            IFNULL(SUM(importe), 0) AS total
+
+//**********************************************************************************************
+//Cuenta_id = 1
+saveAhorro($db, 1, $anio_ant, $mes_ant);
+
+//**********************************************************************************************
+//Cuenta_id = 2
+saveAhorro($db, 2, $anio_ant, $mes_ant);
+
+//**********************************************************************************************
+//Cuenta_id = 3
+saveAhorro($db, 3, $anio_ant, $mes_ant);
+
+//**********************************************************************************************
+//Cuenta_id = 4
+saveAhorro($db, 4, $anio_ant, $mes_ant);
+
+
+
+//**********************************************************************************************
+//**********************************************************************************************
+
+function saveAhorro($db, $cuenta_id, $anio_ant, $mes_ant) {
+
+    $cuenta = $db->rawQuery("SELECT
+	                        IFNULL(SUM(importe),0) importe,
+	                        cuenta_id
                           FROM movimientos
-                          WHERE DATE(fecha) BETWEEN '$fecha_desde' AND '$fecha_hasta'
-                            AND (cuenta_id = '1.1.1.01' OR cuenta_id = '1.1.1.02'
-                            OR cuenta_id = '1.1.1.03' OR cuenta_id = '1.1.1.10'
-                            OR cuenta_id = '1.1.1.31' OR cuenta_id = '1.1.1.32'
-                            OR cuenta_id = '1.1.1.33' OR cuenta_id = '1.1.1.34')
-                          GROUP BY cuenta_id");
+                          WHERE cuenta_id = '1.1.1.3" . $cuenta_id . "' and sucursal_id=" . $cuenta_id);
 
-//SI HUBO MOVIMIENTOS EL MES PASADO SIGO
-if($db->count > 0) {
-
-    foreach ($results as $row) {
-
-        //DETERMINO SI EN LA TABLA RESULTADOS, YA EXISTE ALGUNA CUENTA PARA EL MES Y AÑO QUE CERRO
-        $resultados = $db->rawQuery("SELECT
+    $resultados = $db->rawQuery("SELECT
                             resultado_id,
                             anio,
                             mes,
                             cuenta_id,
                             total
                           FROM resultados
-                          WHERE anio= ".$anio_ant."
-                            AND mes = ".$mes_ant."
-                            AND cuenta_id = '". $row['cuenta_id'] ."'");
+                          WHERE anio= " . $anio_ant . "
+                            AND mes = " . $mes_ant . "
+                            AND cuenta_id = '". $cuenta[0]['cuenta_id'] ."'");
 
-        //SI NO EXSTE UN REGISTRO PARA ESA CUENTA LO INSERTO
-        if($db->count == 0) {
-            $data = array(
-                'anio' => $anio_ant,
-                'mes' => $mes_ant,
-                'cuenta_id' => $row['cuenta_id'],
-                'total' => $row['total']
-            );
+    if($db->count == 0) {
 
-            $result = $db->insert('resultados', $data);
-            if ($result > -1) {
-                //SE INSERTO EL REGISTRO
-                //echo ("Registro insertado");
-            } else {
-                //ERROR INSERTANDO
-                //echo ("Error insertando el registro");
-            }
+        $result = $db->rawQuery("SELECT
+                            resultado_id,
+                            anio,
+                            mes,
+                            cuenta_id,
+                            total
+                          FROM resultados
+                          WHERE anio = " . $anio_ant . "
+                            AND mes = 6
+                            AND cuenta_id = '" . $cuenta[0]['cuenta_id'] ."'");
+
+        $total = $cuenta[0]['importe'] + $result[0]['total'];
+
+        $data = array(
+            'anio' => $anio_ant,
+            'mes' => $mes_ant,
+            'cuenta_id' => $cuenta[0]['cuenta_id'],
+            'total' => $total
+        );
+
+        $result = $db->insert('resultados', $data);
+        if ($result > -1) {
+            //echo ("<div style='color:green;'>Registro insertado</div>");
         } else {
-            //SI EXISTE UN REGISTRO NO HAGO NADA
-            //echo("Existe un registro");
+            //echo ("<div style='color:red;'>Error insertando el registro</div>");
         }
+    } else {
+        //echo("<div style='color:red;'>Existe un registro - Cuenta_id: " . $resultados[0]['cuenta_id'] . " - Mes: " . $mes_ant . " - Anio: " . $anio_ant . "</div>");
     }
+
+
 }
-
-
