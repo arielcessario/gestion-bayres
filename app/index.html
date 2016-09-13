@@ -283,7 +283,8 @@
                         'bower_components/ac-angular-movimientos/movimientos-service.js',
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
-                        'bower_components/ac-angular-cajas/ac-encomiendas.js'
+                        'bower_components/ac-angular-cajas/ac-encomiendas.js',
+                        'bower_components/ac-angular-reportes/ac-reporte-traslado.js'
                     ], 'segundo');
 
 
@@ -383,6 +384,8 @@
         <div ng-if="appCtrl.menu == 'reportes'">
             <a href="#/reportes/stock" ng-click="appCtrl.sub_menu = 'stock'"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'stock'}">Stock</a>
+            <a href="#/reportes/auditoria" ng-click="appCtrl.sub_menu = 'auditoria'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'auditoria'}">Auditoria</a>
         </div>
         <div ng-if="appCtrl.menu =='stock'">
             <a href="#/stock/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'" ng-if="appCtrl.user.data.rol == 0"
@@ -393,10 +396,10 @@
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'traslado'}">Traslado</a>
             <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'fraccionado'"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'fraccionado'}">Fraccionado</a>
-            <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'consulta'" ng-if="appCtrl.user.data.rol == 0"
+            <!--<a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'consulta'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'consulta'}">Consulta</a>
             <a href="#/stock/fraccionado" ng-click="appCtrl.sub_menu = 'otro'" ng-if="appCtrl.user.data.rol == 0"
-               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'otro'}">Otro</a>
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'otro'}">Otro</a>-->
         </div>
         <div ng-if="appCtrl.menu == 'administracion'">
             <a href="#/administracion/productos" ng-click="appCtrl.sub_menu = 'productos'"

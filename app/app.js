@@ -35,7 +35,8 @@
         'acAvisos',
         'acAvisosAdministracion',
         'acHelper',
-        'acEncomiendas'
+        'acEncomiendas',
+        'acReporteTraslado'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {
             authProvider.init({
                 domain: 'ac-desarrollos.auth0.com',
@@ -224,6 +225,19 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/reportes/auditoria', {
+                templateUrl: 'auditoria/auditoria.html',
+                controller: 'AuditoriaController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('auditoria/auditoria.js');
+                    }]
+                }
+            });
+
         }])
         .controller('AppCtrl', AppCtrl);
 
