@@ -167,7 +167,7 @@
         window.mailAdmin = 'arielcessario@gmail.com';
         //        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail:'tantopc@hotmail.com'}];
         window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}];
-        //                window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail: 'tantopc@hotmail.com'}, {mail: 'rafa_710@hotmail.com'}, {mail:'rafa710@gmail.com'}];
+        //        window.mailAdmins = [{mail: 'arielcessario@gmail.com'}, {mail: 'mmaneff@gmail.com'}, {mail: 'tantopc@hotmail.com'}, {mail: 'rafa_710@hotmail.com'}, {mail:'rafa710@gmail.com'}];
 
         // include angular loader, which allows the files to load in any order
         //@@NG_LOADER_START@@
@@ -262,6 +262,7 @@
                         'bower_components/ac-angular-usuarios/ac-usuarios.js',
                         'bower_components/ac-angular-usuarios/ac-usuarios-administracion.js',
                         'bower_components/ac-angular-usuarios/ac-usuarios-nuevo.js',
+                        'bower_components/ac-angular-usuarios/ac-deudores.js',
                         'bower_components/ac-angular-productos/ac-productos.js',
                         'bower_components/ac-angular-productos/ac-productos-administracion.js',
                         'bower_components/ac-angular-avisos/ac-avisos.js',
@@ -284,7 +285,8 @@
                         'includes/LangTables.js',
                         'helper/ac-helper.js',
                         'bower_components/ac-angular-cajas/ac-encomiendas.js',
-                        'bower_components/ac-angular-reportes/ac-reporte-traslado.js'
+                        'bower_components/ac-angular-reportes/ac-reporte-traslado.js',
+                        'bower_components/ac-angular-cajas/ac-historico-caja-diaria.js',
                     ], 'segundo');
 
 
@@ -386,6 +388,10 @@
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'stock'}">Stock</a>
             <a href="#/reportes/auditoria" ng-click="appCtrl.sub_menu = 'auditoria'"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'auditoria'}">Auditoria</a>
+            <!--<a href="#/reportes/deudores" ng-click="appCtrl.sub_menu = 'deudores'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Deudores</a>-->
+            <a href="#/reportes/historico_caja_diario" ng-click="appCtrl.sub_menu = 'deudores'"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'deudores'}">Historico Caja Diario</a>
         </div>
         <div ng-if="appCtrl.menu =='stock'">
             <a href="#/stock/pedidos" ng-click="appCtrl.sub_menu = 'pedidos'" ng-if="appCtrl.user.data.rol == 0"

@@ -36,7 +36,9 @@
         'acAvisosAdministracion',
         'acHelper',
         'acEncomiendas',
-        'acReporteTraslado'
+        'acReporteTraslado',
+        'acDeudores',
+        'acHistoricoCajaDiaria'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {
             authProvider.init({
                 domain: 'ac-desarrollos.auth0.com',
@@ -237,6 +239,31 @@
                     }]
                 }
             });
+
+            $routeProvider.when('/reportes/historico_caja_diario', {
+                templateUrl: 'historico_caja_diario/historico_caja_diario.html',
+                controller: 'HistoricoCajaDiarioController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('historico_caja_diario/historico_caja_diario.js');
+                    }]
+                }
+            });
+            /*
+            $routeProvider.when('/reportes/deudores', {
+                templateUrl: 'deudores/deudores.html',
+                controller: 'DeudoresController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('deudores/deudores.js');
+                    }]
+                }
+            });
+            */
 
         }])
         .controller('AppCtrl', AppCtrl);
