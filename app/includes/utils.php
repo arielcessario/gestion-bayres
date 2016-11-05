@@ -21,7 +21,13 @@ $image_path = "../../../images/";
 $compression_level = 20;
 
 
-require_once 'MysqliDb.php';
+//require_once 'MysqliDb.php';
+if (file_exists('../../../../../cnx/cnx.php')) {
+    require_once '../../../../../cnx/cnx.php';
+} else {
+    require_once '../../../../cnx/cnx.php';
+}
+
 
 /* @name: checkSecurity
  * @param
@@ -173,10 +179,8 @@ class Main
             echo 'Caught exception: ', $e->getMessage(), "\n";
         }
         if (!isset($this->db)) {
-//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_ac', 'aT9?aVvnZgAM', 'arielces_ac');
-            $this->db = new MysqliDb ('192.185.4.175', 'arielces_test', '*DJ[c(n@)[ku', 'arielces_bayres_test');
-//            $this->db = new MysqliDb ('192.185.4.175', 'arielces_bayres', 't)htl)lPH{83', 'arielces_bayres');
-//            $this->db = new MysqliDb ('127.0.0.1', 'root', 'concentrador', 'arielces_bayres');
+            $this->db = get('bayres-local');
+            //$this->db = get('bayres-test');
         }
     }
 }

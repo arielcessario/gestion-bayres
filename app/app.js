@@ -37,7 +37,7 @@
         'acHelper',
         'acEncomiendas',
         'acReporteTraslado',
-        'acDeudores',
+        //'acDeudores',
         'acHistoricoCajaDiaria'
     ]).config(['$routeProvider', 'authProvider', function ($routeProvider, authProvider) {
             authProvider.init({
