@@ -17,6 +17,7 @@
         'acUsuariosNuevo',
         'acProductos',
         'acProductosAdministracion',
+        'acCategoriasAdministracion',
         'acStocks',
         'acPagoProveedores',
         'acPedidosAdministracion',
@@ -103,6 +104,19 @@
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         // you can lazy load files for an existing module
                         return $ocLazyLoad.load('avisos/avisos.js');
+                    }]
+                }
+            });
+
+
+            $routeProvider.when('/administracion/categorias', {
+                templateUrl: 'categorias/categorias.html',
+                controller: 'CategoriasController',
+                data: {requiresLogin: true},
+                resolve: { // Any property in resolve should return a promise and is executed before the view is loaded
+                    loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                        // you can lazy load files for an existing module
+                        return $ocLazyLoad.load('categorias/categorias.js');
                     }]
                 }
             });

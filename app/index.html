@@ -265,6 +265,7 @@
                         //'bower_components/ac-angular-usuarios/ac-deudores.js',
                         'bower_components/ac-angular-productos/ac-productos.js',
                         'bower_components/ac-angular-productos/ac-productos-administracion.js',
+                        'bower_components/ac-angular-productos/ac-categorias-administracion.js',
                         'bower_components/ac-angular-avisos/ac-avisos.js',
                         'bower_components/ac-angular-avisos/ac-avisos-administracion.js',
                         'bower_components/ac-angular-uploads/ac-uploads.js',
@@ -419,6 +420,8 @@
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'sucursales'}">Sucursales</a>
             <a href="#/administracion/avisos" ng-click="appCtrl.sub_menu = 'avisos'" ng-if="appCtrl.user.data.rol == 0"
                ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'avisos'}">Avisos</a>
+            <a href="#/administracion/categorias" ng-click="appCtrl.sub_menu = 'categorias'" ng-if="appCtrl.user.data.rol == 0"
+               ng-class="{'sub-menu-selected':appCtrl.sub_menu == 'categorias'}">Categorias</a>
         </div>
         <div ng-if="appCtrl.menu == 'ventas'">
             <a href="#/web/ventas" ng-click="appCtrl.sub_menu = 'ventas'" ng-if="appCtrl.user.data.rol == 0"
